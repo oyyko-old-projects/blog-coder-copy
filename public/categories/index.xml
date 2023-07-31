@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Oyyko</title>
+    <link>https://oyyko.com/categories/</link>
+    <description>Recent content in Categories on Oyyko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
+    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster><atom:link href="https://oyyko.com/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

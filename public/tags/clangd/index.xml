@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>clangd on Oyyko</title>
+    <link>https://oyyko.com/tags/clangd/</link>
+    <description>Recent content in clangd on Oyyko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
+    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
+    <lastBuildDate>Sun, 07 Aug 2022 21:49:29 +0800</lastBuildDate><atom:link href="https://oyyko.com/tags/clangd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Cpp17 or higher version of Cpp on Vscode extension Clangd</title>
+      <link>https://oyyko.com/posts/use-cpp17-on-vscode-clangd/</link>
+      <pubDate>Sun, 07 Aug 2022 21:49:29 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/use-cpp17-on-vscode-clangd/</guid>
+      <description>Recently I&amp;rsquo;ve switched my code completion tool in VScode from Microsoft&amp;rsquo;s official plugin to clangd. On the one hand, clangd can provide a better user experience, on the other hand, I also use this plugin in my company (Bytedance).
+I joked to myself: Two of the most interesting things I learned when I interned at the company were that indentation changed from four spaces to two, and braces changed from wrap to no wrap.</description>
+    </item>
+    
+  </channel>
+</rss>

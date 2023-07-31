@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Oyyko</title>
+    <link>https://oyyko.com/tags/</link>
+    <description>Recent content in Tags on Oyyko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
+    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
+    <lastBuildDate>Sat, 29 Jul 2023 22:50:19 +0800</lastBuildDate><atom:link href="https://oyyko.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>meta</title>
+      <link>https://oyyko.com/tags/meta/</link>
+      <pubDate>Sat, 29 Jul 2023 22:50:19 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/meta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VSCode</title>
+      <link>https://oyyko.com/tags/vscode/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>https://oyyko.com/tags/code/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mogan</title>
+      <link>https://oyyko.com/tags/mogan/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/mogan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>note</title>
+      <link>https://oyyko.com/tags/note/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/note/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>texmacs</title>
+      <link>https://oyyko.com/tags/texmacs/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/texmacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>archlinux</title>
+      <link>https://oyyko.com/tags/archlinux/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/archlinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://oyyko.com/tags/linux/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manjaro</title>
+      <link>https://oyyko.com/tags/manjaro/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/manjaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>os</title>
+      <link>https://oyyko.com/tags/os/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>translate</title>
+      <link>https://oyyko.com/tags/translate/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/translate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lisp</title>
+      <link>https://oyyko.com/tags/lisp/</link>
+      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/lisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scheme</title>
+      <link>https://oyyko.com/tags/scheme/</link>
+      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/scheme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bug</title>
+      <link>https://oyyko.com/tags/bug/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/bug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cpp</title>
+      <link>https://oyyko.com/tags/cpp/</link>
+      <pubDate>Tue, 23 Aug 2022 15:20:51 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/cpp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clangd</title>
+      <link>https://oyyko.com/tags/clangd/</link>
+      <pubDate>Sun, 07 Aug 2022 21:49:29 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/clangd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://oyyko.com/tags/life/</link>
+      <pubDate>Sun, 24 Jul 2022 00:37:35 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://oyyko.com/tags/bash/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Link</title>
+      <link>https://oyyko.com/tags/link/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/link/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithm</title>
+      <link>https://oyyko.com/tags/algorithm/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>https://oyyko.com/tags/latex/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ICS</title>
+      <link>https://oyyko.com/tags/ics/</link>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/ics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://oyyko.com/tags/math/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Number_Theory</title>
+      <link>https://oyyko.com/tags/number_theory/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/number_theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leetcode</title>
+      <link>https://oyyko.com/tags/leetcode/</link>
+      <pubDate>Tue, 30 Nov 2021 15:20:51 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDE</title>
+      <link>https://oyyko.com/tags/ide/</link>
+      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Translation</title>
+      <link>https://oyyko.com/tags/translation/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/translation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>https://oyyko.com/tags/c/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/tags/c/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

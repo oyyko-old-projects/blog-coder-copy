@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Using Cpp17 or higher version of Cpp on Vscode extension Clangd · Oyyko
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Oyyko">
+<meta name="description" content="Recently I&rsquo;ve switched my code completion tool in VScode from Microsoft&rsquo;s official plugin to clangd. On the one hand, clangd can provide a better user experience, on the other hand, I also use this plugin in my company (Bytedance).
+I joked to myself: Two of the most interesting things I learned when I interned at the company were that indentation changed from four spaces to two, and braces changed from wrap to no wrap.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using Cpp17 or higher version of Cpp on Vscode extension Clangd"/>
+<meta name="twitter:description" content="Recently I&rsquo;ve switched my code completion tool in VScode from Microsoft&rsquo;s official plugin to clangd. On the one hand, clangd can provide a better user experience, on the other hand, I also use this plugin in my company (Bytedance).
+I joked to myself: Two of the most interesting things I learned when I interned at the company were that indentation changed from four spaces to two, and braces changed from wrap to no wrap."/>
+
+<meta property="og:title" content="Using Cpp17 or higher version of Cpp on Vscode extension Clangd" />
+<meta property="og:description" content="Recently I&rsquo;ve switched my code completion tool in VScode from Microsoft&rsquo;s official plugin to clangd. On the one hand, clangd can provide a better user experience, on the other hand, I also use this plugin in my company (Bytedance).
+I joked to myself: Two of the most interesting things I learned when I interned at the company were that indentation changed from four spaces to two, and braces changed from wrap to no wrap." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oyyko.com/posts/use-cpp17-on-vscode-clangd/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-07T21:49:29+08:00" />
+<meta property="article:modified_time" content="2022-08-07T21:49:29+08:00" />
+
+
+
+
+<link rel="canonical" href="https://oyyko.com/posts/use-cpp17-on-vscode-clangd/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.3177c52908014e036ec6c4e1c8194a1b197b85e669df726c671b40f2e4f77abb.css" integrity="sha256-MXfFKQgBTgNuxsThyBlKGxl7heZp33JsZxtA8uT3ers=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Oyyko
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://oyyko.com/posts/use-cpp17-on-vscode-clangd/">
+              Using Cpp17 or higher version of Cpp on Vscode extension Clangd
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-08-07T21:49:29&#43;08:00">
+                2022-08-07
+              </time>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/clangd/">clangd</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/vscode/">VSCode</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/cpp/">Cpp</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        
+        <hr>
+        <i class="fa fa-book"></i> Table of Contents
+               <div id="toc"> <nav id="TableOfContents"></nav> </div>
+        <hr>
+        <p>Recently I&rsquo;ve switched my code completion tool in VScode from Microsoft&rsquo;s official plugin to clangd. On the one hand, clangd can provide a better user experience, on the other hand, I also use this plugin in my company (Bytedance).</p>
+<p>I joked to myself: Two of the most interesting things I learned when I interned at the company were that indentation changed from four spaces to two, and braces changed from wrap to no wrap.</p>
+<p>Now, there is a problem. I installed clangd, switched over and everything worked fine. But when I use string_view, clangd told me it didn&rsquo;t recognize this thing. I quickly realized that this is due to the fact that the default Cpp version of clangd is still 14. So changing its default version became something I had to do.</p>
+<p>I googled but didn&rsquo;t find any useful information.</p>
+<p>I try to use compile_commands.json file. But on the one hand, it needs to be configured separately for each project, while the effect I expect is to use Cpp17 for any file that is opened at random. On the other hand, it turns out that it does not work. (maybe I didn&rsquo;t configure it properly)</p>
+<p>So, here is the final solution.</p>
+<p>Open (create if not already there) <code>~/.config/clangd/config.yaml</code>
+and write the following information</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span><span style="color:#268bd2">CompileFlags</span>: 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>    <span style="color:#268bd2">Add</span>: [-std=c++20]
+</span></span></code></pre></div><p>Cool. Now let&rsquo;s have fun with Cpp20.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        <div class="comments">
+    <script>
+  
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? 'github-light' : getTheme;
+    
+    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+    let s = document.createElement('script');
+    s.src = 'https://utteranc.es/client.js';
+    s.setAttribute('repo', 'oyyko\/utteranc-comments');
+    s.setAttribute('issue-term', 'pathname');
+    s.setAttribute('theme', theme);
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
+  
+    </script>
+    </div>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <link rel='stylesheet' type='text/css' href=http://fonts.googleapis.com/css?family&#61;Jetbrains&#43;Mono%7cRoboto&#43;Slab%7cNoto&#43;Sans&#43;SC%7c>
+
+
+    <section class="container">
+      ©
+      
+      2019 -
+      
+      2023
+       Oyyko 
+      ·
+      
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
+        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
+        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
+      
+    </section>
+</footer>
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

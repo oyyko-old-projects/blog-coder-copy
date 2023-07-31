@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>os on Oyyko</title>
+    <link>https://oyyko.com/tags/os/</link>
+    <description>Recent content in os on Oyyko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
+    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
+    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://oyyko.com/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archlinux/Manjaro Install Guide</title>
+      <link>https://oyyko.com/posts/arch_install/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/arch_install/</guid>
+      <description>manjaro I3新电脑配置
+假设已经安装好了manjaro i3，接下来要做的是：
+基本装机 按顺序执行以下操作 Link to heading 换源 Link to heading 编辑/etc/pacman.d/mirrorlist 内容改为
+1Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch 加入archlinuxcn源并安装yay Link to heading 在 /etc/pacman.conf 文件末尾添加以下两行
+1[archlinuxcn] 2Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch 之后通过以下命令安装 archlinuxcn-keyring 包导入 GPG key。
+1sudo pacman -Sy archlinuxcn-keyring 之后就可以用yay 安装各种软件了
+记得先sudo pacman -Syyu一下。
+科学上网 Link to heading 由于安装某些软件的时候，yay会从国外下载，所以要先科学上网才能尽情安装想要的软件。
+1yay -S clash-for-windows-bin 之后导入已有的订阅。 之后在终端中设置(例如加入到~/.zshrc中)：
+1export https_proxy=http://127.0.0.1:7890; 2export http_proxy=http://127.0.0.1:7890; 3export all_proxy=socks5://127.0.0.1:7890; 对于i3wm等无法设置系统级代理的桌面环境，请把chrome的启动改为
+1bindsym $mod+F2 exec google-chrome-stable --proxy-server=&amp;#34;socks5://127.0.0.1:7890&amp;#34; 这样chrome也可以自动使用代理上网了。
+安装输入法 Link to heading 1yay -S fcitx5-im 2yay -S base-devel 3yay -S fcitx5-rime 4yay -S rime-cloverpinyin 配置fcitx5的环境变量：</description>
+    </item>
+    
+    <item>
+      <title>Revisit_OS</title>
+      <link>https://oyyko.com/posts/revisit_os/</link>
+      <pubDate>Sat, 20 Aug 2022 16:05:28 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/revisit_os/</guid>
+      <description>For some reason, I&amp;rsquo;ve been reviewing OS related stuff lately.
+hardlink and softlink Link to heading ln creates hark links. ln -s creates soft (a.k.a symbolic) links.
+ln -l show the number of hardlinks points to the same inode.
+hardlink points to the inode. softlink points to the path.
+pros and cons: hardlink must be on the same partition, can only link to files. softlink can link to a file or directory, no partition limitation.</description>
+    </item>
+    
+  </channel>
+</rss>

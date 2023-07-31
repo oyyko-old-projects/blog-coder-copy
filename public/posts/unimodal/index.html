@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  The language UNIMODAL is not context free · Oyyko
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Oyyko">
+<meta name="description" content="In this article, we will prove that: the language &lsquo;UNIMODAL&rsquo; is not cfg. Also, we will prove that cfg can not be used to compare binary number.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The language UNIMODAL is not context free"/>
+<meta name="twitter:description" content="In this article, we will prove that: the language &lsquo;UNIMODAL&rsquo; is not cfg. Also, we will prove that cfg can not be used to compare binary number."/>
+
+<meta property="og:title" content="The language UNIMODAL is not context free" />
+<meta property="og:description" content="In this article, we will prove that: the language &lsquo;UNIMODAL&rsquo; is not cfg. Also, we will prove that cfg can not be used to compare binary number." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oyyko.com/posts/unimodal/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-10-06T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://oyyko.com/posts/unimodal/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.3177c52908014e036ec6c4e1c8194a1b197b85e669df726c671b40f2e4f77abb.css" integrity="sha256-MXfFKQgBTgNuxsThyBlKGxl7heZp33JsZxtA8uT3ers=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Oyyko
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://oyyko.com/posts/unimodal/">
+              The language UNIMODAL is not context free
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-10-06T00:00:00Z">
+                2021-10-06
+              </time>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        
+        <hr>
+        <i class="fa fa-book"></i> Table of Contents
+               <div id="toc"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#proposition-onebinary-equal">proposition one:&ldquo;BINARY EQUAL&rdquo;：</a></li>
+    <li><a href="#proposition-twobinary-bigger">proposition two:&ldquo;BINARY BIGGER&rdquo;:</a></li>
+    <li><a href="#proposition-threeunimodal">proposition three:&ldquo;UNIMODAL&rdquo;:</a></li>
+  </ul>
+</nav> </div>
+        <hr>
+        <p>In this article, we will prove that: the language &lsquo;UNIMODAL&rsquo; is not cfg. Also, we will prove that cfg can not be used to compare binary number.</p>
+<h2 id="proposition-onebinary-equal">
+  proposition one:&ldquo;BINARY EQUAL&rdquo;：
+  <a class="heading-link" href="#proposition-onebinary-equal">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Alphabet：{S,0,1}</p>
+<p>language BINARY_EQUAL：string such as ${(0|1)^* S (0|1)^*}$，AND the binary number before &lsquo;#&rsquo; is equal to the the latter one.</p>
+<p>statement： BINARY_EQUAL is not context free grammar</p>
+<p>Prove: Assume that BINARY_EQUAL is cfl(context free language), then use the pump lemma.</p>
+<p>For a string s=&ldquo;xxxx&hellip;xxxx#yyyy&hellip;yyyy&rdquo;</p>
+<p>$$
+\exists uvwxy, \text{such that} \ s=uvwxy\ ,\text{and}\ \ \forall i\ge 0, uv^iwx^iy\in \mathbb{BINARY_EQUAL}
+$$</p>
+<p>We choose a special string: $s=1^k0^kS0^k1^k$, so when k is large enough, the v and x must be different. Hence, the pumped string is not BINARY_EQUAL. So the proposition is right.</p>
+<h2 id="proposition-twobinary-bigger">
+  proposition two:&ldquo;BINARY BIGGER&rdquo;:
+  <a class="heading-link" href="#proposition-twobinary-bigger">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Alphabet：{S,0,1}
+language BINARY_EQUAL：string such as ${(0|1)^* S (0|1)^*}$，AND the binary number before &lsquo;#&rsquo; is <strong>BIGGER</strong> to the the latter one.
+statement： BINARY_BIGGER is not context free grammar</p>
+<p>Prove: Assume that BINARY_BIGGER is cfl, use the pump lemma for the string $1^k0^{k-1}1S1^k0^k$.</p>
+<p>If v and x are both in the left number, the pump down it.(pump down means that we choose the $i$ in the pump lemma as 0. a.k.a $i=0$) then the digits of left num is 2k-2, while the right is 2k, so the right number is bigger than the left.</p>
+<p>If v and x are both in the right number, just choose i as much as you need. Then the right is obvious larger than the left.</p>
+<p>If v and x are in different sides:
+(1) If v is &lsquo;1&rsquo; and x is &lsquo;1&rsquo;,pump down it. Then two num should be equal
+(2) If v is &lsquo;00&hellip;1&rsquo;, and x is &lsquo;11&hellip;1&rsquo; then pump up it and the right num should be larger.</p>
+<p>So, the proposition is true.</p>
+<h2 id="proposition-threeunimodal">
+  proposition three:&ldquo;UNIMODAL&rdquo;:
+  <a class="heading-link" href="#proposition-threeunimodal">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Alphabet：{S,0,1}
+language UNIMODAL：string such as ${(0|1)^* S (0|1)^<em>(S(0|1)^</em>)^*}$. This string will be considered as an array of binary number. And when and only when the array is UNIMODAL. The string belongs to the language.</p>
+<p>For example: 1 3 5 3 1 is a unimodal array. The form in binary is 1#11#101#11#1. So the string &lsquo;1#11#101#11#1&rsquo; is unimodal.
+statement： UNIMODAL is not context free grammar</p>
+<p>Prove: use pump lemma. s=uvwxy. Let s be &lsquo;$1^K0^KS1^K0^KS1^K0^KS1^K0^KS1^K0^K$&rsquo;, Actually, we need $1^K0^KS1^K0^K(S1^K0^K)^k$. Because every num in this array is equal. It&rsquo;s a UNIMODAL string. And if v and x belongs to one num, then pump down it. We get a decrease then increase, hence a controdiction.</p>
+<p>And if v and x belongs to different num. Then v is &lsquo;000&hellip;&rsquo;, x is &lsquo;111&hellip;&rsquo;,(because we let the k be large enough). Hence,we pump down, we we will get a decrease and then increase and then decrease. Controdiction!</p>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        <div class="comments">
+    <script>
+  
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? 'github-light' : getTheme;
+    
+    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+    let s = document.createElement('script');
+    s.src = 'https://utteranc.es/client.js';
+    s.setAttribute('repo', 'oyyko\/utteranc-comments');
+    s.setAttribute('issue-term', 'pathname');
+    s.setAttribute('theme', theme);
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
+  
+    </script>
+    </div>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <link rel='stylesheet' type='text/css' href=http://fonts.googleapis.com/css?family&#61;Jetbrains&#43;Mono%7cRoboto&#43;Slab%7cNoto&#43;Sans&#43;SC%7c>
+
+
+    <section class="container">
+      ©
+      
+      2019 -
+      
+      2023
+       Oyyko 
+      ·
+      
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
+        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
+        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
+      
+    </section>
+</footer>
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

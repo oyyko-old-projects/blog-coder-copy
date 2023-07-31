@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on Oyyko</title>
+    <link>https://oyyko.com/tags/c/</link>
+    <description>Recent content in C on Oyyko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
+    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
+    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://oyyko.com/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C Hello World Again</title>
+      <link>https://oyyko.com/posts/c_hello_world/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/c_hello_world/</guid>
+      <description>&lt;p&gt;本文是我给地空学院的学生的C语言讲座的讲稿&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>N queens Problem</title>
+      <link>https://oyyko.com/posts/n-queens/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/n-queens/</guid>
+      <description>&lt;p&gt;This article will provide a fast way to find a solution for the famous N queens problem.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

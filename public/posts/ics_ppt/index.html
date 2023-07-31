@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  ICS PPT Note 1 · Oyyko
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Oyyko">
+<meta name="description" content="计算系统概率PPT笔记1 复习期中">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ICS PPT Note 1"/>
+<meta name="twitter:description" content="计算系统概率PPT笔记1 复习期中"/>
+
+<meta property="og:title" content="ICS PPT Note 1" />
+<meta property="og:description" content="计算系统概率PPT笔记1 复习期中" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oyyko.com/posts/ics_ppt/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-11-26T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://oyyko.com/posts/ics_ppt/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.3177c52908014e036ec6c4e1c8194a1b197b85e669df726c671b40f2e4f77abb.css" integrity="sha256-MXfFKQgBTgNuxsThyBlKGxl7heZp33JsZxtA8uT3ers=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Oyyko
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://oyyko.com/posts/ics_ppt/">
+              ICS PPT Note 1
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-11-26T00:00:00Z">
+                2021-11-26
+              </time>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/ics/">ICS</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        
+        <hr>
+        <i class="fa fa-book"></i> Table of Contents
+               <div id="toc"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ppt-1-1">PPT 1-1</a></li>
+    <li><a href="#ppt1-2">PPT1-2</a></li>
+    <li><a href="#ppt-2-1">PPT 2-1</a>
+      <ul>
+        <li><a href="#summary">Summary:</a></li>
+      </ul>
+    </li>
+    <li><a href="#ppt2-2">PPT2-2</a></li>
+    <li><a href="#ppt-3-1">PPT 3-1</a></li>
+    <li><a href="#ppt-3-2">PPT 3-2</a></li>
+  </ul>
+</nav> </div>
+        <hr>
+        <p>计算系统概率PPT笔记1 复习期中</p>
+<h2 id="ppt-1-1">
+  PPT 1-1
+  <a class="heading-link" href="#ppt-1-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>架构：
+Application
+Algorithm and Data Structure
+Programming Language, Compiler
+OS/VM
+<strong>ISA (Instruction Set Architecture)</strong>
+Microarchitecture
+RTL
+Digital Circuits/Analog Circuits
+Electonic Devices
+Physics</p>
+<h2 id="ppt1-2">
+  PPT1-2
+  <a class="heading-link" href="#ppt1-2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>计算机是一个二进制的系统。通过操纵电子进行计算。高电压(高于某个特定值)视为1，低电压视为0.</p>
+<p>信息的基本单位是Bit</p>
+<p>MOS管：有N和P型
+N型MOS管:三个极, <strong>#1</strong> , <strong>#2</strong> 和 <strong>Gate</strong>
+当Gate为1时，连通
+当Gate为0时，断开</p>
+<p>P型MOS管恰恰相反
+当Gate为0时，连通
+当Gate为1时，断开</p>
+<h2 id="ppt-2-1">
+  PPT 2-1
+  <a class="heading-link" href="#ppt-2-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>进制：八进制，二进制，十六进制
+无符号整数
+有符号整数：</p>
+<ul>
+<li>n个bit，有$2^n$个不同的值</li>
+</ul>
+<p>原码(signed Magnitude)：一个符号位，n-1个数值位。有+0,-0,导致空间的浪费
+反码(1&rsquo;s Complement)：正数的反码等于原码。负数的反码等于原码的符号位不变，而数值位取反。
+补码(2&rsquo;s Complement)：反码+1等于补码。
+例如3bit</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>001</td>
+<td>1</td>
+</tr>
+<tr>
+<td>010</td>
+<td>2</td>
+</tr>
+<tr>
+<td>011</td>
+<td>3</td>
+</tr>
+<tr>
+<td>100</td>
+<td>-4</td>
+</tr>
+<tr>
+<td>101</td>
+<td>-3</td>
+</tr>
+<tr>
+<td>110</td>
+<td>-2</td>
+</tr>
+<tr>
+<td>111</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="summary">
+  Summary:
+  <a class="heading-link" href="#summary">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>每个计算机里面的内容都是一个数字，也就是二进制的0和1.
+负数用补码(2&rsquo;s Complement)来表示
+Overflows can be detected utilizing the carry bit
+浮点数有特殊的表示法</p>
+<h2 id="ppt2-2">
+  PPT2-2
+  <a class="heading-link" href="#ppt2-2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>a data type includes <strong>representation</strong> and <strong>operations</strong>.
+对整数的操作：
+１．　相加
+２．　相减
+３．　带符号扩展(Sign Extension)
+例如：0001的8位扩展为0000 0001
+而　1001的8位扩展为1111 1001
+将sign bit进行扩展</p>
+<p>判断overflow:　当输入的两个操作数的符号一致，而和的符号却不一样的时候。即产生了overflow.</p>
+<p>小数：
+定点数，浮点数</p>
+<p>浮点数：IEEE754</p>
+<p>S:1bit Exp:8bit Fraction:23bit</p>
+<p>1,8,23
+S,Exp,Frac</p>
+<p>$$
+(-1)^S*(1.Frac)*2^{(Exp-127)}, 1\le Exp\le 254
+$$</p>
+<p>特殊：当指数部分全1，小数部分全0时，表示无穷。符号位为1表示负无穷，符号位为0表示正无穷。浮点正常表示的指数范围为00000001-11111110，即$2^{-126}~2^{127}$
+若指数全为0，则为subnormal number,它表示的指数位仍然是$2^{-126}$，但小数从1.frac变为0.frac,从而可以表示更小的数</p>
+<p>Some data types are supported directly by the instruction set architecture.</p>
+<ul>
+<li>For LC-3, there is only one supported data type: 16-bit 2’s complement signed integer</li>
+<li>Operations: ADD, AND, NOT</li>
+</ul>
+<h2 id="ppt-3-1">
+  PPT 3-1
+  <a class="heading-link" href="#ppt-3-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>晶体管和逻辑门
+MOS管：已学习
+CMOS: Complementary MOS
+使用N和P型的MOS管来构造逻辑门</p>
+<p>题目1:构造一个3个输入的NOR门，使用CMOS</p>
+<p>记号：</p>
+<ul>
+<li>在线上面打斜线写4,表示这个线是4位宽的</li>
+<li>小圈表示否定</li>
+</ul>
+<h2 id="ppt-3-2">
+  PPT 3-2
+  <a class="heading-link" href="#ppt-3-2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>从组合逻辑到时序逻辑
+Decoder
+MUX
+Full adder(input: A,B,C_in,output: S,C_out)
+使用1位的full adder可以构造多位的加法</p>
+<p>减法器：使用全加器和补码的原理构造，把输入B取反之后和A相加，加的时候设置全加器的C_in为1(补码要求) 即可</p>
+<p>RS锁存器(RS Latch):
+R:Reset (to be 0)
+S:Set   (to be 1)</p>
+<table>
+<thead>
+<tr>
+<th>R</th>
+<th>S</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>未定义</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>设为0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>设为1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>保持不变</td>
+</tr>
+</tbody>
+</table>
+<p>为了解决RS锁存器，当R,S同时取1的时候未定义的问题
+设计D锁存器</p>
+<table>
+<thead>
+<tr>
+<th>D</th>
+<th>E</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>~</td>
+<td>0</td>
+<td>保持不变</td>
+</tr>
+<tr>
+<td>~</td>
+<td>1</td>
+<td>跟随D改变</td>
+</tr>
+</tbody>
+</table>
+<p>D触发器:俩D锁存器相连，功能：在clk的上升沿读取数据，其他时候保持不变.</p>
+<p>表示多位数据:
+A=10101
+A[4:2]=101
+A[1:0]=01</p>
+<p>Memory:
+k*m
+k=2^n个locations
+每个位置有m bit 的信息</p>
+<p><strong>k</strong>: Address Space
+number of locations
+(usually a power of 2)</p>
+<p><strong>m</strong>: Addressability
+number of bits per location
+(e.g., byte-addressable)</p>
+<p>RAM:(Random Access Memory)
+Static RAM(SRAM)</p>
+<ul>
+<li>fast, not very dense (bitcell is a latch)
+Dynamic RAM(DRAM)</li>
+<li>slower but denser, bit storage must be periodically refreshed</li>
+<li>each bitcell is a capacitor (like a leaky bucket) that decays</li>
+</ul>
+<p>ROM:(Read Only Memory)</p>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        <div class="comments">
+    <script>
+  
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? 'github-light' : getTheme;
+    
+    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+    let s = document.createElement('script');
+    s.src = 'https://utteranc.es/client.js';
+    s.setAttribute('repo', 'oyyko\/utteranc-comments');
+    s.setAttribute('issue-term', 'pathname');
+    s.setAttribute('theme', theme);
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
+  
+    </script>
+    </div>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <link rel='stylesheet' type='text/css' href=http://fonts.googleapis.com/css?family&#61;Jetbrains&#43;Mono%7cRoboto&#43;Slab%7cNoto&#43;Sans&#43;SC%7c>
+
+
+    <section class="container">
+      ©
+      
+      2019 -
+      
+      2023
+       Oyyko 
+      ·
+      
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
+        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
+        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
+      
+    </section>
+</footer>
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oyyko</title>
+    <link>https://oyyko.com/</link>
+    <description>Recent content on Oyyko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
+    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
+    <lastBuildDate>Sat, 29 Jul 2023 22:50:19 +0800</lastBuildDate><atom:link href="https://oyyko.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://oyyko.com/about/</link>
+      <pubDate>Sat, 29 Jul 2023 23:43:28 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/about/</guid>
+      <description>Hi. Oyyko here. Nice to meet you!
+One of my favorite Latin aphorisms is: “Memento mori”. It means remember you are mortal.
+The name Oyyko was randomly typed by me. Since then, I have been using it as my nickname.
+Some interesting things about me:
+My OS: Windows7 → Windows10 → Manjaro → Ubuntu → mac OS → Archlinux → Manjaro → Arch
+My PC: HP laptop → Legion Y7000P → Macbook Pro 13 → ThinkPad X1 Carbon (9th) → mechrevo Code 01 → ITX desktop(12400 + Arc A770)</description>
+    </item>
+    
+    <item>
+      <title>Change0729</title>
+      <link>https://oyyko.com/posts/change0729/</link>
+      <pubDate>Sat, 29 Jul 2023 22:50:19 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/change0729/</guid>
+      <description>Now I changed the theme of this blog to https://github.com/luizdepra/hugo-coder.</description>
+    </item>
+    
+    <item>
+      <title>Vscode 返回上一个位置快捷键</title>
+      <link>https://oyyko.com/posts/vscode2/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/vscode2/</guid>
+      <description>非常有用的一个功能。
+Windows: $Alt + \leftarrow$
+Linux: $Control + Alt + -$</description>
+    </item>
+    
+    <item>
+      <title>Texmacs/Mogan Note 2</title>
+      <link>https://oyyko.com/posts/texmacs_note2/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/texmacs_note2/</guid>
+      <description>23_15 Link to heading 1(get-init-tree &amp;#34;text-at-halign&amp;#34;) 这个与缓存有关。缓存位置在~/.Texmacs/。如果不更改缓存，更改源代码不会生效。
+23_7 Link to heading 1(tm-define (graphics-release-left x y) 2 ;;(display* &amp;#34;Graphics] Release-left &amp;#34; x &amp;#34;, &amp;#34; y &amp;#34;\n&amp;#34;) 3 (if (inside-graphical-text?) 4 (with-innermost t graphical-text-context? 5 (let* ((ps (select-first (s2f x) (s2f y))) 6 (p (and ps (car ps)))) 7 (if (and p (list-starts? p (tree-&amp;gt;path t))) 8 (go-to p) 9 (tree-go-to t :start)))) 10 (edit_left-button (car (graphics-mode)) x y))) 1(tm-define (get-keyboard-modifiers) 2 the-keyboard-modifiers) 3 4(tm-define (set-keyboard-modifiers mods) 5 (set!</description>
+    </item>
+    
+    <item>
+      <title>Archlinux/Manjaro Install Guide</title>
+      <link>https://oyyko.com/posts/arch_install/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/arch_install/</guid>
+      <description>manjaro I3新电脑配置
+假设已经安装好了manjaro i3，接下来要做的是：
+基本装机 按顺序执行以下操作 Link to heading 换源 Link to heading 编辑/etc/pacman.d/mirrorlist 内容改为
+1Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch 加入archlinuxcn源并安装yay Link to heading 在 /etc/pacman.conf 文件末尾添加以下两行
+1[archlinuxcn] 2Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch 之后通过以下命令安装 archlinuxcn-keyring 包导入 GPG key。
+1sudo pacman -Sy archlinuxcn-keyring 之后就可以用yay 安装各种软件了
+记得先sudo pacman -Syyu一下。
+科学上网 Link to heading 由于安装某些软件的时候，yay会从国外下载，所以要先科学上网才能尽情安装想要的软件。
+1yay -S clash-for-windows-bin 之后导入已有的订阅。 之后在终端中设置(例如加入到~/.zshrc中)：
+1export https_proxy=http://127.0.0.1:7890; 2export http_proxy=http://127.0.0.1:7890; 3export all_proxy=socks5://127.0.0.1:7890; 对于i3wm等无法设置系统级代理的桌面环境，请把chrome的启动改为
+1bindsym $mod+F2 exec google-chrome-stable --proxy-server=&amp;#34;socks5://127.0.0.1:7890&amp;#34; 这样chrome也可以自动使用代理上网了。
+安装输入法 Link to heading 1yay -S fcitx5-im 2yay -S base-devel 3yay -S fcitx5-rime 4yay -S rime-cloverpinyin 配置fcitx5的环境变量：</description>
+    </item>
+    
+    <item>
+      <title>Texmacs Graphics Tutorial</title>
+      <link>https://oyyko.com/posts/texmacs_graphics_tutorial/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/texmacs_graphics_tutorial/</guid>
+      <description>原文：https://www.texmacs.org/tmweb/documents/tutorials/TeXmacs-graphics-tutorial.pdf</description>
+    </item>
+    
+    <item>
+      <title>Texmacs/Mogan Note</title>
+      <link>https://oyyko.com/posts/texmacs_note/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/texmacs_note/</guid>
+      <description>Note Link to heading graphics-utils.scm Link to heading 1;;These abbreviations are very convenient 2;;to use. A nice naming scheme is : 3;; 4;; -&amp;gt; b=bool ; 5;; -&amp;gt; i=integer ; 6;; -&amp;gt; f=float ; 7;; -&amp;gt; sy=symbol ; 8;; -&amp;gt; s=string ; 9;; -&amp;gt; o=Scheme object ; 10;; -&amp;gt; p=path. 11;; -&amp;gt; t=tree. 12;; 13;; One can add the missing ones on demand. 14(tm-define f2s float-&amp;gt;string) 15(tm-define s2f string-&amp;gt;float) 16(tm-define sy2s symbol-&amp;gt;string) 17(tm-define s2sy string-&amp;gt;symbol) 18(tm-define o2s object-&amp;gt;string) 19(tm-define s2o string-&amp;gt;object) 20(tm-define t2o tree-&amp;gt;object) 21(tm-define o2t object-&amp;gt;tree) graphics-single.</description>
+    </item>
+    
+    <item>
+      <title>Scheme Review 1</title>
+      <link>https://oyyko.com/posts/scheme/</link>
+      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/scheme/</guid>
+      <description>https://courses.cs.washington.edu/courses/cse341/04wi/lectures/14-scheme-quote.html
+Quote Link to heading Scheme has a convenient syntax for representing data literals: prefix any expression with &amp;rsquo; (single quote) and the expression, rather than being evaluated, will be returned as data:
+1&amp;#39;3 ; =&amp;gt; 3 (a number) 2&amp;#39;&amp;#34;hi&amp;#34; ; =&amp;gt; &amp;#34;hi&amp;#34; (a string) 3&amp;#39;a ; =&amp;gt; a (a symbol) 4&amp;#39;(+ 3 4) ; =&amp;gt; (list &amp;#39;+ &amp;#39;3 &amp;#39;4) (a list) 5&amp;#39;(a b c) ; =&amp;gt; (list &amp;#39;a &amp;#39;b &amp;#39;c) (a list) 6 7&amp;#39;(define x 25) (a list) 8 ; =&amp;gt; (list &amp;#39;define &amp;#39;x &amp;#39;25) 9 ; =&amp;gt; (list &amp;#39;define &amp;#39;x 25) 10 11&amp;#39;(lambda (x) (+ x 3)) (a list) 12 ; =&amp;gt; (list &amp;#39;lambda (list &amp;#39;x) (list &amp;#39;+ &amp;#39;x &amp;#39;3)) 13 ; =&amp;gt; (list &amp;#39;lambda (list &amp;#39;x) (list &amp;#39;+ &amp;#39;x 3)) As these examples illustrate, &amp;ldquo;quoted&amp;rdquo; data remains unevaluated, and provides a convenient way of representing Scheme programs.</description>
+    </item>
+    
+    <item>
+      <title>In archlinux, chrome cannot be displayed normally under AMD.</title>
+      <link>https://oyyko.com/posts/chrome_amd/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/chrome_amd/</guid>
+      <description>Solution:
+1rm -rf .config/google-chrome/Default/GPUCache </description>
+    </item>
+    
+    <item>
+      <title>Value_categories_in_Cpp</title>
+      <link>https://oyyko.com/posts/value_categories_in_cpp/</link>
+      <pubDate>Tue, 23 Aug 2022 15:20:51 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/value_categories_in_cpp/</guid>
+      <description>Intro Link to heading 1#define IS_XVALUE(expr) \ 2(is_rvalue_reference&amp;lt;decltype((expr))&amp;gt;{}) 3#define IS_PRVALUE(expr) \ 4(!is_reference&amp;lt;decltype((expr))&amp;gt;{}) 5#define IS_LVALUE(expr) \ 6(is_lvalue_reference&amp;lt;decltype((expr))&amp;gt;{}) This is a method I recently discovered to determine which value category an expression is. I&amp;rsquo;ll explain why it works later.
+First, let&amp;rsquo;s take a look at value categories in C++.
+One of the most important things you should notice before you start is that value categories are not a property about values, but rather a property about expressions.</description>
+    </item>
+    
+    <item>
+      <title>Revisit_OS</title>
+      <link>https://oyyko.com/posts/revisit_os/</link>
+      <pubDate>Sat, 20 Aug 2022 16:05:28 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/revisit_os/</guid>
+      <description>For some reason, I&amp;rsquo;ve been reviewing OS related stuff lately.
+hardlink and softlink Link to heading ln creates hark links. ln -s creates soft (a.k.a symbolic) links.
+ln -l show the number of hardlinks points to the same inode.
+hardlink points to the inode. softlink points to the path.
+pros and cons: hardlink must be on the same partition, can only link to files. softlink can link to a file or directory, no partition limitation.</description>
+    </item>
+    
+    <item>
+      <title>Using Cpp17 or higher version of Cpp on Vscode extension Clangd</title>
+      <link>https://oyyko.com/posts/use-cpp17-on-vscode-clangd/</link>
+      <pubDate>Sun, 07 Aug 2022 21:49:29 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/use-cpp17-on-vscode-clangd/</guid>
+      <description>Recently I&amp;rsquo;ve switched my code completion tool in VScode from Microsoft&amp;rsquo;s official plugin to clangd. On the one hand, clangd can provide a better user experience, on the other hand, I also use this plugin in my company (Bytedance).
+I joked to myself: Two of the most interesting things I learned when I interned at the company were that indentation changed from four spaces to two, and braces changed from wrap to no wrap.</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>https://oyyko.com/posts/first-post/</link>
+      <pubDate>Sun, 24 Jul 2022 00:37:35 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/first-post/</guid>
+      <description>新博客 Link to heading 决定把博客切换到hugo。也算是人生路上一个新的开始。</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Note 4</title>
+      <link>https://oyyko.com/posts/cpp4/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/cpp4/</guid>
+      <description>&lt;p&gt;C++ 笔记4&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BASH脚本</title>
+      <link>https://oyyko.com/posts/bash/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/bash/</guid>
+      <description>&lt;p&gt;BASH 条件判断&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>链接 Note 1</title>
+      <link>https://oyyko.com/posts/link1/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/link1/</guid>
+      <description>&lt;p&gt;链接的笔记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Note 3</title>
+      <link>https://oyyko.com/posts/cpp3/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/cpp3/</guid>
+      <description>&lt;p&gt;本文是我的C++笔记的第三篇
+My Thrid C++ Note;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>位运算技巧</title>
+      <link>https://oyyko.com/posts/bithack/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/bithack/</guid>
+      <description>&lt;p&gt;位运算技巧&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>现代C&#43;&#43;白皮书 笔记1</title>
+      <link>https://oyyko.com/posts/cpp_whitepaper/</link>
+      <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/cpp_whitepaper/</guid>
+      <description>&lt;p&gt;现代C++白皮书 笔记1&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VsCode Latex 插件配置</title>
+      <link>https://oyyko.com/posts/vscode-latex/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/vscode-latex/</guid>
+      <description>更改vscode的 setting.json文件 加入
+1&amp;#34;latex-workshop.latex.tools&amp;#34;: [ 2 { 3 &amp;#34;name&amp;#34;: &amp;#34;latexmk&amp;#34;, 4 &amp;#34;command&amp;#34;: &amp;#34;latexmk&amp;#34;, 5 &amp;#34;args&amp;#34;: [ 6 &amp;#34;-synctex=1&amp;#34;, 7 &amp;#34;-interaction=nonstopmode&amp;#34;, 8 &amp;#34;-file-line-error&amp;#34;, 9 &amp;#34;-pdf&amp;#34;, 10 &amp;#34;-outdir=%OUTDIR%&amp;#34;, 11 &amp;#34;%DOC%&amp;#34;, 12 &amp;#34;-xelatex&amp;#34; 13 ], 14 &amp;#34;env&amp;#34;: {} 15 }, 即可
+即在命令参数的最后增加 -xelatex 参数
+备注：之前在文件头部添加% !TEX program = xelatex是管用的，现在不知道为啥又不行了。</description>
+    </item>
+    
+    <item>
+      <title>链表 笔记</title>
+      <link>https://oyyko.com/posts/linklist/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/linklist/</guid>
+      <description>&lt;p&gt;链表笔记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ICS 笔记3</title>
+      <link>https://oyyko.com/posts/ics3/</link>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/ics3/</guid>
+      <description>&lt;p&gt;ICS笔记3&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>压行技巧</title>
+      <link>https://oyyko.com/posts/yahang/</link>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/yahang/</guid>
+      <description>&lt;p&gt;压行技巧&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>三道面试题</title>
+      <link>https://oyyko.com/posts/three-problem/</link>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/three-problem/</guid>
+      <description>&lt;p&gt;三道面试题&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>数论笔记</title>
+      <link>https://oyyko.com/posts/shulun/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/shulun/</guid>
+      <description>&lt;p&gt;本文是我的数论笔记的第一篇
+关于:4k+1型和4k+3型素数&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>二分总结</title>
+      <link>https://oyyko.com/posts/bisection/</link>
+      <pubDate>Tue, 30 Nov 2021 15:20:51 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/bisection/</guid>
+      <description>##　Leetcode 704 二分查找target
+这种是在一个元素各不相同的有序数组里面找一个等于target的数 解法：
+1class Solution 2{ 3public: 4 int search(vector&amp;lt;int&amp;gt; &amp;amp;nums, int target) 5 { 6 int l{0}; 7 int r = nums.size() - 1; 8 int mid; 9 while (l &amp;lt;= r) 10 { 11 mid = (l + (r - l) / 2); 12 if (nums[mid] == target) 13 { 14 return mid; 15 } 16 if (target &amp;lt; nums[mid]) 17 { 18 r = mid - 1; 19 } 20 else 21 { 22 l = mid + 1; 23 } 24 } 25 return -1; 26 } 27}; 此时，分三种情况。注意到，在不等于的时候，r和l都对mid有排斥</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Note 2</title>
+      <link>https://oyyko.com/posts/cpp2/</link>
+      <pubDate>Sun, 28 Nov 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/cpp2/</guid>
+      <description>&lt;p&gt;本文是我的C++笔记的第二篇
+My Second C++ Note;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ICS PPT Note 1</title>
+      <link>https://oyyko.com/posts/ics_ppt/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/ics_ppt/</guid>
+      <description>&lt;p&gt;计算系统概率PPT笔记1 复习期中&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A strange way to compute GCD</title>
+      <link>https://oyyko.com/posts/gcd/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/gcd/</guid>
+      <description>&lt;p&gt;A strange way to compute GCD in one line&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ICS Note 2</title>
+      <link>https://oyyko.com/posts/ics2/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/ics2/</guid>
+      <description>&lt;p&gt;This is my notes for ICS. Source: book
+计算系统概论笔记2 来自课本&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ICS Note 1</title>
+      <link>https://oyyko.com/posts/ics1/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/ics1/</guid>
+      <description>&lt;p&gt;This is my notes for ICS. Source: ppt
+计算系统概论笔记1 来自PPT&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The language UNIMODAL is not context free</title>
+      <link>https://oyyko.com/posts/unimodal/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/unimodal/</guid>
+      <description>&lt;p&gt;In this article, we will prove that: the language &amp;lsquo;UNIMODAL&amp;rsquo; is not cfg. Also, we will prove that cfg can not be used to compare binary number.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSCODE 使用笔记</title>
+      <link>https://oyyko.com/posts/vscode/</link>
+      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/vscode/</guid>
+      <description>&lt;p&gt;工欲善其事，必先利其器。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CCPC华为的一道趣题</title>
+      <link>https://oyyko.com/posts/ccpc_huawei/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/ccpc_huawei/</guid>
+      <description>&lt;p&gt;本文记录了CCPC华为比赛中的一道题目&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fix a grub bug</title>
+      <link>https://oyyko.com/posts/grub/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/grub/</guid>
+      <description>In this article, I will record how to fix the problem that grub can&amp;rsquo;t find Windows on nvme. So that someday, I can reuse this to help myself.
+First of all, install os-prober.
+Then, run update-grub or grub-mkconfig. Then you will find that os-prober is not working.
+It will print a warning saying like: OS-PROBER will not be executed in order to protect xxx. If you want to know more, please look GRUB-DISABLE-OR-PROBER document to find more information.</description>
+    </item>
+    
+    <item>
+      <title>name and shakespeare</title>
+      <link>https://oyyko.com/posts/names_and_shakespeare/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/names_and_shakespeare/</guid>
+      <description>匿名函数与莎士比亚大定理
+This article is translated from Here
+提问：为什么在lambda calculus里面，函数必须是匿名的。 Link to heading 我正在观看一个Youtube视频，在这个视频里面，讲者介绍了Y组合子的概念。 Y组合子概念产生的动机之一，正如讲者所述，是为了用lambda calculus来表示递归函数，以使得Church理论(任何能被实际上计算的东西都可以用lambda calculus来计算)保持成立。 我的问题在于：为什么我们不能通过名字来简单的调用一个函数。例如日常生活中我们经常会写下这种式子： $$ n(x,y)=x+y $$ 但是在lambda calculus里面我们不允许把这个函数与名字n相关联，我们只能匿名的定义它为 $$ (x,y)\rightarrow x+y $$ 为什么在lambda calculus里面我们不能拥有被命名的函数? 如果存在具名函数，我们会破坏什么准则? 或者仅仅是我搞错了视频的意思?
+回答 Link to heading 关于这个问题的主要结论来自一个十六世纪晚期的英国数学家，他叫莎士比亚。他最著名的关于这个问题的论文名为《罗密欧与茱丽叶》，在1597年发表。
+他的主要结论在第二幕的第二场景中阐明。即如下的著名定理：
+名称有什么关系呢?玫瑰不叫玫瑰,依然芳香如故!
+这个定理可以被直观的理解为&amp;quot;名字对意义毫无帮助&amp;quot; 莎士比亚的论文的大部分内容是一个用来补充定理的例子，用以表明名字尽管名字没有任何意义，但它们却是无穷无尽的问题的根源。 正如莎士比亚所指出的那样，名称可以在不改变含义的情况下进行更改，这一操作后来被丘奇及其追随者称为α转换。结果，如何确定名字表示的意义变成了造成了许许多多的问题。例如我们要发展“环境”的概念，在环境中名字-意义联系是确定的，并且发展出一系列的规则来辨别当前的环境。这使得计算机科学家们困惑了很长一段时间，引起了诸如臭名昭著的Funarg问题之类的技术难题。“环境”在许多流行的编程语言中仍然是个大问题，几乎和莎士比亚在其论文中提出的例子一样致命。 这个问题也与形式语言理论中提出的问题接近，即必须将字母和形式系统定义为同构，以便强调字母符号是抽象实体，而与它们如何作为某些集合中的元素而“实现”无关。 莎士比亚的主要结果也表明了科学随后即将与魔术和宗教告别。因为在魔术与宗教的世界里面，人们认为一个东西有它的“真名”。 所有这一切的结论是：尽管名字可以方便人们的日常工作和生活，但是在理论研究中不被名字而困扰更为重要。 记住：不是所有被叫做娘的都是你的母亲。
+评论 Link to heading 最近，玫瑰正在被foobar所取代。</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Note 1</title>
+      <link>https://oyyko.com/posts/cpp1/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/cpp1/</guid>
+      <description>&lt;p&gt;本文是我的C++笔记的第一篇
+My First C++ Note;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C Hello World Again</title>
+      <link>https://oyyko.com/posts/c_hello_world/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/c_hello_world/</guid>
+      <description>&lt;p&gt;本文是我给地空学院的学生的C语言讲座的讲稿&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>N queens Problem</title>
+      <link>https://oyyko.com/posts/n-queens/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/n-queens/</guid>
+      <description>&lt;p&gt;This article will provide a fast way to find a solution for the famous N queens problem.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
