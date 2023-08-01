@@ -2,6 +2,7 @@
 title: ICS PPT Note 1
 date: 2021-11-26
 tags: [ICS]
+toc: true
 ---
 计算系统概率PPT笔记1 复习期中
 <!--more-->

@@ -2,6 +2,7 @@
 title: BASH脚本
 date: 2022-05-27
 tags: [bash]
+toc: true
 ---
 
 BASH 条件判断

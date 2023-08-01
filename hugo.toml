@@ -1,6 +1,8 @@
 baseURL = 'https://oyyko.com'
 title = "Oyyko"
 theme = "hugo-coder"
+publishDir = "docs"
+enableGitInfo = true
 
 languagecode = "en"
 defaultcontentlanguage = "en"

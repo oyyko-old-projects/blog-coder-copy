@@ -3,6 +3,7 @@ title: C++ Note 4
 date: 2022-07-07
 tags: [Cpp]
 math: true
+toc: true
 ---
 C++ 笔记4
 

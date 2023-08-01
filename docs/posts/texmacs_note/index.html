@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Texmacs/Mogan Note · Oyyko
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Oyyko">
+<meta name="description" content="Note Link to heading graphics-utils.scm Link to heading 1;;These abbreviations are very convenient 2;;to use. A nice naming scheme is : 3;; 4;; -&gt; b=bool ; 5;; -&gt; i=integer ; 6;; -&gt; f=float ; 7;; -&gt; sy=symbol ; 8;; -&gt; s=string ; 9;; -&gt; o=Scheme object ; 10;; -&gt; p=path. 11;; -&gt; t=tree. 12;; 13;; One can add the missing ones on demand. 14(tm-define f2s float-&gt;string) 15(tm-define s2f string-&gt;float) 16(tm-define sy2s symbol-&gt;string) 17(tm-define s2sy string-&gt;symbol) 18(tm-define o2s object-&gt;string) 19(tm-define s2o string-&gt;object) 20(tm-define t2o tree-&gt;object) 21(tm-define o2t object-&gt;tree) graphics-single.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Texmacs/Mogan Note"/>
+<meta name="twitter:description" content="Note Link to heading graphics-utils.scm Link to heading 1;;These abbreviations are very convenient 2;;to use. A nice naming scheme is : 3;; 4;; -&gt; b=bool ; 5;; -&gt; i=integer ; 6;; -&gt; f=float ; 7;; -&gt; sy=symbol ; 8;; -&gt; s=string ; 9;; -&gt; o=Scheme object ; 10;; -&gt; p=path. 11;; -&gt; t=tree. 12;; 13;; One can add the missing ones on demand. 14(tm-define f2s float-&gt;string) 15(tm-define s2f string-&gt;float) 16(tm-define sy2s symbol-&gt;string) 17(tm-define s2sy string-&gt;symbol) 18(tm-define o2s object-&gt;string) 19(tm-define s2o string-&gt;object) 20(tm-define t2o tree-&gt;object) 21(tm-define o2t object-&gt;tree) graphics-single."/>
+
+<meta property="og:title" content="Texmacs/Mogan Note" />
+<meta property="og:description" content="Note Link to heading graphics-utils.scm Link to heading 1;;These abbreviations are very convenient 2;;to use. A nice naming scheme is : 3;; 4;; -&gt; b=bool ; 5;; -&gt; i=integer ; 6;; -&gt; f=float ; 7;; -&gt; sy=symbol ; 8;; -&gt; s=string ; 9;; -&gt; o=Scheme object ; 10;; -&gt; p=path. 11;; -&gt; t=tree. 12;; 13;; One can add the missing ones on demand. 14(tm-define f2s float-&gt;string) 15(tm-define s2f string-&gt;float) 16(tm-define sy2s symbol-&gt;string) 17(tm-define s2sy string-&gt;symbol) 18(tm-define o2s object-&gt;string) 19(tm-define s2o string-&gt;object) 20(tm-define t2o tree-&gt;object) 21(tm-define o2t object-&gt;tree) graphics-single." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oyyko.com/posts/texmacs_note/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-01T03:48:54+08:00" />
+
+
+
+
+<link rel="canonical" href="https://oyyko.com/posts/texmacs_note/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.3177c52908014e036ec6c4e1c8194a1b197b85e669df726c671b40f2e4f77abb.css" integrity="sha256-MXfFKQgBTgNuxsThyBlKGxl7heZp33JsZxtA8uT3ers=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Oyyko
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://oyyko.com/posts/texmacs_note/">
+              Texmacs/Mogan Note
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-05T00:00:00Z">
+                2023-07-05
+              </time>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/note/">note</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/code/">code</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/mogan/">mogan</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/texmacs/">texmacs</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        
+        <hr>
+        <i class="fa fa-book"></i> Table of Contents
+               <div id="toc"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#graphics-utilsscm">graphics-utils.scm</a></li>
+    <li><a href="#graphics-singlescm">graphics-single.scm</a></li>
+    <li><a href="#graphics-envscm">graphics-env.scm</a></li>
+    <li><a href="#graphics-objectscm">graphics-object.scm</a></li>
+    <li><a href="#研究图形移动功能">研究图形移动功能</a></li>
+    <li><a href="#研究测试相关代码">研究测试相关代码</a></li>
+    <li><a href="#tm-ref">tm-ref</a></li>
+    <li><a href="#tm">tm?</a></li>
+    <li><a href="#研究宏包">研究宏包</a></li>
+    <li><a href="#srfi">SRFI</a></li>
+    <li><a href="#23_15">23_15</a></li>
+    <li><a href="#设置属性">设置属性</a></li>
+    <li><a href="#菜单">菜单</a></li>
+    <li><a href="#object-get-property">object-get-property</a></li>
+  </ul>
+</nav> </div>
+        <hr>
+        <h1 id="note">
+  Note
+  <a class="heading-link" href="#note">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="graphics-utilsscm">
+  graphics-utils.scm
+  <a class="heading-link" href="#graphics-utilsscm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span><span style="color:#586e75">;;These abbreviations are very convenient</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span><span style="color:#586e75">;;to use. A nice naming scheme is :</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span><span style="color:#586e75">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span><span style="color:#586e75">;;  -&gt; b=bool ;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span><span style="color:#586e75">;;  -&gt; i=integer ;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span><span style="color:#586e75">;;  -&gt; f=float ;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span><span style="color:#586e75">;;  -&gt; sy=symbol ;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span><span style="color:#586e75">;;  -&gt; s=string ;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span><span style="color:#586e75">;;  -&gt; o=Scheme object ;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span><span style="color:#586e75">;;  -&gt; p=path.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span><span style="color:#586e75">;;  -&gt; t=tree.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span><span style="color:#586e75">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span><span style="color:#586e75">;;  One can add the missing ones on demand.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>(<span style="color:#268bd2">tm-define</span> <span style="color:#268bd2">f2s</span> <span style="color:#268bd2">float-&gt;string</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span>(<span style="color:#268bd2">tm-define</span> <span style="color:#268bd2">s2f</span> <span style="color:#268bd2">string-&gt;float</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16</span><span>(<span style="color:#268bd2">tm-define</span> <span style="color:#268bd2">sy2s</span> <span style="color:#268bd2">symbol-&gt;string</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">17</span><span>(<span style="color:#268bd2">tm-define</span> <span style="color:#268bd2">s2sy</span> <span style="color:#268bd2">string-&gt;symbol</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">18</span><span>(<span style="color:#268bd2">tm-define</span> <span style="color:#268bd2">o2s</span> <span style="color:#268bd2">object-&gt;string</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">19</span><span>(<span style="color:#268bd2">tm-define</span> <span style="color:#268bd2">s2o</span> <span style="color:#268bd2">string-&gt;object</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">20</span><span>(<span style="color:#268bd2">tm-define</span> <span style="color:#268bd2">t2o</span> <span style="color:#268bd2">tree-&gt;object</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">21</span><span>(<span style="color:#268bd2">tm-define</span> <span style="color:#268bd2">o2t</span> <span style="color:#268bd2">object-&gt;tree</span>)
+</span></span></code></pre></div><h2 id="graphics-singlescm">
+  graphics-single.scm
+  <a class="heading-link" href="#graphics-singlescm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>editing routines for single graphical objects.</p>
+<h2 id="graphics-envscm">
+  graphics-env.scm
+  <a class="heading-link" href="#graphics-envscm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>routines for managing the graphical context.</p>
+<p>current-x在此定义。</p>
+<h2 id="graphics-objectscm">
+  graphics-object.scm
+  <a class="heading-link" href="#graphics-objectscm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>routines for managing the graphical object.</p>
+<h2 id="研究图形移动功能">
+  研究图形移动功能
+  <a class="heading-link" href="#%e7%a0%94%e7%a9%b6%e5%9b%be%e5%bd%a2%e7%a7%bb%e5%8a%a8%e5%8a%9f%e8%83%bd">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>在edit_move函数中有下面一段</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#719e07">cond </span>((<span style="color:#268bd2">==</span> (<span style="color:#b58900">cadr </span><span style="color:#268bd2">mode</span>) <span style="color:#2aa198">&#39;move</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>                  (<span style="color:#268bd2">sketch-transform</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>                   (<span style="color:#268bd2">group-translate</span> (<span style="color:#b58900">- </span><span style="color:#268bd2">x</span> <span style="color:#268bd2">group-old-x</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>                                    (<span style="color:#b58900">- </span><span style="color:#268bd2">y</span> <span style="color:#268bd2">group-old-y</span>))))
+</span></span></code></pre></div><p>其中sketch-transform的定义为</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">sketch-transform</span> <span style="color:#268bd2">opn</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#719e07">set! </span><span style="color:#268bd2">the-sketch</span> (<span style="color:#b58900">map </span><span style="color:#268bd2">opn</span> <span style="color:#268bd2">the-sketch</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  (<span style="color:#719e07">set! </span><span style="color:#268bd2">current-obj</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>	(<span style="color:#719e07">if </span>(<span style="color:#268bd2">graphics-group-mode?</span> (<span style="color:#268bd2">graphics-mode</span>)) <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">nothing</span>) <span style="color:#cb4b16">#f</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>  (<span style="color:#719e07">set! </span><span style="color:#268bd2">current-path</span> <span style="color:#cb4b16">#f</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span>  (<span style="color:#268bd2">graphics-decorations-update</span>))
+</span></span></code></pre></div><p>而group-translate定义为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#719e07">define </span>(<span style="color:#268bd2">group-translate</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#719e07">lambda </span>(<span style="color:#268bd2">o</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>    (<span style="color:#268bd2">traverse-transform</span> <span style="color:#268bd2">o</span> (<span style="color:#268bd2">translate-point</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>))))
+</span></span></code></pre></div><p>其中用到了</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span>(<span style="color:#719e07">define </span>(<span style="color:#268bd2">traverse-transform</span> <span style="color:#268bd2">o</span> <span style="color:#268bd2">opn</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>  (<span style="color:#719e07">define </span>(<span style="color:#268bd2">traverse</span> <span style="color:#268bd2">o</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>    (<span style="color:#268bd2">opn</span> (<span style="color:#719e07">if </span>(<span style="color:#b58900">pair? </span><span style="color:#268bd2">o</span>) (<span style="color:#b58900">map </span><span style="color:#268bd2">traverse</span> <span style="color:#268bd2">o</span>) <span style="color:#268bd2">o</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>  (<span style="color:#268bd2">traverse</span> <span style="color:#268bd2">o</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>(<span style="color:#719e07">define </span>(<span style="color:#268bd2">translate-point</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>  (<span style="color:#719e07">lambda </span>(<span style="color:#268bd2">o</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>    (<span style="color:#719e07">if </span>(<span style="color:#268bd2">match?</span> <span style="color:#268bd2">o</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">point</span> <span style="color:#268bd2">:%2</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>	<span style="color:#719e07">`</span>(<span style="color:#268bd2">point</span> <span style="color:#719e07">,</span>(<span style="color:#268bd2">f2s</span> (<span style="color:#b58900">+ </span><span style="color:#268bd2">x</span> (<span style="color:#268bd2">s2f</span> (<span style="color:#b58900">cadr </span><span style="color:#268bd2">o</span>)))) <span style="color:#719e07">,</span>(<span style="color:#268bd2">f2s</span> (<span style="color:#b58900">+ </span><span style="color:#268bd2">y</span> (<span style="color:#268bd2">s2f</span> (<span style="color:#b58900">caddr </span><span style="color:#268bd2">o</span>)))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>        <span style="color:#268bd2">o</span>)))
+</span></span></code></pre></div><h2 id="研究测试相关代码">
+  研究测试相关代码
+  <a class="heading-link" href="#%e7%a0%94%e7%a9%b6%e6%b5%8b%e8%af%95%e7%9b%b8%e5%85%b3%e4%bb%a3%e7%a0%81">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h2 id="tm-ref">
+  tm-ref
+  <a class="heading-link" href="#tm-ref">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">define-public</span> (<span style="color:#268bd2">tm-ref</span> <span style="color:#268bd2">t</span> <span style="color:#719e07">.</span> <span style="color:#268bd2">l</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#719e07">and </span>(<span style="color:#268bd2">tm?</span> <span style="color:#268bd2">t</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>       (<span style="color:#268bd2">with</span> <span style="color:#268bd2">r</span> (<span style="color:#268bd2">select</span> <span style="color:#268bd2">t</span> <span style="color:#268bd2">l</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>	 (<span style="color:#719e07">and </span>(<span style="color:#268bd2">nnull?</span> <span style="color:#268bd2">r</span>) (<span style="color:#b58900">car </span><span style="color:#268bd2">r</span>)))))
+</span></span></code></pre></div><h2 id="tm">
+  tm?
+  <a class="heading-link" href="#tm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>  tmscm_install_procedure (<span style="color:#2aa198">&#34;tm?&#34;</span>, contentP, <span style="color:#2aa198">1</span>, <span style="color:#2aa198">0</span>, <span style="color:#2aa198">0</span>);
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>tmscm
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span><span style="color:#268bd2">contentP</span> (tmscm t) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  <span style="color:#dc322f">bool</span> b<span style="color:#719e07">=</span> tmscm_is_content (t);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>  <span style="color:#719e07">return</span> bool_to_tmscm (b);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span><span style="color:#dc322f">bool</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span><span style="color:#268bd2">tmscm_is_content</span> (tmscm p) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>  <span style="color:#719e07">if</span> (tmscm_is_string (p) <span style="color:#719e07">||</span> tmscm_is_tree (p)) <span style="color:#719e07">return</span> <span style="color:#b58900">true</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>  <span style="color:#719e07">else</span> <span style="color:#719e07">if</span> (<span style="color:#719e07">!</span>tmscm_is_pair (p) <span style="color:#719e07">||</span> <span style="color:#719e07">!</span>tmscm_is_symbol (tmscm_car (p))) <span style="color:#719e07">return</span> <span style="color:#b58900">false</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>  <span style="color:#719e07">else</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>    <span style="color:#719e07">for</span> (p<span style="color:#719e07">=</span> tmscm_cdr (p); <span style="color:#719e07">!</span>tmscm_is_null (p); p<span style="color:#719e07">=</span> tmscm_cdr (p))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>      <span style="color:#719e07">if</span> (<span style="color:#719e07">!</span>tmscm_is_pair (p) <span style="color:#719e07">||</span> <span style="color:#719e07">!</span>tmscm_is_content (tmscm_car (p))) <span style="color:#719e07">return</span> <span style="color:#b58900">false</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>    <span style="color:#719e07">return</span> <span style="color:#b58900">true</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>  }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>}
+</span></span></code></pre></div><p>因此tm-ref等代码实际上应用于tree数据结构。<code>tm?</code>就是用来检测这个的。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span><span style="color:#268bd2">Scheme</span>]  (<span style="color:#268bd2">tm?</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">point</span> <span style="color:#2aa198">1</span> <span style="color:#2aa198">2</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span><span style="color:#cb4b16">#f</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span><span style="color:#268bd2">Scheme</span>]  (<span style="color:#268bd2">tm?</span> (<span style="color:#268bd2">stree-&gt;tree</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">point</span> <span style="color:#2aa198">1</span> <span style="color:#2aa198">2</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span><span style="color:#cb4b16">#t</span>
+</span></span></code></pre></div><p>之后tm-ref可以取出列表中除了car的第i个元素。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span><span style="color:#268bd2">Scheme</span>]  (<span style="color:#268bd2">tm-ref</span> (<span style="color:#268bd2">stree-&gt;tree</span> <span style="color:#719e07">&#39;</span>(<span style="color:#2aa198">1</span> <span style="color:#2aa198">2</span> <span style="color:#2aa198">3</span> <span style="color:#2aa198">4</span>)) <span style="color:#2aa198">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span><span style="color:#2aa198">2</span>
+</span></span></code></pre></div><h2 id="研究宏包">
+  研究宏包
+  <a class="heading-link" href="#%e7%a0%94%e7%a9%b6%e5%ae%8f%e5%8c%85">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>为什么有的包已经引入，有的需要作为宏包引入呢？
+init中会初始化一些包。</p>
+<h2 id="srfi">
+  SRFI
+  <a class="heading-link" href="#srfi">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>列表长度length</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span>  (<span style="color:#268bd2">assuming</span> (<span style="color:#268bd2">style-has?</span> <span style="color:#2aa198">&#34;std-markup-dtd&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>    (<span style="color:#268bd2">with</span> <span style="color:#268bd2">u</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">arrow-with-text</span> <span style="color:#268bd2">arrow-with-text*</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>      (<span style="color:#268bd2">with</span> <span style="color:#268bd2">l</span> (<span style="color:#268bd2">list-filter</span> <span style="color:#268bd2">u</span> (<span style="color:#719e07">lambda </span>(<span style="color:#268bd2">s</span>) (<span style="color:#268bd2">style-has?</span> (<span style="color:#b58900">symbol-&gt;string </span><span style="color:#268bd2">s</span>))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>        (<span style="color:#268bd2">for</span> (<span style="color:#268bd2">tag</span> (<span style="color:#268bd2">sort</span> <span style="color:#268bd2">l</span> <span style="color:#268bd2">symbol&lt;=?</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>          ((<span style="color:#b58900">eval </span>(<span style="color:#268bd2">upcase-first</span> (<span style="color:#b58900">symbol-&gt;string </span><span style="color:#268bd2">tag</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>           (<span style="color:#268bd2">import-from</span> (<span style="color:#268bd2">graphics</span> <span style="color:#268bd2">graphics-markup</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>           (<span style="color:#268bd2">graphics-set-mode</span> <span style="color:#719e07">`</span>(<span style="color:#268bd2">edit</span> <span style="color:#719e07">,</span><span style="color:#268bd2">tag</span>))))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>    (<span style="color:#268bd2">with</span> <span style="color:#268bd2">u</span> (<span style="color:#268bd2">list-difference</span> <span style="color:#268bd2">gr-tags-user</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">arrow-with-text</span> <span style="color:#268bd2">arrow-with-text*</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>      (<span style="color:#268bd2">with</span> <span style="color:#268bd2">l</span> (<span style="color:#268bd2">list-filter</span> <span style="color:#268bd2">u</span> (<span style="color:#719e07">lambda </span>(<span style="color:#268bd2">s</span>) (<span style="color:#268bd2">style-has?</span> (<span style="color:#b58900">symbol-&gt;string </span><span style="color:#268bd2">s</span>))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>        (<span style="color:#268bd2">assuming</span> (<span style="color:#268bd2">nnull?</span> <span style="color:#268bd2">l</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>          <span style="color:#268bd2">---</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>          (<span style="color:#268bd2">for</span> (<span style="color:#268bd2">tag</span> (<span style="color:#268bd2">sort</span> <span style="color:#268bd2">l</span> <span style="color:#268bd2">symbol&lt;=?</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>            ((<span style="color:#b58900">eval </span>(<span style="color:#268bd2">upcase-first</span> (<span style="color:#b58900">symbol-&gt;string </span><span style="color:#268bd2">tag</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>             (<span style="color:#268bd2">import-from</span> (<span style="color:#268bd2">graphics</span> <span style="color:#268bd2">graphics-markup</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span>             (<span style="color:#268bd2">graphics-set-mode</span> <span style="color:#719e07">`</span>(<span style="color:#268bd2">edit</span> <span style="color:#719e07">,</span><span style="color:#268bd2">tag</span>))))))))
+</span></span></code></pre></div><h2 id="23_15">
+  23_15
+  <a class="heading-link" href="#23_15">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span><span style="color:#719e07">if</span> (N(p) <span style="color:#719e07">==</span> <span style="color:#2aa198">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>      typeset_dynamic (tree (ERROR, <span style="color:#2aa198">&#34;bad text-at&#34;</span>), ip);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>    <span style="color:#719e07">else</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>      SI ox<span style="color:#719e07">=</span> (SI) p[<span style="color:#2aa198">0</span>], oy<span style="color:#719e07">=</span> (SI) p[<span style="color:#2aa198">1</span>], axis<span style="color:#719e07">=</span> (b<span style="color:#719e07">-&gt;</span>h() <span style="color:#719e07">&gt;&gt;</span> <span style="color:#2aa198">1</span>), x<span style="color:#719e07">=</span> ox, y<span style="color:#719e07">=</span> oy;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>      <span style="color:#719e07">if</span> (halign <span style="color:#719e07">==</span> <span style="color:#2aa198">&#34;left&#34;</span>) x <span style="color:#719e07">-=</span> b<span style="color:#719e07">-&gt;</span>x1;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>      <span style="color:#719e07">else</span> <span style="color:#268bd2">if</span> (halign <span style="color:#719e07">==</span> <span style="color:#2aa198">&#34;center&#34;</span>) x <span style="color:#719e07">-=</span> ((b<span style="color:#719e07">-&gt;</span>x1 <span style="color:#719e07">+</span> b<span style="color:#719e07">-&gt;</span>x2) <span style="color:#719e07">&gt;&gt;</span> <span style="color:#2aa198">1</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>      <span style="color:#719e07">else</span> <span style="color:#268bd2">if</span> (halign <span style="color:#719e07">==</span> <span style="color:#2aa198">&#34;right&#34;</span>) x <span style="color:#719e07">-=</span> b<span style="color:#719e07">-&gt;</span>x2;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>      <span style="color:#719e07">if</span> (valign <span style="color:#719e07">==</span> <span style="color:#2aa198">&#34;bottom&#34;</span>) y <span style="color:#719e07">-=</span> b<span style="color:#719e07">-&gt;</span>y1;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>      <span style="color:#719e07">else</span> <span style="color:#268bd2">if</span> (valign <span style="color:#719e07">==</span> <span style="color:#2aa198">&#34;axis&#34;</span>) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>        axis<span style="color:#719e07">=</span> env<span style="color:#719e07">-&gt;</span>fn<span style="color:#719e07">-&gt;</span>yfrac <span style="color:#719e07">-</span> b<span style="color:#719e07">-&gt;</span>y1;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>        y <span style="color:#719e07">-=</span> env<span style="color:#719e07">-&gt;</span>fn<span style="color:#719e07">-&gt;</span>yfrac;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>      }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>      <span style="color:#719e07">else</span> <span style="color:#268bd2">if</span> (valign <span style="color:#719e07">==</span> <span style="color:#2aa198">&#34;center&#34;</span>) y <span style="color:#719e07">-=</span> ((b<span style="color:#719e07">-&gt;</span>y1 <span style="color:#719e07">+</span> b<span style="color:#719e07">-&gt;</span>y2) <span style="color:#719e07">&gt;&gt;</span> <span style="color:#2aa198">1</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>      <span style="color:#719e07">else</span> <span style="color:#268bd2">if</span> (valign <span style="color:#719e07">==</span> <span style="color:#2aa198">&#34;top&#34;</span>) y <span style="color:#719e07">-=</span> b<span style="color:#719e07">-&gt;</span>y2;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span>      SI snap<span style="color:#719e07">=</span> env<span style="color:#719e07">-&gt;</span>get_length (TEXT_AT_SNAPPING);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16</span><span>      print (text_at_box (ip, b, x, y, ox <span style="color:#719e07">-</span> x, oy <span style="color:#719e07">-</span> y, axis, snap));
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">17</span><span>      SI pad <span style="color:#719e07">=</span> env<span style="color:#719e07">-&gt;</span>text_at_repulse;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">18</span><span>      <span style="color:#719e07">if</span> (pad <span style="color:#719e07">&gt;=</span> <span style="color:#2aa198">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">19</span><span>        env<span style="color:#719e07">-&gt;</span>white_zones <span style="color:#719e07">&lt;&lt;</span> rectangle (x <span style="color:#719e07">+</span> b<span style="color:#719e07">-&gt;</span>x1 <span style="color:#719e07">-</span> pad, y <span style="color:#719e07">+</span> b<span style="color:#719e07">-&gt;</span>y1 <span style="color:#719e07">-</span> pad,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">20</span><span>                                       x <span style="color:#719e07">+</span> b<span style="color:#719e07">-&gt;</span>x2 <span style="color:#719e07">+</span> pad, y <span style="color:#719e07">+</span> b<span style="color:#719e07">-&gt;</span>y2 <span style="color:#719e07">+</span> pad);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">21</span><span>    }
+</span></span></code></pre></div><p>在这里设置了偏移量。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">edit_left-button</span> <span style="color:#268bd2">mode</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>  (<span style="color:#268bd2">:require</span> (<span style="color:#268bd2">==</span> <span style="color:#268bd2">mode</span> <span style="color:#2aa198">&#39;edit</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>  (<span style="color:#268bd2">:state</span> <span style="color:#268bd2">graphics-state</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>  (<span style="color:#b58900">display </span><span style="color:#2aa198">&#34;graphics-single 377\n&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>  (<span style="color:#268bd2">display*</span> <span style="color:#268bd2">sticky-point</span> <span style="color:#2aa198">&#34;\n&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>  (<span style="color:#268bd2">display*</span> (<span style="color:#268bd2">current-in?</span> (<span style="color:#268bd2">graphical-text-tag-list</span>)) <span style="color:#2aa198">&#34;\n&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>  (<span style="color:#268bd2">set-texmacs-pointer</span> <span style="color:#2aa198">&#39;graphics-cross</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>  (<span style="color:#719e07">cond </span>(<span style="color:#268bd2">sticky-point</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>         (<span style="color:#719e07">if </span>(<span style="color:#268bd2">current-in?</span> (<span style="color:#268bd2">graphical-text-tag-list</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>             (<span style="color:#268bd2">object_commit</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>             (<span style="color:#268bd2">next-point</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>        ((<span style="color:#719e07">and </span>(<span style="color:#268bd2">current-in?</span> (<span style="color:#268bd2">graphical-text-tag-list</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>              (<span style="color:#268bd2">==</span> (<span style="color:#b58900">car </span>(<span style="color:#268bd2">graphics-mode</span>)) <span style="color:#2aa198">&#39;edit</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>              (<span style="color:#268bd2">graphical-contains-text-tag?</span> (<span style="color:#b58900">cadr </span>(<span style="color:#268bd2">graphics-mode</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span>              (<span style="color:#b58900">not </span>(<span style="color:#268bd2">graphical-contains-curve-tag?</span> (<span style="color:#b58900">cadr </span>(<span style="color:#268bd2">graphics-mode</span>))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16</span><span>              (<span style="color:#268bd2">pointer-inside-graphical-text?</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">17</span><span>         (<span style="color:#268bd2">set-texmacs-pointer</span> <span style="color:#2aa198">&#39;text-arrow</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">18</span><span>         (<span style="color:#268bd2">go-to</span> (<span style="color:#b58900">car </span>(<span style="color:#268bd2">select-first</span> (<span style="color:#268bd2">s2f</span> <span style="color:#268bd2">current-x</span>) (<span style="color:#268bd2">s2f</span> <span style="color:#268bd2">current-y</span>)))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">19</span><span>        (<span style="color:#268bd2">else</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">20</span><span>         (<span style="color:#268bd2">edit-insert</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">21</span><span>         (<span style="color:#268bd2">display*</span> <span style="color:#2aa198">&#34;HERE\n&#34;</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">22</span><span>  (<span style="color:#719e07">set! </span><span style="color:#268bd2">previous-leftclick</span> <span style="color:#719e07">`</span>(<span style="color:#268bd2">point</span> <span style="color:#719e07">,</span><span style="color:#268bd2">current-x</span> <span style="color:#719e07">,</span><span style="color:#268bd2">current-y</span>)))
+</span></span></code></pre></div><p>进入<code>edit-insert</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#719e07">define </span>(<span style="color:#268bd2">edit-insert</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#268bd2">edit-clean-up</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  (<span style="color:#268bd2">object_create</span> (<span style="color:#b58900">cadr </span>(<span style="color:#268bd2">graphics-mode</span>)) <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>))
+</span></span></code></pre></div><p>进入<code>object_create</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">object_create</span> <span style="color:#268bd2">tag</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>  (<span style="color:#268bd2">texmacs-error</span> <span style="color:#2aa198">&#34;object-create&#34;</span> <span style="color:#2aa198">&#34;invalid tag&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">object_create</span> <span style="color:#268bd2">tag</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>  (<span style="color:#268bd2">:require</span> (<span style="color:#268bd2">==</span> <span style="color:#268bd2">tag</span> <span style="color:#2aa198">&#39;point</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>  (<span style="color:#268bd2">object-set!</span> <span style="color:#719e07">`</span>(<span style="color:#268bd2">point</span> <span style="color:#719e07">,</span><span style="color:#268bd2">x</span> <span style="color:#719e07">,</span><span style="color:#268bd2">y</span>) <span style="color:#2aa198">&#39;new</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">object_create</span> <span style="color:#268bd2">tag</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>  (<span style="color:#268bd2">:require</span> (<span style="color:#719e07">or </span>(<span style="color:#268bd2">in?</span> <span style="color:#268bd2">tag</span> <span style="color:#268bd2">gr-tags-curves</span>) (<span style="color:#268bd2">in?</span> <span style="color:#268bd2">tag</span> <span style="color:#268bd2">gr-tags-user</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>  (<span style="color:#268bd2">with</span> <span style="color:#268bd2">o</span> (<span style="color:#268bd2">graphics-enrich</span> <span style="color:#719e07">`</span>(<span style="color:#719e07">,</span><span style="color:#268bd2">tag</span> (<span style="color:#268bd2">point</span> <span style="color:#719e07">,</span><span style="color:#268bd2">x</span> <span style="color:#719e07">,</span><span style="color:#268bd2">y</span>) (<span style="color:#268bd2">point</span> <span style="color:#719e07">,</span><span style="color:#268bd2">x</span> <span style="color:#719e07">,</span><span style="color:#268bd2">y</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>    (<span style="color:#268bd2">graphics-store-state</span> <span style="color:#2aa198">&#39;start-create</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>    (<span style="color:#719e07">set! </span><span style="color:#268bd2">current-point-no</span> <span style="color:#2aa198">1</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>    (<span style="color:#268bd2">object-set!</span> <span style="color:#268bd2">o</span> <span style="color:#2aa198">&#39;checkout</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>    (<span style="color:#268bd2">graphics-store-state</span> <span style="color:#cb4b16">#f</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">object_create</span> <span style="color:#268bd2">tag</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">17</span><span>  (<span style="color:#268bd2">:require</span> (<span style="color:#268bd2">graphical-text-tag?</span> <span style="color:#268bd2">tag</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">18</span><span>  (<span style="color:#268bd2">with</span> <span style="color:#268bd2">long?</span> (<span style="color:#268bd2">graphical-long-text-tag?</span> <span style="color:#268bd2">tag</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">19</span><span>    (<span style="color:#268bd2">object-set!</span> <span style="color:#719e07">`</span>(<span style="color:#719e07">,</span><span style="color:#268bd2">tag</span> <span style="color:#719e07">,</span>(<span style="color:#719e07">if </span><span style="color:#268bd2">long?</span> <span style="color:#719e07">`</span>(<span style="color:#268bd2">document</span> <span style="color:#2aa198">&#34;&#34;</span>) <span style="color:#2aa198">&#34;&#34;</span>) (<span style="color:#268bd2">point</span> <span style="color:#719e07">,</span><span style="color:#268bd2">x</span> <span style="color:#719e07">,</span><span style="color:#268bd2">y</span>)) <span style="color:#2aa198">&#39;new</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">20</span><span>    (<span style="color:#268bd2">and-with</span> <span style="color:#268bd2">d</span> (<span style="color:#268bd2">path-&gt;tree</span> (<span style="color:#268bd2">cDr</span> (<span style="color:#268bd2">cursor-path</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">21</span><span>      (<span style="color:#268bd2">when</span> (<span style="color:#268bd2">tree-func?</span> <span style="color:#268bd2">d</span> <span style="color:#2aa198">&#39;document</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">22</span><span>        (<span style="color:#268bd2">tree-go-to</span> <span style="color:#268bd2">d</span> <span style="color:#2aa198">0</span> <span style="color:#268bd2">:start</span>)))))
+</span></span></code></pre></div><p>得到对应的重载为</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">object_create</span> <span style="color:#268bd2">tag</span> <span style="color:#268bd2">x</span> <span style="color:#268bd2">y</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#268bd2">:require</span> (<span style="color:#268bd2">graphical-text-tag?</span> <span style="color:#268bd2">tag</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  (<span style="color:#268bd2">display*</span> <span style="color:#2aa198">&#34;HERE\n&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>  (<span style="color:#268bd2">with</span> <span style="color:#268bd2">long?</span> (<span style="color:#268bd2">graphical-long-text-tag?</span> <span style="color:#268bd2">tag</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>    (<span style="color:#268bd2">object-set!</span> <span style="color:#719e07">`</span>(<span style="color:#719e07">,</span><span style="color:#268bd2">tag</span> <span style="color:#719e07">,</span>(<span style="color:#719e07">if </span><span style="color:#268bd2">long?</span> <span style="color:#719e07">`</span>(<span style="color:#268bd2">document</span> <span style="color:#2aa198">&#34;&#34;</span>) <span style="color:#2aa198">&#34;&#34;</span>) (<span style="color:#268bd2">point</span> <span style="color:#719e07">,</span><span style="color:#268bd2">x</span> <span style="color:#719e07">,</span><span style="color:#268bd2">y</span>)) <span style="color:#2aa198">&#39;new</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span>    (<span style="color:#268bd2">and-with</span> <span style="color:#268bd2">d</span> (<span style="color:#268bd2">path-&gt;tree</span> (<span style="color:#268bd2">cDr</span> (<span style="color:#268bd2">cursor-path</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">7</span><span>      (<span style="color:#268bd2">when</span> (<span style="color:#268bd2">tree-func?</span> <span style="color:#268bd2">d</span> <span style="color:#2aa198">&#39;document</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">8</span><span>        (<span style="color:#268bd2">tree-go-to</span> <span style="color:#268bd2">d</span> <span style="color:#2aa198">0</span> <span style="color:#268bd2">:start</span>)))))
+</span></span></code></pre></div><p>进入了这一行<code>(graphics-group-enrich-insert o)</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">graphics-group-enrich-insert</span> <span style="color:#268bd2">t</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#268bd2">graphics-group-insert</span> (<span style="color:#268bd2">graphics-enrich</span> <span style="color:#268bd2">t</span>)))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">graphics-enrich</span> <span style="color:#268bd2">t</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#719e07">let* </span>((<span style="color:#268bd2">l1</span> (<span style="color:#268bd2">graphics-all-attributes</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>         (<span style="color:#268bd2">l2</span> (<span style="color:#b58900">map </span><span style="color:#268bd2">gr-prefix</span> <span style="color:#268bd2">l1</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>         (<span style="color:#268bd2">l3</span> (<span style="color:#b58900">map </span><span style="color:#268bd2">graphics-get-property</span> <span style="color:#268bd2">l2</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>         (<span style="color:#268bd2">tab</span> (<span style="color:#268bd2">list-&gt;ahash-table</span> (<span style="color:#b58900">map </span><span style="color:#268bd2">cons</span> <span style="color:#268bd2">l1</span> <span style="color:#268bd2">l3</span>))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span>    (<span style="color:#268bd2">graphics-enrich-bis</span> <span style="color:#268bd2">t</span> <span style="color:#2aa198">&#34;default&#34;</span> <span style="color:#268bd2">tab</span>)))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">graphics-enrich-bis</span> <span style="color:#268bd2">t</span> <span style="color:#268bd2">id</span> <span style="color:#268bd2">tab</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#719e07">set! </span><span style="color:#268bd2">tab</span> (<span style="color:#268bd2">list-&gt;ahash-table</span> (<span style="color:#268bd2">ahash-table-&gt;list</span> <span style="color:#268bd2">tab</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  (<span style="color:#268bd2">ahash-remove!</span> <span style="color:#268bd2">tab</span> <span style="color:#2aa198">&#34;gid&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>  (<span style="color:#719e07">let* </span>((<span style="color:#268bd2">attrs</span> (<span style="color:#268bd2">graphical-relevant-attributes</span> <span style="color:#268bd2">t</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>         (<span style="color:#268bd2">sel</span> (<span style="color:#268bd2">ahash-table-select</span> <span style="color:#268bd2">tab</span> <span style="color:#268bd2">attrs</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span>         (<span style="color:#268bd2">l1</span> (<span style="color:#b58900">cons </span>(<span style="color:#b58900">cons </span><span style="color:#2aa198">&#34;gid&#34;</span> <span style="color:#268bd2">id</span>) (<span style="color:#268bd2">ahash-table-&gt;list</span> <span style="color:#268bd2">sel</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">7</span><span>         (<span style="color:#268bd2">l2</span> (<span style="color:#b58900">map </span>(<span style="color:#719e07">lambda </span>(<span style="color:#268bd2">x</span>) (<span style="color:#b58900">list </span>(<span style="color:#b58900">car </span><span style="color:#268bd2">x</span>) (<span style="color:#b58900">cdr </span><span style="color:#268bd2">x</span>))) <span style="color:#268bd2">l1</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">8</span><span>    <span style="color:#586e75">;;(display* &#34;l= &#34; l2 &#34;\n&#34;)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">9</span><span>    (<span style="color:#268bd2">graphics-enrich-sub</span> <span style="color:#268bd2">t</span> <span style="color:#268bd2">l2</span>)))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span><span style="color:#719e07">class</span> <span style="color:#268bd2">concater_rep</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  edit_env              env;        <span style="color:#586e75">// the environment
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span><span style="color:#586e75"></span>  array<span style="color:#719e07">&lt;</span>line_item<span style="color:#719e07">&gt;</span>      a;          <span style="color:#586e75">// the line items
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span><span style="color:#586e75"></span>  <span style="color:#dc322f">bool</span>                  rigid;      <span style="color:#586e75">// when surely not wrappable
+</span></span></span></code></pre></div><h2 id="设置属性">
+  设置属性
+  <a class="heading-link" href="#%e8%ae%be%e7%bd%ae%e5%b1%9e%e6%80%a7">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">object-set-text-at-halign</span> <span style="color:#268bd2">val</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#268bd2">:argument</span> <span style="color:#268bd2">val</span> <span style="color:#2aa198">&#34;Horizontal alignment&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  (<span style="color:#268bd2">:check-mark</span> <span style="color:#2aa198">&#34;*&#34;</span> (<span style="color:#268bd2">object-test-property?</span> <span style="color:#2aa198">&#34;text-at-halign&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>  (<span style="color:#268bd2">object-set-property</span> <span style="color:#2aa198">&#34;text-at-halign&#34;</span> <span style="color:#268bd2">val</span>))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">object-set-property</span> <span style="color:#268bd2">var</span> <span style="color:#268bd2">val</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#268bd2">and-with</span> <span style="color:#268bd2">t</span> (<span style="color:#268bd2">tree-innermost</span> <span style="color:#268bd2">graphical-context?</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>    (<span style="color:#268bd2">object-set-property-bis</span> <span style="color:#268bd2">t</span> <span style="color:#268bd2">var</span> <span style="color:#268bd2">val</span>)))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#719e07">define </span>(<span style="color:#268bd2">object-set-property-bis</span> <span style="color:#268bd2">t</span> <span style="color:#268bd2">var</span> <span style="color:#268bd2">val</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#719e07">cond </span>((<span style="color:#268bd2">tree-is?</span> <span style="color:#268bd2">t</span> <span style="color:#268bd2">:up</span> <span style="color:#2aa198">&#39;with</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>         (<span style="color:#268bd2">with-set</span> (<span style="color:#268bd2">tree-up</span> <span style="color:#268bd2">t</span>) <span style="color:#268bd2">var</span> <span style="color:#268bd2">val</span> <span style="color:#2aa198">0</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>        ((<span style="color:#268bd2">!=</span> <span style="color:#268bd2">val</span> <span style="color:#2aa198">&#34;default&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>         (<span style="color:#268bd2">tree-set!</span> <span style="color:#268bd2">t</span> <span style="color:#719e07">`</span>(<span style="color:#268bd2">with</span> <span style="color:#719e07">,</span><span style="color:#268bd2">var</span> <span style="color:#719e07">,</span><span style="color:#268bd2">val</span> <span style="color:#719e07">,</span><span style="color:#268bd2">t</span>)))))
+</span></span></code></pre></div><h2 id="菜单">
+  菜单
+  <a class="heading-link" href="#%e8%8f%9c%e5%8d%95">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-menu</span> (<span style="color:#268bd2">text-at-halign-menu</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#2aa198">&#34;Center&#34;</span> (<span style="color:#268bd2">object-set-text-at-halign</span> <span style="color:#2aa198">&#34;default&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  (<span style="color:#2aa198">&#34;Right&#34;</span> (<span style="color:#268bd2">object-set-text-at-halign</span> <span style="color:#2aa198">&#34;right&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>  (<span style="color:#2aa198">&#34;Left1111&#34;</span> (<span style="color:#268bd2">object-set-text-at-halign</span> <span style="color:#2aa198">&#34;left&#34;</span>)))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define-macro</span> (<span style="color:#268bd2">tm-menu</span> <span style="color:#268bd2">head</span> <span style="color:#719e07">.</span> <span style="color:#268bd2">l</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#268bd2">receive</span> (<span style="color:#268bd2">opts</span> <span style="color:#268bd2">body</span>) (<span style="color:#268bd2">list-break</span> <span style="color:#268bd2">l</span> <span style="color:#268bd2">not-define-option?</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>    <span style="color:#719e07">`</span>(<span style="color:#268bd2">tm-define</span> <span style="color:#719e07">,</span><span style="color:#268bd2">head</span> <span style="color:#719e07">,@</span><span style="color:#268bd2">opts</span> (<span style="color:#268bd2">menu-dynamic</span> <span style="color:#719e07">,@</span><span style="color:#268bd2">body</span>))))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define-macro</span> (<span style="color:#268bd2">menu-dynamic</span> <span style="color:#719e07">.</span> <span style="color:#268bd2">l</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  <span style="color:#719e07">`</span>(<span style="color:#268bd2">$list</span> <span style="color:#719e07">,@</span>(<span style="color:#b58900">map </span><span style="color:#268bd2">gui-make</span> <span style="color:#268bd2">l</span>)))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">gui-make</span> <span style="color:#268bd2">x</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>  <span style="color:#586e75">;;(display* &#34;x= &#34; x &#34;\n&#34;)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>  (<span style="color:#719e07">cond </span>((<span style="color:#b58900">symbol? </span><span style="color:#268bd2">x</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>         (<span style="color:#719e07">cond </span>((<span style="color:#268bd2">==</span> <span style="color:#268bd2">x</span> <span style="color:#2aa198">&#39;---</span>) <span style="color:#2aa198">&#39;$---</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>               ((<span style="color:#268bd2">==</span> <span style="color:#268bd2">x</span> <span style="color:#2aa198">&#39;===</span>) (<span style="color:#268bd2">gui-make</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">glue</span> <span style="color:#cb4b16">#f</span> <span style="color:#cb4b16">#f</span> <span style="color:#2aa198">0</span> <span style="color:#2aa198">5</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>               ((<span style="color:#268bd2">==</span> <span style="color:#268bd2">x</span> <span style="color:#2aa198">&#39;======</span>) (<span style="color:#268bd2">gui-make</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">glue</span> <span style="color:#cb4b16">#f</span> <span style="color:#cb4b16">#f</span> <span style="color:#2aa198">0</span> <span style="color:#2aa198">15</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>               ((<span style="color:#268bd2">==</span> <span style="color:#268bd2">x</span> <span style="color:#2aa198">&#39;/</span>) <span style="color:#2aa198">&#39;$/</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>               ((<span style="color:#268bd2">==</span> <span style="color:#268bd2">x</span> <span style="color:#2aa198">&#39;//</span>) (<span style="color:#268bd2">gui-make</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">glue</span> <span style="color:#cb4b16">#f</span> <span style="color:#cb4b16">#f</span> <span style="color:#2aa198">5</span> <span style="color:#2aa198">0</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>               ((<span style="color:#268bd2">==</span> <span style="color:#268bd2">x</span> <span style="color:#2aa198">&#39;///</span>) (<span style="color:#268bd2">gui-make</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">glue</span> <span style="color:#cb4b16">#f</span> <span style="color:#cb4b16">#f</span> <span style="color:#2aa198">15</span> <span style="color:#2aa198">0</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>               ((<span style="color:#268bd2">==</span> <span style="color:#268bd2">x</span> <span style="color:#2aa198">&#39;&gt;&gt;</span>) (<span style="color:#268bd2">gui-make</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">glue</span> <span style="color:#cb4b16">#t</span> <span style="color:#cb4b16">#f</span> <span style="color:#2aa198">5</span> <span style="color:#2aa198">0</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>               ((<span style="color:#268bd2">==</span> <span style="color:#268bd2">x</span> <span style="color:#2aa198">&#39;&gt;&gt;&gt;</span>) (<span style="color:#268bd2">gui-make</span> <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">glue</span> <span style="color:#cb4b16">#t</span> <span style="color:#cb4b16">#f</span> <span style="color:#2aa198">15</span> <span style="color:#2aa198">0</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>               ((<span style="color:#268bd2">==</span> <span style="color:#268bd2">x</span> (<span style="color:#b58900">string-&gt;symbol </span><span style="color:#2aa198">&#34;|&#34;</span>)) <span style="color:#2aa198">&#39;$/</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>               (<span style="color:#268bd2">else</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>                 (<span style="color:#268bd2">texmacs-error</span> <span style="color:#2aa198">&#34;gui-make&#34;</span> <span style="color:#2aa198">&#34;invalid menu item ~S&#34;</span> <span style="color:#268bd2">x</span>))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span>        ((<span style="color:#b58900">string? </span><span style="color:#268bd2">x</span>) <span style="color:#268bd2">x</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16</span><span>        ((<span style="color:#719e07">and </span>(<span style="color:#b58900">pair? </span><span style="color:#268bd2">x</span>) (<span style="color:#268bd2">ahash-ref</span> <span style="color:#268bd2">gui-make-table</span> (<span style="color:#b58900">car </span><span style="color:#268bd2">x</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">17</span><span>         (<span style="color:#b58900">apply </span>(<span style="color:#b58900">car </span>(<span style="color:#268bd2">ahash-ref</span> <span style="color:#268bd2">gui-make-table</span> (<span style="color:#b58900">car </span><span style="color:#268bd2">x</span>))) (<span style="color:#b58900">list </span><span style="color:#268bd2">x</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">18</span><span>        ((<span style="color:#719e07">and </span>(<span style="color:#b58900">pair? </span><span style="color:#268bd2">x</span>) (<span style="color:#719e07">or </span>(<span style="color:#b58900">string? </span>(<span style="color:#b58900">car </span><span style="color:#268bd2">x</span>)) (<span style="color:#b58900">pair? </span>(<span style="color:#b58900">car </span><span style="color:#268bd2">x</span>))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">19</span><span>         <span style="color:#719e07">`</span>(<span style="color:#268bd2">$&gt;</span> <span style="color:#719e07">,</span>(<span style="color:#268bd2">gui-make</span> (<span style="color:#b58900">car </span><span style="color:#268bd2">x</span>)) <span style="color:#719e07">,@</span>(<span style="color:#b58900">cdr </span><span style="color:#268bd2">x</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">20</span><span>        (<span style="color:#268bd2">else</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">21</span><span>          (<span style="color:#268bd2">texmacs-error</span> <span style="color:#2aa198">&#34;gui-make&#34;</span> <span style="color:#2aa198">&#34;invalid menu item ~S&#34;</span> <span style="color:#268bd2">x</span>))))
+</span></span></code></pre></div><p>菜单中的勾选
+可能是check-mark和object-test-property?</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">object-set-text-at-halign</span> <span style="color:#268bd2">val</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#268bd2">:argument</span> <span style="color:#268bd2">val</span> <span style="color:#2aa198">&#34;Horizontal alignment&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  (<span style="color:#268bd2">:check-mark</span> <span style="color:#2aa198">&#34;*&#34;</span> (<span style="color:#268bd2">object-test-property?</span> <span style="color:#2aa198">&#34;text-at-halign&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>  (<span style="color:#268bd2">object-set-property</span> <span style="color:#2aa198">&#34;text-at-halign&#34;</span> <span style="color:#268bd2">val</span>))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#719e07">define </span>(<span style="color:#268bd2">object-test-property?</span> <span style="color:#268bd2">var</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#719e07">lambda </span>(<span style="color:#268bd2">val</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>    (<span style="color:#719e07">if </span>(<span style="color:#268bd2">==</span> <span style="color:#268bd2">val</span> <span style="color:#2aa198">&#34;default&#34;</span>) (<span style="color:#719e07">set! </span><span style="color:#268bd2">val</span> (<span style="color:#268bd2">tree-&gt;stree</span> (<span style="color:#268bd2">get-init-tree</span> <span style="color:#268bd2">var</span>))))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>    (<span style="color:#268bd2">==</span> (<span style="color:#268bd2">object-get-property</span> <span style="color:#268bd2">var</span>) <span style="color:#268bd2">val</span>)))
+</span></span></code></pre></div><p>下一步观察<code>get-init-tree</code> 使用了GLUE</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>{
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>                scm_name <span style="color:#719e07">=</span> <span style="color:#2aa198">&#34;get-init-tree&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>                cpp_name <span style="color:#719e07">=</span> <span style="color:#2aa198">&#34;get_init_value&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>                ret_type <span style="color:#719e07">=</span> <span style="color:#2aa198">&#34;tree&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>                arg_list <span style="color:#719e07">=</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span>                    <span style="color:#2aa198">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">7</span><span>                }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">8</span><span>            },
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span>tree
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>edit_typeset_rep<span style="color:#719e07">::</span>get_init_value (string var) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>  <span style="color:#719e07">if</span> (init<span style="color:#719e07">-&gt;</span>contains (var)) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>    tree t<span style="color:#719e07">=</span> init [var];
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>    <span style="color:#719e07">if</span> (var <span style="color:#719e07">==</span> BG_COLOR <span style="color:#719e07">&amp;&amp;</span> is_func (t, PATTERN)) t<span style="color:#719e07">=</span> env<span style="color:#719e07">-&gt;</span>exec (t);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>    <span style="color:#719e07">return</span> <span style="color:#268bd2">is_func</span> (t, BACKUP, <span style="color:#2aa198">2</span>)<span style="color:#719e07">?</span> t[<span style="color:#2aa198">0</span>]<span style="color:#719e07">:</span> t;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>  }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>  <span style="color:#719e07">if</span> (N(pre)<span style="color:#719e07">==</span><span style="color:#2aa198">0</span>) typeset_preamble ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>  tree t<span style="color:#719e07">=</span> pre [var];
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>  <span style="color:#719e07">if</span> (var <span style="color:#719e07">==</span> BG_COLOR <span style="color:#719e07">&amp;&amp;</span> is_func (t, PATTERN)) t<span style="color:#719e07">=</span> env<span style="color:#719e07">-&gt;</span>exec (t);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>  <span style="color:#719e07">return</span> <span style="color:#268bd2">is_func</span> (t, BACKUP, <span style="color:#2aa198">2</span>)<span style="color:#719e07">?</span> t[<span style="color:#2aa198">0</span>]<span style="color:#719e07">:</span> t;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>}
+</span></span></code></pre></div><p>查到一个叫init的hashmap</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span><span style="color:#719e07">class</span> <span style="color:#268bd2">edit_typeset_rep</span><span style="color:#719e07">:</span> <span style="color:#719e07">virtual</span> <span style="color:#719e07">public</span> editor_rep {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span><span style="color:#719e07">protected</span><span style="color:#719e07">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  tree the_style;                         <span style="color:#586e75">// document style
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span><span style="color:#586e75"></span>  hashmap<span style="color:#719e07">&lt;</span>path,hashmap<span style="color:#719e07">&lt;</span>string,tree<span style="color:#719e07">&gt;</span> <span style="color:#719e07">&gt;</span> cur; <span style="color:#586e75">// environment at different paths
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span><span style="color:#586e75"></span>  hashmap<span style="color:#719e07">&lt;</span>string,tree<span style="color:#719e07">&gt;</span> stydef;            <span style="color:#586e75">// environment after styles
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span><span style="color:#586e75"></span>  hashmap<span style="color:#719e07">&lt;</span>string,tree<span style="color:#719e07">&gt;</span> pre;               <span style="color:#586e75">// environment after styles and init
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">7</span><span><span style="color:#586e75"></span>  hashmap<span style="color:#719e07">&lt;</span>string,tree<span style="color:#719e07">&gt;</span> init;              <span style="color:#586e75">// environment changes w.r.t. style
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span><span style="color:#dc322f">void</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>edit_typeset_rep<span style="color:#719e07">::</span>set_init (hashmap<span style="color:#719e07">&lt;</span>string,tree<span style="color:#719e07">&gt;</span> H) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>  init<span style="color:#719e07">=</span> hashmap<span style="color:#719e07">&lt;</span>string,tree<span style="color:#719e07">&gt;</span> (UNINIT);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>  add_init (H);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span><span style="color:#dc322f">void</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>edit_typeset_rep<span style="color:#719e07">::</span>add_init (hashmap<span style="color:#719e07">&lt;</span>string,tree<span style="color:#719e07">&gt;</span> H) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>  init<span style="color:#719e07">-&gt;</span>join (H);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>  <span style="color:#719e07">::</span>notify_assign (ttt, path(), subtree (et, rp));
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>  notify_change (THE_ENVIRONMENT);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>}
+</span></span></code></pre></div><p>在这里调用了set_init</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span><span style="color:#dc322f">void</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>edit_typeset_rep<span style="color:#719e07">::</span>set_data (new_data data) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>  set_style (data<span style="color:#719e07">-&gt;</span>style);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>  set_init  (data<span style="color:#719e07">-&gt;</span>init);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>  set_fin   (data<span style="color:#719e07">-&gt;</span>fin);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>  set_ref   (data<span style="color:#719e07">-&gt;</span>ref);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>  set_aux   (data<span style="color:#719e07">-&gt;</span>aux);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>  set_att   (data<span style="color:#719e07">-&gt;</span>att);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>  notify_page_change ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>  add_init (data<span style="color:#719e07">-&gt;</span>init);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>  notify_change (THE_DECORATIONS);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>  typeset_invalidate_env ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>  iterator<span style="color:#719e07">&lt;</span>string<span style="color:#719e07">&gt;</span> it <span style="color:#719e07">=</span> iterate (data<span style="color:#719e07">-&gt;</span>att);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>  <span style="color:#719e07">while</span> (it<span style="color:#719e07">-&gt;</span>busy()) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span>    string key<span style="color:#719e07">=</span> it<span style="color:#719e07">-&gt;</span>next ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16</span><span>    (<span style="color:#dc322f">void</span>) call (string (<span style="color:#2aa198">&#34;notify-set-attachment&#34;</span>),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">17</span><span>                 buf<span style="color:#719e07">-&gt;</span>buf<span style="color:#719e07">-&gt;</span>name, key, data<span style="color:#719e07">-&gt;</span>att [key]);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">18</span><span>  }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">19</span><span>}
+</span></span></code></pre></div><p><code>set_data</code>的调用位置是</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span><span style="color:#dc322f">void</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span><span style="color:#268bd2">set_buffer_data</span> (url name, new_data data) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  array<span style="color:#719e07">&lt;</span>url<span style="color:#719e07">&gt;</span> vs<span style="color:#719e07">=</span> buffer_to_views (name);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>  <span style="color:#719e07">for</span> (<span style="color:#dc322f">int</span> i<span style="color:#719e07">=</span><span style="color:#2aa198">0</span>; i<span style="color:#719e07">&lt;</span>N(vs); i<span style="color:#719e07">++</span>) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>    view_to_editor (vs[i]) <span style="color:#719e07">-&gt;</span> set_data (data);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span>    view_to_editor (vs[i]) <span style="color:#719e07">-&gt;</span> init_update ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">7</span><span>  }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">8</span><span>}
+</span></span></code></pre></div><p><code>set_buffer_data</code>的调用位置是</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span><span style="color:#dc322f">void</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span><span style="color:#268bd2">set_buffer_tree</span> (url name, tree doc) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>  tm_buffer buf<span style="color:#719e07">=</span> concrete_buffer (name);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>  <span style="color:#719e07">if</span> (is_nil (buf)) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>    insert_buffer (name);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>    buf<span style="color:#719e07">=</span> concrete_buffer (name);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>    tree body<span style="color:#719e07">=</span> detach_data (doc, buf<span style="color:#719e07">-&gt;</span>data);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>    set_document (buf<span style="color:#719e07">-&gt;</span>rp, body);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>    buf<span style="color:#719e07">-&gt;</span>buf<span style="color:#719e07">-&gt;</span>title<span style="color:#719e07">=</span> propose_title (buf<span style="color:#719e07">-&gt;</span>buf<span style="color:#719e07">-&gt;</span>title, name, body);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>    <span style="color:#719e07">if</span> (buf<span style="color:#719e07">-&gt;</span>data<span style="color:#719e07">-&gt;</span>project <span style="color:#719e07">!=</span> <span style="color:#2aa198">&#34;&#34;</span>) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>      url prj_name<span style="color:#719e07">=</span> head (name) <span style="color:#719e07">*</span> as_string (buf<span style="color:#719e07">-&gt;</span>data<span style="color:#719e07">-&gt;</span>project);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>      buf<span style="color:#719e07">-&gt;</span>prj<span style="color:#719e07">=</span> concrete_buffer_insist (prj_name);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>    }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>  }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span>  <span style="color:#719e07">else</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16</span><span>    string old_title<span style="color:#719e07">=</span> buf<span style="color:#719e07">-&gt;</span>buf<span style="color:#719e07">-&gt;</span>title;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">17</span><span>    string old_project<span style="color:#719e07">=</span> buf<span style="color:#719e07">-&gt;</span>data<span style="color:#719e07">-&gt;</span>project<span style="color:#719e07">-&gt;</span>label;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">18</span><span>    tree body<span style="color:#719e07">=</span> detach_data (doc, buf<span style="color:#719e07">-&gt;</span>data);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">19</span><span>    assign (buf<span style="color:#719e07">-&gt;</span>rp, body);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">20</span><span>    set_buffer_data (name, buf<span style="color:#719e07">-&gt;</span>data);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">21</span><span>    buf<span style="color:#719e07">-&gt;</span>buf<span style="color:#719e07">-&gt;</span>title<span style="color:#719e07">=</span> propose_title (old_title, name, body);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">22</span><span>    <span style="color:#719e07">if</span> (buf<span style="color:#719e07">-&gt;</span>data<span style="color:#719e07">-&gt;</span>project <span style="color:#719e07">!=</span> <span style="color:#2aa198">&#34;&#34;</span> <span style="color:#719e07">&amp;&amp;</span> buf<span style="color:#719e07">-&gt;</span>data<span style="color:#719e07">-&gt;</span>project <span style="color:#719e07">!=</span> old_project) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">23</span><span>      url prj_name<span style="color:#719e07">=</span> head (name) <span style="color:#719e07">*</span> as_string (buf<span style="color:#719e07">-&gt;</span>data<span style="color:#719e07">-&gt;</span>project);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">24</span><span>      buf<span style="color:#719e07">-&gt;</span>prj<span style="color:#719e07">=</span> concrete_buffer_insist (prj_name);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">25</span><span>    }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">26</span><span>  }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">27</span><span>  pretend_buffer_saved (name);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">28</span><span>}
+</span></span></code></pre></div><p>其中<code>set_buffer_data (name, buf-&gt;data);</code> 而 函数第一行有<code>tm_buffer buf= concrete_buffer (name);</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>tm_buffer
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span><span style="color:#268bd2">concrete_buffer</span> (url name) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  <span style="color:#dc322f">int</span> i, n<span style="color:#719e07">=</span> N(bufs);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>  <span style="color:#719e07">for</span> (i<span style="color:#719e07">=</span><span style="color:#2aa198">0</span>; i<span style="color:#719e07">&lt;</span>n; i<span style="color:#719e07">++</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>    <span style="color:#719e07">if</span> (bufs[i]<span style="color:#719e07">-&gt;</span>buf<span style="color:#719e07">-&gt;</span>name <span style="color:#719e07">==</span> name)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span>      <span style="color:#719e07">return</span> bufs[i];
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">7</span><span>  <span style="color:#719e07">return</span> nil_buffer ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">8</span><span>}
+</span></span></code></pre></div><p>下一步问题：buf中的data怎么创建</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span><span style="color:#719e07">class</span> <span style="color:#268bd2">tm_buffer_rep</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span><span style="color:#719e07">public</span><span style="color:#719e07">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>  new_buffer buf;         <span style="color:#586e75">// file related information
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span><span style="color:#586e75"></span>  new_data data;          <span style="color:#586e75">// data associated to document
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span><span style="color:#586e75"></span>  array<span style="color:#719e07">&lt;</span>tm_view<span style="color:#719e07">&gt;</span> vws;     <span style="color:#586e75">// views attached to buffer
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span><span style="color:#586e75"></span>  tm_buffer prj;          <span style="color:#586e75">// buffer which corresponds to the project
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span><span style="color:#586e75"></span>  path rp;                <span style="color:#586e75">// path to the document&#39;s root in the_et
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span><span style="color:#586e75"></span>  link_repository lns;    <span style="color:#586e75">// global links
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span><span style="color:#586e75"></span>  <span style="color:#dc322f">bool</span> notify;            <span style="color:#586e75">// notify modifications to scheme
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span><span style="color:#586e75"></span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>  <span style="color:#268bd2">inline</span> <span style="color:#268bd2">tm_buffer_rep</span> (url name)<span style="color:#719e07">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>    buf (name), data (),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>    vws (<span style="color:#2aa198">0</span>), prj (<span style="color:#b58900">NULL</span>), rp (new_document ()), notify (<span style="color:#b58900">false</span>) {}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span>  <span style="color:#268bd2">inline</span> <span style="color:#719e07">~</span>tm_buffer_rep () {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16</span><span>    delete_document (rp); }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">17</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">18</span><span>  <span style="color:#dc322f">void</span> <span style="color:#268bd2">attach_notifier</span> ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">19</span><span>  <span style="color:#dc322f">bool</span> <span style="color:#268bd2">needs_to_be_saved</span> ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">20</span><span>  <span style="color:#dc322f">bool</span> <span style="color:#268bd2">needs_to_be_autosaved</span> ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">21</span><span>};
+</span></span></code></pre></div><p>疑似相关代码:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>url temp<span style="color:#719e07">=</span> get_current_view_safe ();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  set_current_view (abstract_view (vw));
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>  <span style="color:#719e07">if</span> (is_none (tm_init_buffer_file))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>    tm_init_buffer_file<span style="color:#719e07">=</span> <span style="color:#2aa198">&#34;$TEXMACS_PATH/progs/init-buffer.scm&#34;</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>  <span style="color:#719e07">if</span> (is_none (my_init_buffer_file))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span>    my_init_buffer_file<span style="color:#719e07">=</span> <span style="color:#2aa198">&#34;$TEXMACS_HOME_PATH/progs/my-init-buffer.scm&#34;</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">7</span><span>  <span style="color:#719e07">if</span> (exists (tm_init_buffer_file)) exec_file (tm_init_buffer_file);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">8</span><span>  <span style="color:#719e07">if</span> (exists (my_init_buffer_file)) exec_file (my_init_buffer_file);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">9</span><span>  set_current_view (temp);
+</span></span></code></pre></div><h2 id="object-get-property">
+  object-get-property
+  <a class="heading-link" href="#object-get-property">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>(<span style="color:#268bd2">tm-define</span> (<span style="color:#268bd2">object-get-property</span> <span style="color:#268bd2">var</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>  (<span style="color:#268bd2">tree-&gt;stree</span> (<span style="color:#268bd2">get-env-tree</span> <span style="color:#268bd2">var</span>)))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>{
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>                scm_name <span style="color:#719e07">=</span> <span style="color:#2aa198">&#34;get-env-tree&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">3</span><span>                cpp_name <span style="color:#719e07">=</span> <span style="color:#2aa198">&#34;get_env_value&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">4</span><span>                ret_type <span style="color:#719e07">=</span> <span style="color:#2aa198">&#34;tree&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">5</span><span>                arg_list <span style="color:#719e07">=</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">6</span><span>                    <span style="color:#2aa198">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">7</span><span>                }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">8</span><span>            },
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span>tree
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>edit_typeset_rep<span style="color:#719e07">::</span>get_env_value (string var, path p) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>  typeset_exec_until (p);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>  tree t<span style="color:#719e07">=</span> cur[p][var];
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>  <span style="color:#719e07">return</span> <span style="color:#268bd2">is_func</span> (t, BACKUP, <span style="color:#2aa198">2</span>)<span style="color:#719e07">?</span> t[<span style="color:#2aa198">0</span>]<span style="color:#719e07">:</span> t;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>tree
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>edit_typeset_rep<span style="color:#719e07">::</span>get_env_value (string var) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span> <span style="color:#586e75">/* FIXME: tp is wrong (and consequently, crashes TeXmacs)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span><span style="color:#586e75">  *   when we call this routine from inside the code which
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span><span style="color:#586e75">  *   is triggered by a button, for example.
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span><span style="color:#586e75">  *
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span><span style="color:#586e75">  * Test: fire TeXmacs, then open a new Graphics, then click
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">15</span><span><span style="color:#586e75">  *   on the icon for going in spline mode. Then it crashes,
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">16</span><span><span style="color:#586e75">  *   because we call (get-env-tree) from inside the Scheme.
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">17</span><span><span style="color:#586e75">  *   If we call (get-env-tree-at ... (cDr (cursor-path))),
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">18</span><span><span style="color:#586e75">  *   then it works.
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">19</span><span><span style="color:#586e75">  */</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">20</span><span>  <span style="color:#719e07">return</span> <span style="color:#268bd2">get_env_value</span> (var, tp);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">21</span><span>}
+</span></span></code></pre></div>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        <div class="comments">
+    <script>
+  
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? 'github-light' : getTheme;
+    
+    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+    let s = document.createElement('script');
+    s.src = 'https://utteranc.es/client.js';
+    s.setAttribute('repo', 'oyyko\/utteranc-comments');
+    s.setAttribute('issue-term', 'pathname');
+    s.setAttribute('theme', theme);
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
+  
+    </script>
+    </div>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <link rel='stylesheet' type='text/css' href=http://fonts.googleapis.com/css?family&#61;Jetbrains&#43;Mono%7cRoboto&#43;Slab%7cNoto&#43;Sans&#43;SC%7c>
+
+
+    <section class="container">
+      ©
+      
+      2019 -
+      
+      2023
+       Oyyko 
+      ·
+      
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
+        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
+        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
+      
+    </section>
+</footer>
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

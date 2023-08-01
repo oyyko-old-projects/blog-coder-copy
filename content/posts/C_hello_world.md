@@ -2,6 +2,7 @@
 title: C Hello World Again
 date: 2021-01-02
 tags: [C]
+toc: true
 ---
 
 本文是我给地空学院的学生的C语言讲座的讲稿

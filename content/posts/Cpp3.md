@@ -2,6 +2,7 @@
 title: C++ Note 3
 date: 2022-02-22
 tags: [Cpp]
+toc: true
 ---
 
 本文是我的C++笔记的第三篇

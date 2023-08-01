@@ -3,6 +3,7 @@ title: ICS 笔记3
 date: 2021-12-19
 tags: [ICS]
 math: true
+toc: true
 ---
 ICS笔记3
 <!--more-->

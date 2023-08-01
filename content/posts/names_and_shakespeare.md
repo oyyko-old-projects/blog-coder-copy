@@ -2,6 +2,7 @@
 title: name and shakespeare
 date: 2021-01-25
 tags: [Translation]
+toc: true
 ---
 
 匿名函数与莎士比亚大定理

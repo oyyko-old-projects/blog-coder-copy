@@ -2,6 +2,7 @@
 title: ICS Note 1
 date: 2021-11-17
 tags: [ICS]
+toc: true
 ---
 This is my notes for ICS. Source: ppt
 计算系统概论笔记1 来自PPT

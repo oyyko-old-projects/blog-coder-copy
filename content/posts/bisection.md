@@ -2,6 +2,7 @@
 title: 二分总结
 date: 2021-11-30T15:20:51+08:00
 tags: [Algorithm, Leetcode]
+toc: true
 ---
 
 ##　Leetcode 704 二分查找target

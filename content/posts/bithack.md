@@ -4,6 +4,7 @@ date: 2022-02-21
 tags: [Algorithm, Cpp]
 category: Cpp
 mathjax: false
+toc: true
 ---
 位运算技巧
 <!--more-->

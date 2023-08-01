@@ -3,6 +3,7 @@ title: CCPC华为的一道趣题
 date: 2021-08-22
 tags: [Algorithm, Math, Cpp]
 math: true
+toc: true
 ---
 
 本文记录了CCPC华为比赛中的一道题目
