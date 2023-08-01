@@ -5,3 +5,5 @@ tags: [meta]
 ---
 Now I changed the theme of this blog to https://github.com/luizdepra/hugo-coder.
 
+Also I modified the theme a little to make it looks better.
+
