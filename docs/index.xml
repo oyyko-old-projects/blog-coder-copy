@@ -8,7 +8,24 @@
     <language>en</language>
     <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
     <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
-    <lastBuildDate>Sat, 29 Jul 2023 22:50:19 +0800</lastBuildDate><atom:link href="https://oyyko.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Aug 2023 15:57:15 +0800</lastBuildDate><atom:link href="https://oyyko.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TeXmacs/Mogan Note 3</title>
+      <link>https://oyyko.com/posts/mogan_note3/</link>
+      <pubDate>Wed, 02 Aug 2023 15:57:15 +0800</pubDate>
+      <author>finalwind42@gmail.com (Oyyko)</author>
+      <guid>https://oyyko.com/posts/mogan_note3/</guid>
+      <description>修改为两点画圆 Link to heading 研究三点画圆的代码实现
+菜单中选择画圆的时候使用
+1(&amp;#34;Circle&amp;#34; (graphics-set-mode &amp;#39;(edit carc))) 但是edit carc没有继续出现。因此推测是得到mode之后判断，如果第一个值是edit则统一处理，不需要分别处理。
+以
+1(tm-define (edit_right-button mode x y) 2 (:require (== mode &amp;#39;edit)) 3 (:state graphics-state) 4 (set-texmacs-pointer &amp;#39;graphics-cross) 5 (when current-obj 6 (graphics-delete))) 为例子。
+它在这里被调用
+1(tm-define (graphics-release-right x y) 2 ;;(display* &amp;#34;Graphics] Release-right &amp;#34; x &amp;#34;, &amp;#34; y &amp;#34;\n&amp;#34;) 3 (when (not (inside-graphical-text?)) 4 (edit_right-button (car (graphics-mode)) x y))) 可以看到确实是按照(car (graphics-mode))来进行调用。
+研究如何通过菜单进行markup中的两点画圆
+1(menu-bind graphics-focus-menu 2 (-&amp;gt; (eval (upcase-first (gr-mode-&amp;gt;string (graphics-mode)))) 3 (link graphics-mode-menu)) 4 (if (inside-graphical-over-under?</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://oyyko.com/about/</link>
