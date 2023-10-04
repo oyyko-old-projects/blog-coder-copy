@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://oyyko.com/posts/mac_config/</loc>
+    <lastmod>2023-10-04T11:37:40-07:00</lastmod>
+  </url><url>
     <loc>https://oyyko.com/</loc>
-    <lastmod>2023-08-02T15:57:15+08:00</lastmod>
+    <lastmod>2023-10-04T11:37:40-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/posts/</loc>
-    <lastmod>2023-08-02T15:57:15+08:00</lastmod>
+    <lastmod>2023-10-04T11:37:40-07:00</lastmod>
+  </url><url>
+    <loc>https://oyyko.com/posts/mogan_note4/</loc>
+    <lastmod>2023-10-04T10:37:08-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/posts/mogan_note3/</loc>
-    <lastmod>2023-08-02T15:57:15+08:00</lastmod>
+    <lastmod>2023-08-20T19:01:21+08:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/about/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
