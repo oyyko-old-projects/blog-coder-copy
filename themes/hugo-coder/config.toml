@@ -1,0 +1,71 @@
+baseurl = "http://oyyko.com"
+
+
+
+
+
+[params]
+  author = "Oyyko"
+  info = "Developer & Student"
+  description = "Oyyko's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "/asuka.jpeg"
+
+  #gravatar = "john.doe@example.com"
+
+  # MY!
+  googleCodeFont = "http://fonts.googleapis.com/css?family=Jetbrains+Mono|Roboto+Slab|Noto+Sans+SC|"
+
+
+  since = 2019
+
+  # enableTwemoji = true
+
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[params.utterances]
+  repo = "oyyko/utteranc-comments" # https://utteranc.es/#heading-repository
+  issueTerm = "pathname" # https://utteranc.es/#heading-mapping
+  label = "" # https://utteranc.es/#heading-issue-label
+  theme = "github-light" # https://utteranc.es/#heading-theme
+
+[taxonomies]
+  tag = "tags"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/Oyyko/"
+[[params.social]]
+  name = "Linkedin"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/zhang-jia/"
+[[params.social]]
+  name = "email"
+  icon = "fa fa-envelope fa-2x"
+  weight = 2
+  url = "mailto:finalwind42@gmail.com"
+
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
+[[menu.main]]
+  name = "Projects"
+  weight = 2
+  url = "projects/"
