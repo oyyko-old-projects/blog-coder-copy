@@ -15,6 +15,7 @@
 <meta name="author" content="Oyyko">
 <meta name="description" content="Install HomeBrew Link to heading see https://brew.sh/.
 增加软件仓库 Link to heading 1brew tap homebrew/cask-fonts 2brew tap homebrew/cask 在增加了homebrew/cask之后，安装cask中的软件不需要brew install --cask, 只需要直接brew install即可。
+但是官方不建议这么做，官方做法是使用brew install --cask XXX
 Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew install bat fd wget bottom lsd ripgrep 3## Install cask Apps 4brew install --cask google-chrome visual-studio-code wechat qq iterm2 iina Install snap Link to heading With Snap App, you can use Command ⌘ &#43; 1 to call the first app in your dock.">
 <meta name="keywords" content="blog,developer,personal">
 
@@ -22,16 +23,18 @@ Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew ins
 <meta name="twitter:title" content="New Macbook Setup"/>
 <meta name="twitter:description" content="Install HomeBrew Link to heading see https://brew.sh/.
 增加软件仓库 Link to heading 1brew tap homebrew/cask-fonts 2brew tap homebrew/cask 在增加了homebrew/cask之后，安装cask中的软件不需要brew install --cask, 只需要直接brew install即可。
+但是官方不建议这么做，官方做法是使用brew install --cask XXX
 Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew install bat fd wget bottom lsd ripgrep 3## Install cask Apps 4brew install --cask google-chrome visual-studio-code wechat qq iterm2 iina Install snap Link to heading With Snap App, you can use Command ⌘ &#43; 1 to call the first app in your dock."/>
 
 <meta property="og:title" content="New Macbook Setup" />
 <meta property="og:description" content="Install HomeBrew Link to heading see https://brew.sh/.
 增加软件仓库 Link to heading 1brew tap homebrew/cask-fonts 2brew tap homebrew/cask 在增加了homebrew/cask之后，安装cask中的软件不需要brew install --cask, 只需要直接brew install即可。
+但是官方不建议这么做，官方做法是使用brew install --cask XXX
 Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew install bat fd wget bottom lsd ripgrep 3## Install cask Apps 4brew install --cask google-chrome visual-studio-code wechat qq iterm2 iina Install snap Link to heading With Snap App, you can use Command ⌘ &#43; 1 to call the first app in your dock." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://oyyko.com/posts/mac_config/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-04T10:41:00-07:00" />
-<meta property="article:modified_time" content="2023-10-04T11:37:40-07:00" />
+<meta property="article:modified_time" content="2023-10-10T23:05:15-07:00" />
 
 
 
@@ -158,7 +161,16 @@ Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew ins
           </div>
           
           
-          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/mac/">mac</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/macbook/">macbook</a>
+    </span></div>
+
         </div>
       </header>
 
@@ -180,6 +192,7 @@ Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew ins
     <li><a href="#安装zoxide">安装zoxide</a></li>
     <li><a href="#安装p10k">安装p10k</a></li>
     <li><a href="#使终端中的option----可以实现跨单词跳转">使终端中的option ⌥ + ← 可以实现跨单词跳转</a></li>
+    <li><a href="#使用espanso">使用espanso</a></li>
   </ul>
 </nav> </div>
         <hr>
@@ -201,6 +214,9 @@ Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew ins
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>brew tap homebrew/cask-fonts 
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>brew tap homebrew/cask
 </span></span></code></pre></div><p>在增加了homebrew/cask之后，安装cask中的软件不需要<code>brew install --cask</code>, 只需要直接<code>brew install</code>即可。</p>
+<blockquote>
+<p>但是官方不建议这么做，官方做法是使用<code>brew install --cask XXX</code></p>
+</blockquote>
 <h2 id="use-homebrew-to-install-apps">
   Use homebrew to install Apps
   <a class="heading-link" href="#use-homebrew-to-install-apps">
@@ -220,8 +236,7 @@ Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew ins
   </a>
 </h2>
 <p>With Snap App, you can use <code>Command ⌘ + 1</code> to call the first app in your dock.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>brew install --cask snap
-</span></span></code></pre></div><p>或者从App Store下载。这是免费的。</p>
+<p>从App Store下载。这是免费的。</p>
 <h2 id="install-flow">
   Install Flow
   <a class="heading-link" href="#install-flow">
@@ -303,7 +318,15 @@ Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew ins
 <p>在zshrc中配置</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">1</span><span>bindkey <span style="color:#2aa198">&#34;\e\e[D&#34;</span> backward-word
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">2</span><span>bindkey <span style="color:#2aa198">&#34;\e\e[C&#34;</span> forward-word
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="使用espanso">
+  使用espanso
+  <a class="heading-link" href="#%e4%bd%bf%e7%94%a8espanso">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>espanso是一个键盘快捷键映射软件。例如在任何地方输入:date会自动变为当前的日期。输入:name会自动显示自己的姓名等。</p>
+
       </div>
 
 

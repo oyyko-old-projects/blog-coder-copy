@@ -17,6 +17,7 @@
       <guid>https://oyyko.com/posts/mac_config/</guid>
       <description>Install HomeBrew Link to heading see https://brew.sh/.
 增加软件仓库 Link to heading 1brew tap homebrew/cask-fonts 2brew tap homebrew/cask 在增加了homebrew/cask之后，安装cask中的软件不需要brew install --cask, 只需要直接brew install即可。
+但是官方不建议这么做，官方做法是使用brew install --cask XXX
 Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew install bat fd wget bottom lsd ripgrep 3## Install cask Apps 4brew install --cask google-chrome visual-studio-code wechat qq iterm2 iina Install snap Link to heading With Snap App, you can use Command ⌘ + 1 to call the first app in your dock.</description>
     </item>
     
