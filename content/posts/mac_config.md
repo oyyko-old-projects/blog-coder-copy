@@ -1,7 +1,7 @@
 ---
 title: "New Macbook Setup"
 date: 2023-10-04T10:41:00-07:00
-tags: []
+tags: [mac, macbook]
 toc: true
 math: false
 ---
@@ -16,6 +16,8 @@ brew tap homebrew/cask
 
 在增加了homebrew/cask之后，安装cask中的软件不需要`brew install --cask`, 只需要直接`brew install`即可。
 
+> 但是官方不建议这么做，官方做法是使用`brew install --cask XXX`
+
 ## Use homebrew to install Apps
 ```bash
 ## Install Rust CLI Apps
@@ -27,10 +29,7 @@ brew install --cask google-chrome visual-studio-code wechat qq iterm2 iina
 ## Install snap
 With Snap App, you can use `Command ⌘ + 1` to call the first app in your dock.
 
-```bash
-brew install --cask snap
-```
-或者从App Store下载。这是免费的。
+从App Store下载。这是免费的。
 
 ## Install Flow
 Flow可以定时提醒自己休息。从App Store下载或者brew安装都可以。
@@ -88,5 +87,9 @@ zoxide会记忆你最近访问的目录。例如你最近访问过`~/aaa/bb/bana
 bindkey "\e\e[D" backward-word
 bindkey "\e\e[C" forward-word
 ```
+
+## 使用espanso
+espanso是一个键盘快捷键映射软件。例如在任何地方输入:date会自动变为当前的日期。输入:name会自动显示自己的姓名等。
+
 
 
