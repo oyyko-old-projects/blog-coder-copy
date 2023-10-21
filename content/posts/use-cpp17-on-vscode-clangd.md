@@ -15,7 +15,7 @@ I try to use compile_commands.json file. But on the one hand, it needs to be con
 
 So, here is the final solution.
 
-Open (create if not already there) `~/.config/clangd/config.yaml`
+Open (create if not already there) `~/.config/clangd/config.yaml`.
 and write the following information
 
 ```yaml
@@ -24,4 +24,20 @@ CompileFlags:
 ```
 
 Cool. Now let's have fun with Cpp20.
+
+## Edit in 2023-10-21
+What is written above applies to linux. Under macOS, the configuration file is in `~/Library/Preferences/clangd/config.yaml`. For details, please refer to https://clangd.llvm.org/config#files
+
+Also, you can use `If` in config.yaml to avoid add -std-c++20 for C files (that's funny).
+
+Like this:
+
+```yaml
+If:
+    PathExclude: [.*\.c, .*\.h]
+CompileFlags:
+    Add:
+        - "-std=c++2b"
+
+```
 
