@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oyyko.com/posts/infra/</loc>
-    <lastmod>2023-10-12T21:36:39-07:00</lastmod>
+    <loc>https://oyyko.com/tags/haskell/</loc>
+    <lastmod>2023-11-01T14:56:15-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/</loc>
-    <lastmod>2023-10-12T21:36:39-07:00</lastmod>
+    <lastmod>2023-11-01T14:56:15-07:00</lastmod>
+  </url><url>
+    <loc>https://oyyko.com/tags/plt/</loc>
+    <lastmod>2023-11-01T14:56:15-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/posts/</loc>
+    <lastmod>2023-11-01T14:56:15-07:00</lastmod>
+  </url><url>
+    <loc>https://oyyko.com/tags/</loc>
+    <lastmod>2023-11-01T14:56:15-07:00</lastmod>
+  </url><url>
+    <loc>https://oyyko.com/tags/ucsd/</loc>
+    <lastmod>2023-11-01T14:56:15-07:00</lastmod>
+  </url><url>
+    <loc>https://oyyko.com/posts/haskell1/</loc>
+    <lastmod>2023-11-01T14:56:15-07:00</lastmod>
+  </url><url>
+    <loc>https://oyyko.com/posts/infra/</loc>
     <lastmod>2023-10-12T21:36:39-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/tags/mac/</loc>
@@ -18,9 +33,6 @@
     <lastmod>2023-10-10T23:05:15-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/posts/mac_config/</loc>
-    <lastmod>2023-10-10T23:05:15-07:00</lastmod>
-  </url><url>
-    <loc>https://oyyko.com/tags/</loc>
     <lastmod>2023-10-10T23:05:15-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/posts/mogan_note4/</loc>
@@ -39,7 +51,7 @@
     <lastmod>2023-08-01T12:30:09+08:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/tags/vscode/</loc>
-    <lastmod>2023-08-01T03:48:54+08:00</lastmod>
+    <lastmod>2023-10-21T12:29:36-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/posts/vscode2/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
@@ -99,7 +111,7 @@
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/tags/cpp/</loc>
-    <lastmod>2023-08-01T12:18:15+08:00</lastmod>
+    <lastmod>2023-10-21T12:29:36-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/posts/value_categories_in_cpp/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
@@ -108,10 +120,10 @@
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/tags/clangd/</loc>
-    <lastmod>2023-08-01T03:48:54+08:00</lastmod>
+    <lastmod>2023-10-21T12:29:36-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/posts/use-cpp17-on-vscode-clangd/</loc>
-    <lastmod>2023-08-01T03:48:54+08:00</lastmod>
+    <lastmod>2023-10-21T12:29:36-07:00</lastmod>
   </url><url>
     <loc>https://oyyko.com/posts/first-post/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
