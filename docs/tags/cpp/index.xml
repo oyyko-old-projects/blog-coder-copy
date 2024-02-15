@@ -6,104 +6,77 @@
     <description>Recent content in Cpp on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
-    <lastBuildDate>Tue, 23 Aug 2022 15:20:51 +0800</lastBuildDate><atom:link href="https://oyyko.com/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Aug 2022 15:20:51 +0800</lastBuildDate>
+    <atom:link href="https://oyyko.com/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Value_categories_in_Cpp</title>
       <link>https://oyyko.com/posts/value_categories_in_cpp/</link>
       <pubDate>Tue, 23 Aug 2022 15:20:51 +0800</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/value_categories_in_cpp/</guid>
-      <description>Intro Link to heading 1#define IS_XVALUE(expr) \ 2(is_rvalue_reference&amp;lt;decltype((expr))&amp;gt;{}) 3#define IS_PRVALUE(expr) \ 4(!is_reference&amp;lt;decltype((expr))&amp;gt;{}) 5#define IS_LVALUE(expr) \ 6(is_lvalue_reference&amp;lt;decltype((expr))&amp;gt;{}) This is a method I recently discovered to determine which value category an expression is. I&amp;rsquo;ll explain why it works later.
-First, let&amp;rsquo;s take a look at value categories in C++.
-One of the most important things you should notice before you start is that value categories are not a property about values, but rather a property about expressions.</description>
+      <description>Intro Link to heading 1#define IS_XVALUE(expr) \ 2(is_rvalue_reference&amp;lt;decltype((expr))&amp;gt;{}) 3#define IS_PRVALUE(expr) \ 4(!is_reference&amp;lt;decltype((expr))&amp;gt;{}) 5#define IS_LVALUE(expr) \ 6(is_lvalue_reference&amp;lt;decltype((expr))&amp;gt;{}) This is a method I recently discovered to determine which value category an expression is. I&amp;rsquo;ll explain why it works later.&#xA;First, let&amp;rsquo;s take a look at value categories in C++.&#xA;One of the most important things you should notice before you start is that value categories are not a property about values, but rather a property about expressions.</description>
     </item>
-    
     <item>
       <title>Using Cpp17 or higher version of Cpp on Vscode extension Clangd</title>
       <link>https://oyyko.com/posts/use-cpp17-on-vscode-clangd/</link>
       <pubDate>Sun, 07 Aug 2022 21:49:29 +0800</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/use-cpp17-on-vscode-clangd/</guid>
-      <description>Recently I&amp;rsquo;ve switched my code completion tool in VScode from Microsoft&amp;rsquo;s official plugin to clangd. On the one hand, clangd can provide a better user experience, on the other hand, I also use this plugin in my company (Bytedance).
-I joked to myself: Two of the most interesting things I learned when I interned at the company were that indentation changed from four spaces to two, and braces changed from wrap to no wrap.</description>
+      <description>Recently I&amp;rsquo;ve switched my code completion tool in VScode from Microsoft&amp;rsquo;s official plugin to clangd. On the one hand, clangd can provide a better user experience, on the other hand, I also use this plugin in my company (Bytedance).&#xA;I joked to myself: Two of the most interesting things I learned when I interned at the company were that indentation changed from four spaces to two, and braces changed from wrap to no wrap.</description>
     </item>
-    
     <item>
       <title>C&#43;&#43; Note 4</title>
       <link>https://oyyko.com/posts/cpp4/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/cpp4/</guid>
       <description>&lt;p&gt;C++ 笔记4&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>C&#43;&#43; Note 3</title>
       <link>https://oyyko.com/posts/cpp3/</link>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/cpp3/</guid>
-      <description>&lt;p&gt;本文是我的C++笔记的第三篇
-My Thrid C++ Note;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本文是我的C++笔记的第三篇&#xA;My Thrid C++ Note;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>位运算技巧</title>
       <link>https://oyyko.com/posts/bithack/</link>
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/bithack/</guid>
       <description>&lt;p&gt;位运算技巧&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>现代C&#43;&#43;白皮书 笔记1</title>
       <link>https://oyyko.com/posts/cpp_whitepaper/</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/cpp_whitepaper/</guid>
       <description>&lt;p&gt;现代C++白皮书 笔记1&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>C&#43;&#43; Note 2</title>
       <link>https://oyyko.com/posts/cpp2/</link>
       <pubDate>Sun, 28 Nov 2021 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/cpp2/</guid>
-      <description>&lt;p&gt;本文是我的C++笔记的第二篇
-My Second C++ Note;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本文是我的C++笔记的第二篇&#xA;My Second C++ Note;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A strange way to compute GCD</title>
       <link>https://oyyko.com/posts/gcd/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/gcd/</guid>
       <description>&lt;p&gt;A strange way to compute GCD in one line&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>CCPC华为的一道趣题</title>
       <link>https://oyyko.com/posts/ccpc_huawei/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/ccpc_huawei/</guid>
       <description>&lt;p&gt;本文记录了CCPC华为比赛中的一道题目&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>C&#43;&#43; Note 1</title>
       <link>https://oyyko.com/posts/cpp1/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/cpp1/</guid>
-      <description>&lt;p&gt;本文是我的C++笔记的第一篇
-My First C++ Note;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本文是我的C++笔记的第一篇&#xA;My First C++ Note;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

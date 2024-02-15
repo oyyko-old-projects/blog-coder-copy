@@ -6,46 +6,35 @@
     <description>Recent content in ICS on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
-    <lastBuildDate>Sun, 19 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://oyyko.com/tags/ics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://oyyko.com/tags/ics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ICS 笔记3</title>
       <link>https://oyyko.com/posts/ics3/</link>
       <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/ics3/</guid>
       <description>&lt;p&gt;ICS笔记3&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ICS PPT Note 1</title>
       <link>https://oyyko.com/posts/ics_ppt/</link>
       <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/ics_ppt/</guid>
       <description>&lt;p&gt;计算系统概率PPT笔记1 复习期中&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ICS Note 2</title>
       <link>https://oyyko.com/posts/ics2/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/ics2/</guid>
-      <description>&lt;p&gt;This is my notes for ICS. Source: book
-计算系统概论笔记2 来自课本&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is my notes for ICS. Source: book&#xA;计算系统概论笔记2 来自课本&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ICS Note 1</title>
       <link>https://oyyko.com/posts/ics1/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/ics1/</guid>
-      <description>&lt;p&gt;This is my notes for ICS. Source: ppt
-计算系统概论笔记1 来自PPT&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is my notes for ICS. Source: ppt&#xA;计算系统概论笔记1 来自PPT&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

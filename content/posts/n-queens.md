@@ -12,7 +12,7 @@ For example, when N=8, there are 92 ways to put the chesses. However, our algori
 
 If you still feels not familar with the problem we will solve. Please Google 8 queens problem and look down. 
 
-### N=4
+## N=4
 When N=4, there are only two ways to put these chesses.
 
 

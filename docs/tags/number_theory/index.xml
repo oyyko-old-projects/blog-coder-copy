@@ -6,18 +6,14 @@
     <description>Recent content in Number_Theory on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
-    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://oyyko.com/tags/number_theory/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://oyyko.com/tags/number_theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数论笔记</title>
       <link>https://oyyko.com/posts/shulun/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/shulun/</guid>
-      <description>&lt;p&gt;本文是我的数论笔记的第一篇
-关于:4k+1型和4k+3型素数&lt;/p&gt;</description>
+      <description>&lt;p&gt;本文是我的数论笔记的第一篇&#xA;关于:4k+1型和4k+3型素数&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

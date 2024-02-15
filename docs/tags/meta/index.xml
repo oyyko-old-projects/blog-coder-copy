@@ -6,18 +6,14 @@
     <description>Recent content in meta on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
-    <lastBuildDate>Sat, 29 Jul 2023 22:50:19 +0800</lastBuildDate><atom:link href="https://oyyko.com/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jul 2023 22:50:19 +0800</lastBuildDate>
+    <atom:link href="https://oyyko.com/tags/meta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Change0729</title>
       <link>https://oyyko.com/posts/change0729/</link>
       <pubDate>Sat, 29 Jul 2023 22:50:19 +0800</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/change0729/</guid>
-      <description>Now I changed the theme of this blog to https://github.com/luizdepra/hugo-coder.
-Also I modified the theme a little to make it looks better.</description>
+      <description>Now I changed the theme of this blog to https://github.com/luizdepra/hugo-coder.&#xA;Also I modified the theme a little to make it looks better.</description>
     </item>
-    
   </channel>
 </rss>

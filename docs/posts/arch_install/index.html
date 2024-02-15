@@ -27,8 +27,7 @@
 安装输入法 Link to heading 1yay -S fcitx5-im 2yay -S base-devel 3yay -S fcitx5-rime 4yay -S rime-cloverpinyin 配置fcitx5的环境变量：">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Archlinux/Manjaro Install Guide"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Archlinux/Manjaro Install Guide"/>
 <meta name="twitter:description" content="manjaro I3新电脑配置
 假设已经安装好了manjaro i3，接下来要做的是：
 基本装机 按顺序执行以下操作 Link to heading 换源 Link to heading 编辑/etc/pacman.d/mirrorlist 内容改为
@@ -63,6 +62,7 @@
 
 
 
+
 <link rel="canonical" href="https://oyyko.com/posts/arch_install/">
 
 
@@ -75,7 +75,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.cf2cafa99e42e37d7ee6037c26609b63878d100bceb06101d72e9b64d20f385d.css" integrity="sha256-zyyvqZ5C431&#43;5gN8JmCbY4eNEAvOsGEB1y6bZNIPOF0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.4aa47e08823270231494db5e45db07ca1087851d1cf797b9ceef270927d26246.css" integrity="sha256-SqR&#43;CIIycCMUlNteRdsHyhCHhR0c95e5zu8nCSfSYkY=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -358,19 +358,19 @@
 </span></span></code></pre></div><p>配置vscode-latexworkshop使用xelatex为默认</p>
 <p><a href="https://blog.csdn.net/Haulyn5/article/details/124128533"  class="external-link" target="_blank" rel="noopener">https://blog.csdn.net/Haulyn5/article/details/124128533</a></p>
 <p>修改settings.json</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span>&#34;latex-workshop.latex.tools&#34;: [
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 1</span><span><span style="color:#2aa198">&#34;latex-workshop.latex.tools&#34;</span>: [
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 2</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 3</span><span>        {
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>            &#34;name&#34;: &#34;latexmk&#34;,
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>            &#34;command&#34;: &#34;latexmk&#34;,
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>            &#34;args&#34;: [
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>                &#34;-xelatex&#34;,
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>                &#34;-synctex=1&#34;,
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>                &#34;-interaction=nonstopmode&#34;,
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>                &#34;-file-line-error&#34;,
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>                &#34;%DOC%&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 4</span><span>            <span style="color:#2aa198">&#34;name&#34;</span>: <span style="color:#2aa198">&#34;latexmk&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 5</span><span>            <span style="color:#2aa198">&#34;command&#34;</span>: <span style="color:#2aa198">&#34;latexmk&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 6</span><span>            <span style="color:#2aa198">&#34;args&#34;</span>: [
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 7</span><span>                <span style="color:#2aa198">&#34;-xelatex&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 8</span><span>                <span style="color:#2aa198">&#34;-synctex=1&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050"> 9</span><span>                <span style="color:#2aa198">&#34;-interaction=nonstopmode&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">10</span><span>                <span style="color:#2aa198">&#34;-file-line-error&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">11</span><span>                <span style="color:#2aa198">&#34;%DOC%&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">12</span><span>            ],
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>            &#34;env&#34;: {}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">13</span><span>            <span style="color:#2aa198">&#34;env&#34;</span>: {}
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#495050">14</span><span>        },
 </span></span></code></pre></div><h3 id="安装zsh">
   安装zsh
@@ -557,7 +557,7 @@
       
       2019 -
       
-      2023
+      2024
        Oyyko 
       ·
       

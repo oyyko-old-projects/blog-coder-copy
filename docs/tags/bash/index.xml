@@ -6,17 +6,14 @@
     <description>Recent content in bash on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
-    <lastBuildDate>Fri, 27 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://oyyko.com/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://oyyko.com/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BASH脚本</title>
       <link>https://oyyko.com/posts/bash/</link>
       <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/bash/</guid>
       <description>&lt;p&gt;BASH 条件判断&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

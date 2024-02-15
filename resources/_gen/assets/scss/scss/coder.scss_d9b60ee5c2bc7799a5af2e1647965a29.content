@@ -3145,7 +3145,8 @@ h6 {
       line-height: 2rem; } }
 b,
 strong {
-  font-weight: 700; }
+  color: #dc143c;
+  font-weight: bold; }
 
 .highlight div,
 .highlight pre {

@@ -6,17 +6,14 @@
     <description>Recent content in translate on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
-    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://oyyko.com/tags/translate/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://oyyko.com/tags/translate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Texmacs Graphics Tutorial</title>
       <link>https://oyyko.com/posts/texmacs_graphics_tutorial/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <author>finalwind42@gmail.com (Oyyko)</author>
       <guid>https://oyyko.com/posts/texmacs_graphics_tutorial/</guid>
       <description>原文：https://www.texmacs.org/tmweb/documents/tutorials/TeXmacs-graphics-tutorial.pdf</description>
     </item>
-    
   </channel>
 </rss>
