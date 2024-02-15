@@ -2,241 +2,241 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Oyyko</title>
-    <link>https://oyyko.com/tags/</link>
+    <link>https://blog.oyyko.com/tags/</link>
     <description>Recent content in Tags on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 Nov 2023 14:56:15 -0700</lastBuildDate>
-    <atom:link href="https://oyyko.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>haskell</title>
-      <link>https://oyyko.com/tags/haskell/</link>
+      <link>https://blog.oyyko.com/tags/haskell/</link>
       <pubDate>Wed, 01 Nov 2023 14:56:15 -0700</pubDate>
-      <guid>https://oyyko.com/tags/haskell/</guid>
+      <guid>https://blog.oyyko.com/tags/haskell/</guid>
       <description></description>
     </item>
     <item>
       <title>plt</title>
-      <link>https://oyyko.com/tags/plt/</link>
+      <link>https://blog.oyyko.com/tags/plt/</link>
       <pubDate>Wed, 01 Nov 2023 14:56:15 -0700</pubDate>
-      <guid>https://oyyko.com/tags/plt/</guid>
+      <guid>https://blog.oyyko.com/tags/plt/</guid>
       <description></description>
     </item>
     <item>
       <title>ucsd</title>
-      <link>https://oyyko.com/tags/ucsd/</link>
+      <link>https://blog.oyyko.com/tags/ucsd/</link>
       <pubDate>Wed, 01 Nov 2023 14:56:15 -0700</pubDate>
-      <guid>https://oyyko.com/tags/ucsd/</guid>
+      <guid>https://blog.oyyko.com/tags/ucsd/</guid>
       <description></description>
     </item>
     <item>
       <title>mac</title>
-      <link>https://oyyko.com/tags/mac/</link>
+      <link>https://blog.oyyko.com/tags/mac/</link>
       <pubDate>Wed, 04 Oct 2023 10:41:00 -0700</pubDate>
-      <guid>https://oyyko.com/tags/mac/</guid>
+      <guid>https://blog.oyyko.com/tags/mac/</guid>
       <description></description>
     </item>
     <item>
       <title>macbook</title>
-      <link>https://oyyko.com/tags/macbook/</link>
+      <link>https://blog.oyyko.com/tags/macbook/</link>
       <pubDate>Wed, 04 Oct 2023 10:41:00 -0700</pubDate>
-      <guid>https://oyyko.com/tags/macbook/</guid>
+      <guid>https://blog.oyyko.com/tags/macbook/</guid>
       <description></description>
     </item>
     <item>
       <title>meta</title>
-      <link>https://oyyko.com/tags/meta/</link>
+      <link>https://blog.oyyko.com/tags/meta/</link>
       <pubDate>Sat, 29 Jul 2023 22:50:19 +0800</pubDate>
-      <guid>https://oyyko.com/tags/meta/</guid>
+      <guid>https://blog.oyyko.com/tags/meta/</guid>
       <description></description>
     </item>
     <item>
       <title>VSCode</title>
-      <link>https://oyyko.com/tags/vscode/</link>
+      <link>https://blog.oyyko.com/tags/vscode/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/vscode/</guid>
+      <guid>https://blog.oyyko.com/tags/vscode/</guid>
       <description></description>
     </item>
     <item>
       <title>code</title>
-      <link>https://oyyko.com/tags/code/</link>
+      <link>https://blog.oyyko.com/tags/code/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/code/</guid>
+      <guid>https://blog.oyyko.com/tags/code/</guid>
       <description></description>
     </item>
     <item>
       <title>mogan</title>
-      <link>https://oyyko.com/tags/mogan/</link>
+      <link>https://blog.oyyko.com/tags/mogan/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/mogan/</guid>
+      <guid>https://blog.oyyko.com/tags/mogan/</guid>
       <description></description>
     </item>
     <item>
       <title>note</title>
-      <link>https://oyyko.com/tags/note/</link>
+      <link>https://blog.oyyko.com/tags/note/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/note/</guid>
+      <guid>https://blog.oyyko.com/tags/note/</guid>
       <description></description>
     </item>
     <item>
       <title>texmacs</title>
-      <link>https://oyyko.com/tags/texmacs/</link>
+      <link>https://blog.oyyko.com/tags/texmacs/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/texmacs/</guid>
+      <guid>https://blog.oyyko.com/tags/texmacs/</guid>
       <description></description>
     </item>
     <item>
       <title>archlinux</title>
-      <link>https://oyyko.com/tags/archlinux/</link>
+      <link>https://blog.oyyko.com/tags/archlinux/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/archlinux/</guid>
+      <guid>https://blog.oyyko.com/tags/archlinux/</guid>
       <description></description>
     </item>
     <item>
       <title>linux</title>
-      <link>https://oyyko.com/tags/linux/</link>
+      <link>https://blog.oyyko.com/tags/linux/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/linux/</guid>
+      <guid>https://blog.oyyko.com/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>manjaro</title>
-      <link>https://oyyko.com/tags/manjaro/</link>
+      <link>https://blog.oyyko.com/tags/manjaro/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/manjaro/</guid>
+      <guid>https://blog.oyyko.com/tags/manjaro/</guid>
       <description></description>
     </item>
     <item>
       <title>os</title>
-      <link>https://oyyko.com/tags/os/</link>
+      <link>https://blog.oyyko.com/tags/os/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/os/</guid>
+      <guid>https://blog.oyyko.com/tags/os/</guid>
       <description></description>
     </item>
     <item>
       <title>translate</title>
-      <link>https://oyyko.com/tags/translate/</link>
+      <link>https://blog.oyyko.com/tags/translate/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/translate/</guid>
+      <guid>https://blog.oyyko.com/tags/translate/</guid>
       <description></description>
     </item>
     <item>
       <title>lisp</title>
-      <link>https://oyyko.com/tags/lisp/</link>
+      <link>https://blog.oyyko.com/tags/lisp/</link>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/lisp/</guid>
+      <guid>https://blog.oyyko.com/tags/lisp/</guid>
       <description></description>
     </item>
     <item>
       <title>scheme</title>
-      <link>https://oyyko.com/tags/scheme/</link>
+      <link>https://blog.oyyko.com/tags/scheme/</link>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/scheme/</guid>
+      <guid>https://blog.oyyko.com/tags/scheme/</guid>
       <description></description>
     </item>
     <item>
       <title>bug</title>
-      <link>https://oyyko.com/tags/bug/</link>
+      <link>https://blog.oyyko.com/tags/bug/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/bug/</guid>
+      <guid>https://blog.oyyko.com/tags/bug/</guid>
       <description></description>
     </item>
     <item>
       <title>Cpp</title>
-      <link>https://oyyko.com/tags/cpp/</link>
+      <link>https://blog.oyyko.com/tags/cpp/</link>
       <pubDate>Tue, 23 Aug 2022 15:20:51 +0800</pubDate>
-      <guid>https://oyyko.com/tags/cpp/</guid>
+      <guid>https://blog.oyyko.com/tags/cpp/</guid>
       <description></description>
     </item>
     <item>
       <title>clangd</title>
-      <link>https://oyyko.com/tags/clangd/</link>
+      <link>https://blog.oyyko.com/tags/clangd/</link>
       <pubDate>Sun, 07 Aug 2022 21:49:29 +0800</pubDate>
-      <guid>https://oyyko.com/tags/clangd/</guid>
+      <guid>https://blog.oyyko.com/tags/clangd/</guid>
       <description></description>
     </item>
     <item>
       <title>Life</title>
-      <link>https://oyyko.com/tags/life/</link>
+      <link>https://blog.oyyko.com/tags/life/</link>
       <pubDate>Sun, 24 Jul 2022 00:37:35 +0800</pubDate>
-      <guid>https://oyyko.com/tags/life/</guid>
+      <guid>https://blog.oyyko.com/tags/life/</guid>
       <description></description>
     </item>
     <item>
       <title>bash</title>
-      <link>https://oyyko.com/tags/bash/</link>
+      <link>https://blog.oyyko.com/tags/bash/</link>
       <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/bash/</guid>
+      <guid>https://blog.oyyko.com/tags/bash/</guid>
       <description></description>
     </item>
     <item>
       <title>Link</title>
-      <link>https://oyyko.com/tags/link/</link>
+      <link>https://blog.oyyko.com/tags/link/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/link/</guid>
+      <guid>https://blog.oyyko.com/tags/link/</guid>
       <description></description>
     </item>
     <item>
       <title>Algorithm</title>
-      <link>https://oyyko.com/tags/algorithm/</link>
+      <link>https://blog.oyyko.com/tags/algorithm/</link>
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/algorithm/</guid>
+      <guid>https://blog.oyyko.com/tags/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Latex</title>
-      <link>https://oyyko.com/tags/latex/</link>
+      <link>https://blog.oyyko.com/tags/latex/</link>
       <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/latex/</guid>
+      <guid>https://blog.oyyko.com/tags/latex/</guid>
       <description></description>
     </item>
     <item>
       <title>ICS</title>
-      <link>https://oyyko.com/tags/ics/</link>
+      <link>https://blog.oyyko.com/tags/ics/</link>
       <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/ics/</guid>
+      <guid>https://blog.oyyko.com/tags/ics/</guid>
       <description></description>
     </item>
     <item>
       <title>Math</title>
-      <link>https://oyyko.com/tags/math/</link>
+      <link>https://blog.oyyko.com/tags/math/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/math/</guid>
+      <guid>https://blog.oyyko.com/tags/math/</guid>
       <description></description>
     </item>
     <item>
       <title>Number_Theory</title>
-      <link>https://oyyko.com/tags/number_theory/</link>
+      <link>https://blog.oyyko.com/tags/number_theory/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/number_theory/</guid>
+      <guid>https://blog.oyyko.com/tags/number_theory/</guid>
       <description></description>
     </item>
     <item>
       <title>Leetcode</title>
-      <link>https://oyyko.com/tags/leetcode/</link>
+      <link>https://blog.oyyko.com/tags/leetcode/</link>
       <pubDate>Tue, 30 Nov 2021 15:20:51 +0800</pubDate>
-      <guid>https://oyyko.com/tags/leetcode/</guid>
+      <guid>https://blog.oyyko.com/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>
       <title>IDE</title>
-      <link>https://oyyko.com/tags/ide/</link>
+      <link>https://blog.oyyko.com/tags/ide/</link>
       <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/ide/</guid>
+      <guid>https://blog.oyyko.com/tags/ide/</guid>
       <description></description>
     </item>
     <item>
       <title>Translation</title>
-      <link>https://oyyko.com/tags/translation/</link>
+      <link>https://blog.oyyko.com/tags/translation/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/translation/</guid>
+      <guid>https://blog.oyyko.com/tags/translation/</guid>
       <description></description>
     </item>
     <item>
       <title>C</title>
-      <link>https://oyyko.com/tags/c/</link>
+      <link>https://blog.oyyko.com/tags/c/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/tags/c/</guid>
+      <guid>https://blog.oyyko.com/tags/c/</guid>
       <description></description>
     </item>
   </channel>

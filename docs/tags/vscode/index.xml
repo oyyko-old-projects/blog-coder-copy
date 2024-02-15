@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VSCode on Oyyko</title>
-    <link>https://oyyko.com/tags/vscode/</link>
+    <link>https://blog.oyyko.com/tags/vscode/</link>
     <description>Recent content in VSCode on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oyyko.com/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vscode 返回上一个位置快捷键</title>
-      <link>https://oyyko.com/posts/vscode2/</link>
+      <link>https://blog.oyyko.com/posts/vscode2/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/vscode2/</guid>
+      <guid>https://blog.oyyko.com/posts/vscode2/</guid>
       <description>非常有用的一个功能。&#xA;Windows: $Alt + \leftarrow$&#xA;Linux: $Control + Alt + -$</description>
     </item>
     <item>
       <title>Using Cpp17 or higher version of Cpp on Vscode extension Clangd</title>
-      <link>https://oyyko.com/posts/use-cpp17-on-vscode-clangd/</link>
+      <link>https://blog.oyyko.com/posts/use-cpp17-on-vscode-clangd/</link>
       <pubDate>Sun, 07 Aug 2022 21:49:29 +0800</pubDate>
-      <guid>https://oyyko.com/posts/use-cpp17-on-vscode-clangd/</guid>
+      <guid>https://blog.oyyko.com/posts/use-cpp17-on-vscode-clangd/</guid>
       <description>Recently I&amp;rsquo;ve switched my code completion tool in VScode from Microsoft&amp;rsquo;s official plugin to clangd. On the one hand, clangd can provide a better user experience, on the other hand, I also use this plugin in my company (Bytedance).&#xA;I joked to myself: Two of the most interesting things I learned when I interned at the company were that indentation changed from four spaces to two, and braces changed from wrap to no wrap.</description>
     </item>
     <item>
       <title>VsCode Latex 插件配置</title>
-      <link>https://oyyko.com/posts/vscode-latex/</link>
+      <link>https://blog.oyyko.com/posts/vscode-latex/</link>
       <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/vscode-latex/</guid>
+      <guid>https://blog.oyyko.com/posts/vscode-latex/</guid>
       <description>更改vscode的 setting.json文件 加入&#xA;1&amp;#34;latex-workshop.latex.tools&amp;#34;: [ 2 { 3 &amp;#34;name&amp;#34;: &amp;#34;latexmk&amp;#34;, 4 &amp;#34;command&amp;#34;: &amp;#34;latexmk&amp;#34;, 5 &amp;#34;args&amp;#34;: [ 6 &amp;#34;-synctex=1&amp;#34;, 7 &amp;#34;-interaction=nonstopmode&amp;#34;, 8 &amp;#34;-file-line-error&amp;#34;, 9 &amp;#34;-pdf&amp;#34;, 10 &amp;#34;-outdir=%OUTDIR%&amp;#34;, 11 &amp;#34;%DOC%&amp;#34;, 12 &amp;#34;-xelatex&amp;#34; 13 ], 14 &amp;#34;env&amp;#34;: {} 15 }, 即可&#xA;即在命令参数的最后增加 -xelatex 参数&#xA;备注：之前在文件头部添加% !TEX program = xelatex是管用的，现在不知道为啥又不行了。</description>
     </item>
     <item>
       <title>VSCODE 使用笔记</title>
-      <link>https://oyyko.com/posts/vscode/</link>
+      <link>https://blog.oyyko.com/posts/vscode/</link>
       <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/vscode/</guid>
+      <guid>https://blog.oyyko.com/posts/vscode/</guid>
       <description>&lt;p&gt;工欲善其事，必先利其器。&lt;/p&gt;</description>
     </item>
   </channel>

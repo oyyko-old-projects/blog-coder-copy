@@ -1,4 +1,4 @@
-baseURL = 'https://oyyko.com'
+baseURL = 'https://blog.oyyko.com'
 title = "Oyyko"
 theme = "hugo-coder"
 publishDir = "docs"
@@ -12,7 +12,7 @@ paginate = 1000
 [author]
   name = "Oyyko"
   email = "finalwind42@gmail.com"
-  link = "https://oyyko.com"
+  link = "https://blog.oyyko.com"
 
 [markup]
   [markup.highlight]

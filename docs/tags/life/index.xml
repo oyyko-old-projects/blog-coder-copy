@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life on Oyyko</title>
-    <link>https://oyyko.com/tags/life/</link>
+    <link>https://blog.oyyko.com/tags/life/</link>
     <description>Recent content in Life on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Jul 2022 00:37:35 +0800</lastBuildDate>
-    <atom:link href="https://oyyko.com/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>https://oyyko.com/posts/first-post/</link>
+      <link>https://blog.oyyko.com/posts/first-post/</link>
       <pubDate>Sun, 24 Jul 2022 00:37:35 +0800</pubDate>
-      <guid>https://oyyko.com/posts/first-post/</guid>
+      <guid>https://blog.oyyko.com/posts/first-post/</guid>
       <description>新博客 Link to heading 决定把博客切换到hugo。也算是人生路上一个新的开始。</description>
     </item>
   </channel>

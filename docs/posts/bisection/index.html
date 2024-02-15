@@ -28,7 +28,7 @@
 这种是在一个元素各不相同的有序数组里面找一个等于target的数 解法：
 1class Solution 2{ 3public: 4 int search(vector&lt;int&gt; &amp;nums, int target) 5 { 6 int l{0}; 7 int r = nums.size() - 1; 8 int mid; 9 while (l &lt;= r) 10 { 11 mid = (l &#43; (r - l) / 2); 12 if (nums[mid] == target) 13 { 14 return mid; 15 } 16 if (target &lt; nums[mid]) 17 { 18 r = mid - 1; 19 } 20 else 21 { 22 l = mid &#43; 1; 23 } 24 } 25 return -1; 26 } 27}; 此时，分三种情况。注意到，在不等于的时候，r和l都对mid有排斥" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://oyyko.com/posts/bisection/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://blog.oyyko.com/posts/bisection/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-11-30T15:20:51+08:00" />
 <meta property="article:modified_time" content="2023-08-01T12:18:15+08:00" />
 
@@ -36,7 +36,7 @@
 
 
 
-<link rel="canonical" href="https://oyyko.com/posts/bisection/">
+<link rel="canonical" href="https://blog.oyyko.com/posts/bisection/">
 
 
 <style>
@@ -143,7 +143,7 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://oyyko.com/posts/bisection/">
+            <a class="title-link" href="https://blog.oyyko.com/posts/bisection/">
               二分总结
             </a>
           </h1>

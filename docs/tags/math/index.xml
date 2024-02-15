@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on Oyyko</title>
-    <link>https://oyyko.com/tags/math/</link>
+    <link>https://blog.oyyko.com/tags/math/</link>
     <description>Recent content in Math on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oyyko.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数论笔记</title>
-      <link>https://oyyko.com/posts/shulun/</link>
+      <link>https://blog.oyyko.com/posts/shulun/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/shulun/</guid>
+      <guid>https://blog.oyyko.com/posts/shulun/</guid>
       <description>&lt;p&gt;本文是我的数论笔记的第一篇&#xA;关于:4k+1型和4k+3型素数&lt;/p&gt;</description>
     </item>
     <item>
       <title>CCPC华为的一道趣题</title>
-      <link>https://oyyko.com/posts/ccpc_huawei/</link>
+      <link>https://blog.oyyko.com/posts/ccpc_huawei/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/ccpc_huawei/</guid>
+      <guid>https://blog.oyyko.com/posts/ccpc_huawei/</guid>
       <description>&lt;p&gt;本文记录了CCPC华为比赛中的一道题目&lt;/p&gt;</description>
     </item>
   </channel>

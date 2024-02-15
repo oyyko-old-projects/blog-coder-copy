@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>macbook on Oyyko</title>
-    <link>https://oyyko.com/tags/macbook/</link>
+    <link>https://blog.oyyko.com/tags/macbook/</link>
     <description>Recent content in macbook on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 04 Oct 2023 10:41:00 -0700</lastBuildDate>
-    <atom:link href="https://oyyko.com/tags/macbook/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/macbook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Macbook Setup</title>
-      <link>https://oyyko.com/posts/mac_config/</link>
+      <link>https://blog.oyyko.com/posts/mac_config/</link>
       <pubDate>Wed, 04 Oct 2023 10:41:00 -0700</pubDate>
-      <guid>https://oyyko.com/posts/mac_config/</guid>
+      <guid>https://blog.oyyko.com/posts/mac_config/</guid>
       <description>Install HomeBrew Link to heading see https://brew.sh/.&#xA;增加软件仓库 Link to heading 1brew tap homebrew/cask-fonts 2brew tap homebrew/cask 在增加了homebrew/cask之后，安装cask中的软件不需要brew install --cask, 只需要直接brew install即可。&#xA;但是官方不建议这么做，官方做法是使用brew install --cask XXX&#xA;Use homebrew to install Apps Link to heading 1## Install Rust CLI Apps 2brew install bat fd wget bottom lsd ripgrep 3## Install cask Apps 4brew install --cask google-chrome visual-studio-code wechat qq iterm2 iina Install snap Link to heading With Snap App, you can use Command ⌘ + 1 to call the first app in your dock.</description>
     </item>
   </channel>

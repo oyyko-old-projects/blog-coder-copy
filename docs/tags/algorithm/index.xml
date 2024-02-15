@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithm on Oyyko</title>
-    <link>https://oyyko.com/tags/algorithm/</link>
+    <link>https://blog.oyyko.com/tags/algorithm/</link>
     <description>Recent content in Algorithm on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://oyyko.com/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>位运算技巧</title>
-      <link>https://oyyko.com/posts/bithack/</link>
+      <link>https://blog.oyyko.com/posts/bithack/</link>
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/bithack/</guid>
+      <guid>https://blog.oyyko.com/posts/bithack/</guid>
       <description>&lt;p&gt;位运算技巧&lt;/p&gt;</description>
     </item>
     <item>
       <title>链表 笔记</title>
-      <link>https://oyyko.com/posts/linklist/</link>
+      <link>https://blog.oyyko.com/posts/linklist/</link>
       <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/linklist/</guid>
+      <guid>https://blog.oyyko.com/posts/linklist/</guid>
       <description>&lt;p&gt;链表笔记&lt;/p&gt;</description>
     </item>
     <item>
       <title>压行技巧</title>
-      <link>https://oyyko.com/posts/yahang/</link>
+      <link>https://blog.oyyko.com/posts/yahang/</link>
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/yahang/</guid>
+      <guid>https://blog.oyyko.com/posts/yahang/</guid>
       <description>&lt;p&gt;压行技巧&lt;/p&gt;</description>
     </item>
     <item>
       <title>三道面试题</title>
-      <link>https://oyyko.com/posts/three-problem/</link>
+      <link>https://blog.oyyko.com/posts/three-problem/</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/three-problem/</guid>
+      <guid>https://blog.oyyko.com/posts/three-problem/</guid>
       <description>&lt;p&gt;三道面试题&lt;/p&gt;</description>
     </item>
     <item>
       <title>二分总结</title>
-      <link>https://oyyko.com/posts/bisection/</link>
+      <link>https://blog.oyyko.com/posts/bisection/</link>
       <pubDate>Tue, 30 Nov 2021 15:20:51 +0800</pubDate>
-      <guid>https://oyyko.com/posts/bisection/</guid>
+      <guid>https://blog.oyyko.com/posts/bisection/</guid>
       <description>##　Leetcode 704 二分查找target&#xA;这种是在一个元素各不相同的有序数组里面找一个等于target的数 解法：&#xA;1class Solution 2{ 3public: 4 int search(vector&amp;lt;int&amp;gt; &amp;amp;nums, int target) 5 { 6 int l{0}; 7 int r = nums.size() - 1; 8 int mid; 9 while (l &amp;lt;= r) 10 { 11 mid = (l + (r - l) / 2); 12 if (nums[mid] == target) 13 { 14 return mid; 15 } 16 if (target &amp;lt; nums[mid]) 17 { 18 r = mid - 1; 19 } 20 else 21 { 22 l = mid + 1; 23 } 24 } 25 return -1; 26 } 27}; 此时，分三种情况。注意到，在不等于的时候，r和l都对mid有排斥</description>
     </item>
     <item>
       <title>A strange way to compute GCD</title>
-      <link>https://oyyko.com/posts/gcd/</link>
+      <link>https://blog.oyyko.com/posts/gcd/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/gcd/</guid>
+      <guid>https://blog.oyyko.com/posts/gcd/</guid>
       <description>&lt;p&gt;A strange way to compute GCD in one line&lt;/p&gt;</description>
     </item>
     <item>
       <title>CCPC华为的一道趣题</title>
-      <link>https://oyyko.com/posts/ccpc_huawei/</link>
+      <link>https://blog.oyyko.com/posts/ccpc_huawei/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/ccpc_huawei/</guid>
+      <guid>https://blog.oyyko.com/posts/ccpc_huawei/</guid>
       <description>&lt;p&gt;本文记录了CCPC华为比赛中的一道题目&lt;/p&gt;</description>
     </item>
     <item>
       <title>N queens Problem</title>
-      <link>https://oyyko.com/posts/n-queens/</link>
+      <link>https://blog.oyyko.com/posts/n-queens/</link>
       <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://oyyko.com/posts/n-queens/</guid>
+      <guid>https://blog.oyyko.com/posts/n-queens/</guid>
       <description>&lt;p&gt;This article will provide a fast way to find a solution for the famous N queens problem.&lt;/p&gt;</description>
     </item>
   </channel>
