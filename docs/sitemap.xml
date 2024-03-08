@@ -2,23 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.oyyko.com/tags/coding/</loc>
+    <lastmod>2024-03-07T22:20:06-08:00</lastmod>
+  </url><url>
+    <loc>https://blog.oyyko.com/tags/interview/</loc>
+    <lastmod>2024-03-07T22:20:06-08:00</lastmod>
+  </url><url>
+    <loc>https://blog.oyyko.com/</loc>
+    <lastmod>2024-03-07T22:20:06-08:00</lastmod>
+  </url><url>
+    <loc>https://blog.oyyko.com/posts/</loc>
+    <lastmod>2024-03-07T22:20:06-08:00</lastmod>
+  </url><url>
+    <loc>https://blog.oyyko.com/tags/</loc>
+    <lastmod>2024-03-07T22:20:06-08:00</lastmod>
+  </url><url>
+    <loc>https://blog.oyyko.com/posts/interview/</loc>
+    <lastmod>2024-03-07T22:20:06-08:00</lastmod>
+  </url><url>
     <loc>https://blog.oyyko.com/projects/</loc>
     <lastmod>2024-02-14T19:17:09-08:00</lastmod>
   </url><url>
     <loc>https://blog.oyyko.com/tags/haskell/</loc>
     <lastmod>2023-11-02T12:04:26-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/</loc>
-    <lastmod>2024-02-14T19:17:09-08:00</lastmod>
-  </url><url>
     <loc>https://blog.oyyko.com/tags/plt/</loc>
     <lastmod>2023-11-02T12:04:26-07:00</lastmod>
-  </url><url>
-    <loc>https://blog.oyyko.com/posts/</loc>
-    <lastmod>2024-02-14T19:17:09-08:00</lastmod>
-  </url><url>
-    <loc>https://blog.oyyko.com/tags/</loc>
-    <lastmod>2024-02-14T19:17:09-08:00</lastmod>
   </url><url>
     <loc>https://blog.oyyko.com/tags/ucsd/</loc>
     <lastmod>2023-11-02T12:04:26-07:00</lastmod>
@@ -26,7 +35,13 @@
     <loc>https://blog.oyyko.com/posts/haskell1/</loc>
     <lastmod>2023-11-02T12:04:26-07:00</lastmod>
   </url><url>
+    <loc>https://blog.oyyko.com/tags/infra/</loc>
+    <lastmod>2023-10-12T21:36:39-07:00</lastmod>
+  </url><url>
     <loc>https://blog.oyyko.com/posts/infra/</loc>
+    <lastmod>2023-10-12T21:36:39-07:00</lastmod>
+  </url><url>
+    <loc>https://blog.oyyko.com/tags/%E5%85%AB%E8%82%A1/</loc>
     <lastmod>2023-10-12T21:36:39-07:00</lastmod>
   </url><url>
     <loc>https://blog.oyyko.com/tags/mac/</loc>

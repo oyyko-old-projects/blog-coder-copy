@@ -1,7 +1,7 @@
 ---
 title: "Infra知识点"
 date: 2023-10-11T23:54:53-07:00
-tags: []
+tags: [Infra, 八股]
 toc: true
 math: false
 ---

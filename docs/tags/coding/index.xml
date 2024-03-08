@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding on Oyyko</title>
+    <link>https://blog.oyyko.com/tags/coding/</link>
+    <description>Recent content in Coding on Oyyko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Mar 2024 22:20:06 -0800</lastBuildDate>
+    <atom:link href="https://blog.oyyko.com/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何准备程序员面试</title>
+      <link>https://blog.oyyko.com/posts/interview/</link>
+      <pubDate>Thu, 07 Mar 2024 22:20:06 -0800</pubDate>
+      <guid>https://blog.oyyko.com/posts/interview/</guid>
+      <description>本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。&#xA;本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。&#xA;首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl+F搜索。&#xA;术语表 Link to heading JD: (Job Description) 工作岗位描述&#xA;bar: 招人的标准。类似高考的分数线。一般用来形容难度高低。&#xA;DP: (data point) 数据点。一般含义就是指自己or身边朋友的例子。例如我GPA2.0被牛津录取了，我就可以在网上说，给大家贡献一个DP，GPA2.0被牛津录取。或者我在面试谷歌的过程中遇到了Leetcode1234这道题，我就可以说贡献一个DP，谷歌面试会考Leetcode1234.&#xA;OA: (Online Assessment) 在线笔试&#xA;BQ: (behavioral question) 和代码无关的问题。例如你在工作中遇到难题会怎么办？&#xA;VO: (Virtual Onsite) 电话或者视频面试。&#xA;HC: (Head Count) 人头数。也就是岗位计划招几个人。例如你面试了一个组，表现很好，但是他们这个组今年的hc只有1个人，而他们在面试你之前，已经签了1个人。那么这个时候由于hc不够，你就无法被录用。&#xA;CV/Resume: 简历&#xA;IC: (Individual Contributor) 个人贡献者，与之对应的是Manager。IC指的就是写代码的，Manager指的是管理岗位。&#xA;toxic: 有毒。往往用于形容令人不适的团队氛围或公司文化。&#xA;NG: (New Grad) 指刚毕业的学生。&#xA;ROI: (return on investment) 投资回报率&#xA;Skip: 你老板的老板。你也可以分别称呼他们为skip manager和 direct manager.&#xA;RA: (research assistant) 研究助理，你本科在实验室打杂也可以称自己做了2年的RA。&#xA;corner case: 写代码的时候遇到的极端or边界情况。&#xA;写在前面的话 Link to heading 心态 Link to heading 我们作为面试者，在求职的过程中，最终目标当然是拿到工作。因此很多时候你没有必要准备到万无一失了再投递简历或者面试。或者由于自己的不自信而不敢去投递或面试。哪怕心里很慌，也要先拿下offer再说。一般对于学生求职者来说，在拿到offer到正式上班中间还有好几个月的时间，如果你真的觉得自己不能胜任这份工作，那么你还有好几个月可以继续学习钻研相关领域。你如果总是想让自己的技术水平先达到高级工程师水平再去求职，那永远也准备不完。</description>
+    </item>
+  </channel>
+</rss>
