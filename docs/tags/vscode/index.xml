@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VSCode on Oyyko</title>
+    <title>Vscode on Oyyko</title>
     <link>https://blog.oyyko.com/tags/vscode/</link>
-    <description>Recent content in VSCode on Oyyko</description>
+    <description>Recent content in Vscode on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Oct 2023 12:29:36 -0700</lastBuildDate>
     <atom:link href="https://blog.oyyko.com/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vscode 返回上一个位置快捷键</title>

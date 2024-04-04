@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lisp on Oyyko</title>
+    <title>Lisp on Oyyko</title>
     <link>https://blog.oyyko.com/tags/lisp/</link>
-    <description>Recent content in lisp on Oyyko</description>
+    <description>Recent content in Lisp on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Aug 2023 03:48:54 +0800</lastBuildDate>
     <atom:link href="https://blog.oyyko.com/tags/lisp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scheme Review 1</title>
