@@ -6,8 +6,15 @@
     <description>Recent content on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Apr 2024 16:10:24 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2024 23:37:30 -0700</lastBuildDate>
     <atom:link href="https://blog.oyyko.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>面试常见问题 1</title>
+      <link>https://blog.oyyko.com/posts/interview1/</link>
+      <pubDate>Sun, 07 Apr 2024 23:37:30 -0700</pubDate>
+      <guid>https://blog.oyyko.com/posts/interview1/</guid>
+      <description>部分内容为GPT的回答。&#xA;和红黑树的功能类似的还有哪些数据结构 Link to heading 红黑树是一种自平衡的二叉搜索树，它通过特定的属性和操作保持树的平衡，从而实现在最坏情况下仍能保持对数级别的查找、插入和删除时间复杂度。和红黑树提供相似功能的数据结构主要包括其他类型的自平衡二叉搜索树和一些特殊的数据结构，它们都能提供高效的查找、插入和删除操作。下面列出一些常见的例子：&#xA;AVL树 Link to heading AVL树是最早被发明的自平衡二叉搜索树之一。它严格保持二叉树的平衡，即任何节点的两个子树的高度最大差为1。这种严格的平衡要求使得AVL树在查找操作中表现得非常好，但在频繁的插入和删除操作中可能会有较多的旋转调整，相比于红黑树可能略显低效。&#xA;B树及其变种 Link to heading B树是一种平衡的多路搜索树，主要用于数据库和文件系统。B树通过将节点中存储多个元素并允许节点有多个子节点来减少树的高度，从而优化磁盘读写操作。B+树和B*树是B树的变种，它们在B树的基础上做了进一步的优化，广泛应用于数据库索引。&#xA;Splay树 Link to heading Splay树是一种自调整的二叉搜索树，它通过一种称为“伸展”的操作来保证最近进行的操作可以在较快的时间内完成。伸展树不保证树的严格平衡，但它能保证分摊的时间复杂度为O(log n)。&#xA;Treap Link to heading Treap是一种结合了二叉搜索树和堆的数据结构，节点既按键排序又按优先级堆组织。它利用旋转操作来维持二叉搜索树的性质和堆的性质，实现了平衡树的效果。&#xA;Skip List Link to heading 跳跃表是一种概率性的数据结构，通过在多层链表上添加“快速通道”来实现快速查找。虽然不是树结构，跳跃表在功能上与红黑树相似，提供了高效的查找、插入和删除操作，其平均时间和空间复杂度都是O(log n)。跳跃表的实现相比于红黑树和AVL树更为简单，易于理解和实现。&#xA;AA树 Link to heading AA树是一种变种的红黑树，它简化了红黑树的平衡规则和旋转操作。通过限制只有右链接可以是红色，AA树使得实现变得更加简单，同时保持了与红黑树相似的操作性能。&#xA;这些数据结构各有特点，适用于不同的场景。选择合适的数据结构需要根据实际的应用场景和性能要求来决定。&#xA;五千万个整数求和，尽量降低时间消耗。怎么做？ Link to heading 对于五千万个整数求和的问题，主要目标是优化时间复杂度和减少执行时间。以下是一些优化策略，可以帮助提高求和操作的效率：&#xA;1. 使用有效的数据结构 Link to heading 确保整数存储在连续的内存空间中，比如使用数组或列表，这样可以减少内存访问的开销。 2. 循环优化 Link to heading 尽可能使用高效的循环结构，减少循环内不必要的计算和条件判断。 3. 多线程或并行计算 Link to heading 利用现代计算机多核心的优势，可以将五千万个整数分成几个部分，每个核心处理一部分数据，然后将结果汇总。这种方式可以大大减少总的计算时间。 使用如OpenMP、Intel TBB（Thread Building Blocks）、Python的concurrent.futures模块或Java的java.util.concurrent包等并行框架和库来简化多线程编程的复杂性。 4. 向量化运算 Link to heading 在支持向量化的编程语言中（如使用NumPy库的Python），可以利用向量化运算来提高性能，因为这些运算是在底层进行优化的。 5.</description>
+    </item>
     <item>
       <title>二分问题的统一解决方案</title>
       <link>https://blog.oyyko.com/posts/erfen/</link>
@@ -16,7 +23,7 @@
       <description>思路来自 https://www.youtube.com/watch?v=QvcM99na30k。本文为学习记录+结合自己的思考修改后得出的框架。&#xA;引入 Link to heading 在算法题中有时候会遇到这种场景，对于一个问题，它的答案是一个整数且一定取在一个范围内，例如答案只可能是$[1, 10^9]$中的一个数字。且存在一个条件，使得对于任何小于答案的数字，这个条件都不成立；而对于任何大于等于答案的数字，这个条件都成立。那么这个时候就可以使用二分的方法来找到答案。&#xA;框架与求解 Link to heading 下面用严格的语言来表达这类问题(我称为二分问题):&#xA;存在一个函数 check , 它接受一个整数 i 作为输入, 且 check(i) 只可能等于 True or False .&#xA;并且，存在一个数 $k$ ,使得对于任何小于 $k$ 的整数 i ，都有 check(i)==False ，而对于任何大于等于$k$的整数 i ，有 check(i)==True . 我们现在有函数 check ,需要找到这个整数$k$. 且我们知道 $k$ 在 $[a,b]$ 区间内。&#xA;我们接下来提出一个框架来解决这个问题。&#xA;首先，我们从获取信息的角度思考这个问题。在我们去实际跑一次 check 函数之前，我们是没有获取任何信息的。这个时候我们可以认为所有的 $[a,b]$ 之间的整数都是未知状态。&#xA;而我们在运行了 check(i) 之后，由于问题的性质，我们获取到的信息不只是 check(i) 本身为真还是假。而是可以知道一个范围内的所有整数都满足或者不满足条件。&#xA;例如我运行了 check(i) ,得到 check(i)==False. 那么我就知道对于所有的 $[a,i]$ 闭区间内的整数，它们check的结果一定也都是 False .&#xA;而如果我运行了 check(i) ,得到 check(i)==True.</description>
     </item>
     <item>
-      <title>Goconcnotpar</title>
+      <title>Go 并发与并行的区别</title>
       <link>https://blog.oyyko.com/posts/goconcnotpar/</link>
       <pubDate>Wed, 03 Apr 2024 15:12:33 -0700</pubDate>
       <guid>https://blog.oyyko.com/posts/goconcnotpar/</guid>
