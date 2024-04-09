@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algo on Oyyko</title>
-    <link>http://localhost:1313/tags/algo/</link>
+    <link>https://blog.oyyko.com/tags/algo/</link>
     <description>Recent content in Algo on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 03 Apr 2024 23:22:34 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/algo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/algo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>二分问题的统一解决方案</title>
-      <link>http://localhost:1313/posts/erfen/</link>
+      <link>https://blog.oyyko.com/posts/erfen/</link>
       <pubDate>Wed, 03 Apr 2024 16:10:24 -0700</pubDate>
-      <guid>http://localhost:1313/posts/erfen/</guid>
+      <guid>https://blog.oyyko.com/posts/erfen/</guid>
       <description>思路来自 https://www.youtube.com/watch?v=QvcM99na30k。本文为学习记录+结合自己的思考修改后得出的框架。&#xA;引入 Link to heading 在算法题中有时候会遇到这种场景，对于一个问题，它的答案是一个整数且一定取在一个范围内，例如答案只可能是$[1, 10^9]$中的一个数字。且存在一个条件，使得对于任何小于答案的数字，这个条件都不成立；而对于任何大于等于答案的数字，这个条件都成立。那么这个时候就可以使用二分的方法来找到答案。&#xA;框架与求解 Link to heading 下面用严格的语言来表达这类问题(我称为二分问题):&#xA;存在一个函数 check , 它接受一个整数 i 作为输入, 且 check(i) 只可能等于 True or False .&#xA;并且，存在一个数 $k$ ,使得对于任何小于 $k$ 的整数 i ，都有 check(i)==False ，而对于任何大于等于$k$的整数 i ，有 check(i)==True . 我们现在有函数 check ,需要找到这个整数$k$. 且我们知道 $k$ 在 $[a,b]$ 区间内。&#xA;我们接下来提出一个框架来解决这个问题。&#xA;首先，我们从获取信息的角度思考这个问题。在我们去实际跑一次 check 函数之前，我们是没有获取任何信息的。这个时候我们可以认为所有的 $[a,b]$ 之间的整数都是未知状态。&#xA;而我们在运行了 check(i) 之后，由于问题的性质，我们获取到的信息不只是 check(i) 本身为真还是假。而是可以知道一个范围内的所有整数都满足或者不满足条件。&#xA;例如我运行了 check(i) ,得到 check(i)==False. 那么我就知道对于所有的 $[a,i]$ 闭区间内的整数，它们check的结果一定也都是 False .&#xA;而如果我运行了 check(i) ,得到 check(i)==True.</description>
     </item>
   </channel>

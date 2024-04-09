@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Concurrent on Oyyko</title>
-    <link>http://localhost:1313/tags/concurrent/</link>
+    <link>https://blog.oyyko.com/tags/concurrent/</link>
     <description>Recent content in Concurrent on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Apr 2024 01:01:44 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/concurrent/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/concurrent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go 并发与并行的区别</title>
-      <link>http://localhost:1313/posts/goconcnotpar/</link>
+      <link>https://blog.oyyko.com/posts/goconcnotpar/</link>
       <pubDate>Wed, 03 Apr 2024 15:12:33 -0700</pubDate>
-      <guid>http://localhost:1313/posts/goconcnotpar/</guid>
+      <guid>https://blog.oyyko.com/posts/goconcnotpar/</guid>
       <description></description>
     </item>
   </channel>

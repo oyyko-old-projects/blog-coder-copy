@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IDE on Oyyko</title>
-    <link>http://localhost:1313/tags/ide/</link>
+    <link>https://blog.oyyko.com/tags/ide/</link>
     <description>Recent content in IDE on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Aug 2023 03:48:54 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/ide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VSCODE 使用笔记</title>
-      <link>http://localhost:1313/posts/vscode/</link>
+      <link>https://blog.oyyko.com/posts/vscode/</link>
       <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/vscode/</guid>
+      <guid>https://blog.oyyko.com/posts/vscode/</guid>
       <description>&lt;p&gt;工欲善其事，必先利其器。&lt;/p&gt;</description>
     </item>
   </channel>

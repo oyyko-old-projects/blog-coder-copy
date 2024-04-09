@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scheme on Oyyko</title>
-    <link>http://localhost:1313/tags/scheme/</link>
+    <link>https://blog.oyyko.com/tags/scheme/</link>
     <description>Recent content in Scheme on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Aug 2023 03:48:54 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/scheme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/scheme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scheme Review 1</title>
-      <link>http://localhost:1313/posts/scheme/</link>
+      <link>https://blog.oyyko.com/posts/scheme/</link>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/scheme/</guid>
+      <guid>https://blog.oyyko.com/posts/scheme/</guid>
       <description>https://courses.cs.washington.edu/courses/cse341/04wi/lectures/14-scheme-quote.html&#xA;Quote Link to heading Scheme has a convenient syntax for representing data literals: prefix any expression with &amp;rsquo; (single quote) and the expression, rather than being evaluated, will be returned as data:&#xA;1&amp;#39;3 ; =&amp;gt; 3 (a number) 2&amp;#39;&amp;#34;hi&amp;#34; ; =&amp;gt; &amp;#34;hi&amp;#34; (a string) 3&amp;#39;a ; =&amp;gt; a (a symbol) 4&amp;#39;(+ 3 4) ; =&amp;gt; (list &amp;#39;+ &amp;#39;3 &amp;#39;4) (a list) 5&amp;#39;(a b c) ; =&amp;gt; (list &amp;#39;a &amp;#39;b &amp;#39;c) (a list) 6 7&amp;#39;(define x 25) (a list) 8 ; =&amp;gt; (list &amp;#39;define &amp;#39;x &amp;#39;25) 9 ; =&amp;gt; (list &amp;#39;define &amp;#39;x 25) 10 11&amp;#39;(lambda (x) (+ x 3)) (a list) 12 ; =&amp;gt; (list &amp;#39;lambda (list &amp;#39;x) (list &amp;#39;+ &amp;#39;x &amp;#39;3)) 13 ; =&amp;gt; (list &amp;#39;lambda (list &amp;#39;x) (list &amp;#39;+ &amp;#39;x 3)) As these examples illustrate, &amp;ldquo;quoted&amp;rdquo; data remains unevaluated, and provides a convenient way of representing Scheme programs.</description>
     </item>
   </channel>

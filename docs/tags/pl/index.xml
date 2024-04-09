@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PL on Oyyko</title>
-    <link>http://localhost:1313/tags/pl/</link>
+    <link>https://blog.oyyko.com/tags/pl/</link>
     <description>Recent content in PL on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 03 Apr 2024 23:22:34 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/pl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/pl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cpp 笔记 新系列1</title>
-      <link>http://localhost:1313/posts/cppnote1/</link>
+      <link>https://blog.oyyko.com/posts/cppnote1/</link>
       <pubDate>Tue, 02 Apr 2024 19:12:23 -0700</pubDate>
-      <guid>http://localhost:1313/posts/cppnote1/</guid>
+      <guid>https://blog.oyyko.com/posts/cppnote1/</guid>
       <description></description>
     </item>
     <item>
       <title>Go 学习笔记 1</title>
-      <link>http://localhost:1313/posts/go_note1/</link>
+      <link>https://blog.oyyko.com/posts/go_note1/</link>
       <pubDate>Sun, 31 Mar 2024 14:07:47 -0700</pubDate>
-      <guid>http://localhost:1313/posts/go_note1/</guid>
+      <guid>https://blog.oyyko.com/posts/go_note1/</guid>
       <description>ChatGPT摘抄 Link to heading Go和C++的区别 Link to heading Go语言（通常称为Golang）和C++在多个方面有显著的区别，包括它们的设计哲学、类型系统、内存管理、并发模型等方面。下面是一些主要的区别：&#xA;设计哲学:&#xA;Go 设计简洁，以提高开发效率和易用性为目标。它旨在使得编写高性能、可靠、易于维护的代码更加直接和简单。 C++ 设计为一种通用编程语言，强调性能和灵活性。它支持多种编程范式（如过程式、面向对象、泛型编程），但这也使得它变得相对复杂。 类型系统:&#xA;Go 有一个静态类型系统，但它的类型推导使得代码更简洁。它支持接口，但不支持类和继承，而是通过组合和接口实现多态和代码复用。 C++ 也是静态类型的，但它支持更复杂的类型系统，包括类、继承、模板等。这提供了强大的灵活性，但也增加了复杂性。 内存管理:&#xA;Go 提供自动垃圾收集，减少了内存泄漏的风险，简化了内存管理。 C++ 需要程序员手动管理内存，虽然提供了智能指针等现代特性来帮助管理，但管理不当仍可能导致内存泄漏和其他问题。 并发模型:&#xA;Go 的并发模型是其核心特性之一，基于“goroutines”（轻量级线程）和通道。这使得编写并发程序变得更简单和安全。 C++ 支持多线程，但并发并不是语言核心的一部分。C++11及以后的版本引入了一些并发编程的标准库支持，但使用起来比Go更复杂。 标准库和生态系统:&#xA;Go 有一个丰富的标准库，尤其是对于网络编程和并发编程。Go的生态系统随着语言的普及而快速增长，特别是在云服务和微服务开发中。 C++ 拥有庞大的第三方库和工具集，适用于各种编程任务，但标准库相对较小。C++在高性能计算、游戏开发、系统编程等领域有着悠久和广泛的应用。 编译和执行:&#xA;Go 编译器倾向于生成单个静态链接的二进制文件，简化了部署和分发。 C++ 通常需要更复杂的构建系统，尤其是对于依赖于多个库和平台的项目。 总之，Go和C++在设计上有根本的不同。Go旨在简化并发编程，提高开发效率，适合快速开发大型分布式系统。而C++提供了更多的控制和灵活性，适合那些需要极致性能优化和复杂系统设计的场景。选择哪种语言取决于项目需求、团队熟悉度和特定任务的需求。&#xA;讲一下go语言中的协程 Link to heading Go语言中的协程（goroutine）是Go语言并发设计的核心。goroutine 类似于线程，但在执行和资源消耗方面更为高效。它们由Go运行时（runtime）管理，而不是直接由操作系统管理。这样做的好处是goroutine的创建和销毁的成本比操作系统线程低得多，允许在同一程序中并发运行成千上万的goroutine。&#xA;创建goroutine Link to heading 在Go语言中，创建一个goroutine非常简单，只需要在函数调用前加上go关键字。例如：&#xA;1go funcName(params) 这会启动一个新的goroutine并在这个新的goroutine中调用funcName函数，params是传递给funcName函数的参数。&#xA;特点 Link to heading 轻量级：每个goroutine的堆栈大小在初始化时很小，根据需要可以动态地增长和缩减。这种设计让成千上万的goroutine并发运行成为可能。 不需要显式创建和销毁：goroutine由Go的运行时环境管理，程序员只需要创建它们，无需关心销毁和回收。 使用通道（channels）进行通信：goroutine之间的同步通常通过channels进行，channels是Go语言中的一种类型安全的消息传递机制。使用channels，可以很容易地在goroutine之间传递数据和信号。 示例 Link to heading 下面的示例展示了如何使用goroutine和channels进行并发编程：&#xA;1package main 2 3import ( 4 &amp;#34;fmt&amp;#34; 5 &amp;#34;time&amp;#34; 6) 7 8// 函数打印传入的消息 9func printMessage(message string) { 10 for i := 0; i &amp;lt; 5; i++ { 11 fmt.</description>
     </item>
   </channel>

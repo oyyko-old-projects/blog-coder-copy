@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Interview on Oyyko</title>
-    <link>http://localhost:1313/tags/interview/</link>
+    <link>https://blog.oyyko.com/tags/interview/</link>
     <description>Recent content in Interview on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Apr 2024 01:01:44 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/interview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>面试常见问题 1</title>
-      <link>http://localhost:1313/posts/interview1/</link>
+      <link>https://blog.oyyko.com/posts/interview1/</link>
       <pubDate>Sun, 07 Apr 2024 23:37:30 -0700</pubDate>
-      <guid>http://localhost:1313/posts/interview1/</guid>
+      <guid>https://blog.oyyko.com/posts/interview1/</guid>
       <description>部分内容为GPT的回答。&#xA;和红黑树的功能类似的还有哪些数据结构 Link to heading 红黑树是一种自平衡的二叉搜索树，它通过特定的属性和操作保持树的平衡，从而实现在最坏情况下仍能保持对数级别的查找、插入和删除时间复杂度。和红黑树提供相似功能的数据结构主要包括其他类型的自平衡二叉搜索树和一些特殊的数据结构，它们都能提供高效的查找、插入和删除操作。下面列出一些常见的例子：&#xA;AVL树 Link to heading AVL树是最早被发明的自平衡二叉搜索树之一。它严格保持二叉树的平衡，即任何节点的两个子树的高度最大差为1。这种严格的平衡要求使得AVL树在查找操作中表现得非常好，但在频繁的插入和删除操作中可能会有较多的旋转调整，相比于红黑树可能略显低效。&#xA;B树及其变种 Link to heading B树是一种平衡的多路搜索树，主要用于数据库和文件系统。B树通过将节点中存储多个元素并允许节点有多个子节点来减少树的高度，从而优化磁盘读写操作。B+树和B*树是B树的变种，它们在B树的基础上做了进一步的优化，广泛应用于数据库索引。&#xA;Splay树 Link to heading Splay树是一种自调整的二叉搜索树，它通过一种称为“伸展”的操作来保证最近进行的操作可以在较快的时间内完成。伸展树不保证树的严格平衡，但它能保证分摊的时间复杂度为O(log n)。&#xA;Treap Link to heading Treap是一种结合了二叉搜索树和堆的数据结构，节点既按键排序又按优先级堆组织。它利用旋转操作来维持二叉搜索树的性质和堆的性质，实现了平衡树的效果。&#xA;Skip List Link to heading 跳跃表是一种概率性的数据结构，通过在多层链表上添加“快速通道”来实现快速查找。虽然不是树结构，跳跃表在功能上与红黑树相似，提供了高效的查找、插入和删除操作，其平均时间和空间复杂度都是O(log n)。跳跃表的实现相比于红黑树和AVL树更为简单，易于理解和实现。&#xA;AA树 Link to heading AA树是一种变种的红黑树，它简化了红黑树的平衡规则和旋转操作。通过限制只有右链接可以是红色，AA树使得实现变得更加简单，同时保持了与红黑树相似的操作性能。&#xA;这些数据结构各有特点，适用于不同的场景。选择合适的数据结构需要根据实际的应用场景和性能要求来决定。&#xA;五千万个整数求和，尽量降低时间消耗。怎么做？ Link to heading 对于五千万个整数求和的问题，主要目标是优化时间复杂度和减少执行时间。以下是一些优化策略，可以帮助提高求和操作的效率：&#xA;1. 使用有效的数据结构 Link to heading 确保整数存储在连续的内存空间中，比如使用数组或列表，这样可以减少内存访问的开销。 2. 循环优化 Link to heading 尽可能使用高效的循环结构，减少循环内不必要的计算和条件判断。 3. 多线程或并行计算 Link to heading 利用现代计算机多核心的优势，可以将五千万个整数分成几个部分，每个核心处理一部分数据，然后将结果汇总。这种方式可以大大减少总的计算时间。 使用如OpenMP、Intel TBB（Thread Building Blocks）、Python的concurrent.futures模块或Java的java.util.concurrent包等并行框架和库来简化多线程编程的复杂性。 4. 向量化运算 Link to heading 在支持向量化的编程语言中（如使用NumPy库的Python），可以利用向量化运算来提高性能，因为这些运算是在底层进行优化的。 5.</description>
     </item>
     <item>
       <title>如何准备程序员面试</title>
-      <link>http://localhost:1313/posts/interview/</link>
+      <link>https://blog.oyyko.com/posts/interview/</link>
       <pubDate>Thu, 07 Mar 2024 22:20:06 -0800</pubDate>
-      <guid>http://localhost:1313/posts/interview/</guid>
+      <guid>https://blog.oyyko.com/posts/interview/</guid>
       <description>本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。&#xA;本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。&#xA;首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl+F搜索。&#xA;术语表 Link to heading JD: (Job Description) 工作岗位描述&#xA;bar: 招人的标准。类似高考的分数线。一般用来形容难度高低。&#xA;DP: (data point) 数据点。一般含义就是指自己or身边朋友的例子。例如我GPA2.0被牛津录取了，我就可以在网上说，给大家贡献一个DP，GPA2.0被牛津录取。或者我在面试谷歌的过程中遇到了Leetcode1234这道题，我就可以说贡献一个DP，谷歌面试会考Leetcode1234.&#xA;OA: (Online Assessment) 在线笔试&#xA;BQ: (behavioral question) 和代码无关的问题。例如你在工作中遇到难题会怎么办？&#xA;VO: (Virtual Onsite) 电话或者视频面试。&#xA;HC: (Head Count) 人头数。也就是岗位计划招几个人。例如你面试了一个组，表现很好，但是他们这个组今年的hc只有1个人，而他们在面试你之前，已经签了1个人。那么这个时候由于hc不够，你就无法被录用。&#xA;CV/Resume: 简历&#xA;IC: (Individual Contributor) 个人贡献者，与之对应的是Manager。IC指的就是写代码的，Manager指的是管理岗位。&#xA;toxic: 有毒。往往用于形容令人不适的团队氛围或公司文化。&#xA;NG: (New Grad) 指刚毕业的学生。&#xA;ROI: (return on investment) 投资回报率&#xA;Skip: 你老板的老板。你也可以分别称呼他们为skip manager和 direct manager.&#xA;RA: (research assistant) 研究助理，你本科在实验室打杂也可以称自己做了2年的RA。&#xA;corner case: 写代码的时候遇到的极端or边界情况。&#xA;写在前面的话 Link to heading 心态 Link to heading 我们作为面试者，在求职的过程中，最终目标当然是拿到工作。因此很多时候你没有必要准备到万无一失了再投递简历或者面试。或者由于自己的不自信而不敢去投递或面试。哪怕心里很慌，也要先拿下offer再说。一般对于学生求职者来说，在拿到offer到正式上班中间还有好几个月的时间，如果你真的觉得自己不能胜任这份工作，那么你还有好几个月可以继续学习钻研相关领域。你如果总是想让自己的技术水平先达到高级工程师水平再去求职，那永远也准备不完。</description>
     </item>
   </channel>

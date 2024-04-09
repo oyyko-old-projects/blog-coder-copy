@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Oyyko</title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>https://blog.oyyko.com/tags/linux/</link>
     <description>Recent content in Linux on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Aug 2023 12:18:15 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oyyko.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archlinux/Manjaro Install Guide</title>
-      <link>http://localhost:1313/posts/arch_install/</link>
+      <link>https://blog.oyyko.com/posts/arch_install/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/arch_install/</guid>
+      <guid>https://blog.oyyko.com/posts/arch_install/</guid>
       <description>manjaro I3新电脑配置&#xA;假设已经安装好了manjaro i3，接下来要做的是：&#xA;基本装机 按顺序执行以下操作 Link to heading 换源 Link to heading 编辑/etc/pacman.d/mirrorlist 内容改为&#xA;1Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch 加入archlinuxcn源并安装yay Link to heading 在 /etc/pacman.conf 文件末尾添加以下两行&#xA;1[archlinuxcn] 2Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch 之后通过以下命令安装 archlinuxcn-keyring 包导入 GPG key。&#xA;1sudo pacman -Sy archlinuxcn-keyring 之后就可以用yay 安装各种软件了&#xA;记得先sudo pacman -Syyu一下。&#xA;科学上网 Link to heading 由于安装某些软件的时候，yay会从国外下载，所以要先科学上网才能尽情安装想要的软件。&#xA;1yay -S clash-for-windows-bin 之后导入已有的订阅。 之后在终端中设置(例如加入到~/.zshrc中)：&#xA;1export https_proxy=http://127.0.0.1:7890; 2export http_proxy=http://127.0.0.1:7890; 3export all_proxy=socks5://127.0.0.1:7890; 对于i3wm等无法设置系统级代理的桌面环境，请把chrome的启动改为&#xA;1bindsym $mod+F2 exec google-chrome-stable --proxy-server=&amp;#34;socks5://127.0.0.1:7890&amp;#34; 这样chrome也可以自动使用代理上网了。&#xA;安装输入法 Link to heading 1yay -S fcitx5-im 2yay -S base-devel 3yay -S fcitx5-rime 4yay -S rime-cloverpinyin 配置fcitx5的环境变量：</description>
     </item>
   </channel>
