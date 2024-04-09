@@ -2,311 +2,311 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Oyyko</title>
-    <link>https://blog.oyyko.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Apr 2024 23:37:30 -0700</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Apr 2024 01:01:44 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://blog.oyyko.com/tags/c&#43;&#43;/</link>
+      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
       <pubDate>Sun, 07 Apr 2024 23:37:30 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/c&#43;&#43;/</guid>
+      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>Interview</title>
-      <link>https://blog.oyyko.com/tags/interview/</link>
+      <link>http://localhost:1313/tags/interview/</link>
       <pubDate>Sun, 07 Apr 2024 23:37:30 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/interview/</guid>
+      <guid>http://localhost:1313/tags/interview/</guid>
       <description></description>
     </item>
     <item>
       <title>Algo</title>
-      <link>https://blog.oyyko.com/tags/algo/</link>
+      <link>http://localhost:1313/tags/algo/</link>
       <pubDate>Wed, 03 Apr 2024 16:10:24 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/algo/</guid>
+      <guid>http://localhost:1313/tags/algo/</guid>
       <description></description>
     </item>
     <item>
       <title>Binary</title>
-      <link>https://blog.oyyko.com/tags/binary/</link>
+      <link>http://localhost:1313/tags/binary/</link>
       <pubDate>Wed, 03 Apr 2024 16:10:24 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/binary/</guid>
+      <guid>http://localhost:1313/tags/binary/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrent</title>
-      <link>https://blog.oyyko.com/tags/concurrent/</link>
+      <link>http://localhost:1313/tags/concurrent/</link>
       <pubDate>Wed, 03 Apr 2024 15:12:33 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/concurrent/</guid>
+      <guid>http://localhost:1313/tags/concurrent/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>https://blog.oyyko.com/tags/go/</link>
+      <link>http://localhost:1313/tags/go/</link>
       <pubDate>Wed, 03 Apr 2024 15:12:33 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/go/</guid>
+      <guid>http://localhost:1313/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>PL</title>
-      <link>https://blog.oyyko.com/tags/pl/</link>
+      <link>http://localhost:1313/tags/pl/</link>
       <pubDate>Tue, 02 Apr 2024 19:12:23 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/pl/</guid>
+      <guid>http://localhost:1313/tags/pl/</guid>
       <description></description>
     </item>
     <item>
       <title>Coding</title>
-      <link>https://blog.oyyko.com/tags/coding/</link>
+      <link>http://localhost:1313/tags/coding/</link>
       <pubDate>Thu, 07 Mar 2024 22:20:06 -0800</pubDate>
-      <guid>https://blog.oyyko.com/tags/coding/</guid>
+      <guid>http://localhost:1313/tags/coding/</guid>
       <description></description>
     </item>
     <item>
       <title>Haskell</title>
-      <link>https://blog.oyyko.com/tags/haskell/</link>
+      <link>http://localhost:1313/tags/haskell/</link>
       <pubDate>Wed, 01 Nov 2023 14:56:15 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/haskell/</guid>
+      <guid>http://localhost:1313/tags/haskell/</guid>
       <description></description>
     </item>
     <item>
       <title>Plt</title>
-      <link>https://blog.oyyko.com/tags/plt/</link>
+      <link>http://localhost:1313/tags/plt/</link>
       <pubDate>Wed, 01 Nov 2023 14:56:15 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/plt/</guid>
+      <guid>http://localhost:1313/tags/plt/</guid>
       <description></description>
     </item>
     <item>
       <title>Ucsd</title>
-      <link>https://blog.oyyko.com/tags/ucsd/</link>
+      <link>http://localhost:1313/tags/ucsd/</link>
       <pubDate>Wed, 01 Nov 2023 14:56:15 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/ucsd/</guid>
+      <guid>http://localhost:1313/tags/ucsd/</guid>
       <description></description>
     </item>
     <item>
       <title>Infra</title>
-      <link>https://blog.oyyko.com/tags/infra/</link>
+      <link>http://localhost:1313/tags/infra/</link>
       <pubDate>Wed, 11 Oct 2023 23:54:53 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/infra/</guid>
+      <guid>http://localhost:1313/tags/infra/</guid>
       <description></description>
     </item>
     <item>
       <title>八股</title>
-      <link>https://blog.oyyko.com/tags/%E5%85%AB%E8%82%A1/</link>
+      <link>http://localhost:1313/tags/%E5%85%AB%E8%82%A1/</link>
       <pubDate>Wed, 11 Oct 2023 23:54:53 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/%E5%85%AB%E8%82%A1/</guid>
+      <guid>http://localhost:1313/tags/%E5%85%AB%E8%82%A1/</guid>
       <description></description>
     </item>
     <item>
       <title>Mac</title>
-      <link>https://blog.oyyko.com/tags/mac/</link>
+      <link>http://localhost:1313/tags/mac/</link>
       <pubDate>Wed, 04 Oct 2023 10:41:00 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/mac/</guid>
+      <guid>http://localhost:1313/tags/mac/</guid>
       <description></description>
     </item>
     <item>
       <title>Macbook</title>
-      <link>https://blog.oyyko.com/tags/macbook/</link>
+      <link>http://localhost:1313/tags/macbook/</link>
       <pubDate>Wed, 04 Oct 2023 10:41:00 -0700</pubDate>
-      <guid>https://blog.oyyko.com/tags/macbook/</guid>
+      <guid>http://localhost:1313/tags/macbook/</guid>
       <description></description>
     </item>
     <item>
       <title>Meta</title>
-      <link>https://blog.oyyko.com/tags/meta/</link>
+      <link>http://localhost:1313/tags/meta/</link>
       <pubDate>Sat, 29 Jul 2023 22:50:19 +0800</pubDate>
-      <guid>https://blog.oyyko.com/tags/meta/</guid>
+      <guid>http://localhost:1313/tags/meta/</guid>
       <description></description>
     </item>
     <item>
       <title>Vscode</title>
-      <link>https://blog.oyyko.com/tags/vscode/</link>
+      <link>http://localhost:1313/tags/vscode/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/vscode/</guid>
+      <guid>http://localhost:1313/tags/vscode/</guid>
       <description></description>
     </item>
     <item>
       <title>Code</title>
-      <link>https://blog.oyyko.com/tags/code/</link>
+      <link>http://localhost:1313/tags/code/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/code/</guid>
+      <guid>http://localhost:1313/tags/code/</guid>
       <description></description>
     </item>
     <item>
       <title>Mogan</title>
-      <link>https://blog.oyyko.com/tags/mogan/</link>
+      <link>http://localhost:1313/tags/mogan/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/mogan/</guid>
+      <guid>http://localhost:1313/tags/mogan/</guid>
       <description></description>
     </item>
     <item>
       <title>Note</title>
-      <link>https://blog.oyyko.com/tags/note/</link>
+      <link>http://localhost:1313/tags/note/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/note/</guid>
+      <guid>http://localhost:1313/tags/note/</guid>
       <description></description>
     </item>
     <item>
       <title>Texmacs</title>
-      <link>https://blog.oyyko.com/tags/texmacs/</link>
+      <link>http://localhost:1313/tags/texmacs/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/texmacs/</guid>
+      <guid>http://localhost:1313/tags/texmacs/</guid>
       <description></description>
     </item>
     <item>
       <title>Archlinux</title>
-      <link>https://blog.oyyko.com/tags/archlinux/</link>
+      <link>http://localhost:1313/tags/archlinux/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/archlinux/</guid>
+      <guid>http://localhost:1313/tags/archlinux/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>https://blog.oyyko.com/tags/linux/</link>
+      <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Manjaro</title>
-      <link>https://blog.oyyko.com/tags/manjaro/</link>
+      <link>http://localhost:1313/tags/manjaro/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/manjaro/</guid>
+      <guid>http://localhost:1313/tags/manjaro/</guid>
       <description></description>
     </item>
     <item>
       <title>OS</title>
-      <link>https://blog.oyyko.com/tags/os/</link>
+      <link>http://localhost:1313/tags/os/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/os/</guid>
+      <guid>http://localhost:1313/tags/os/</guid>
       <description></description>
     </item>
     <item>
       <title>Translate</title>
-      <link>https://blog.oyyko.com/tags/translate/</link>
+      <link>http://localhost:1313/tags/translate/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/translate/</guid>
+      <guid>http://localhost:1313/tags/translate/</guid>
       <description></description>
     </item>
     <item>
       <title>Lisp</title>
-      <link>https://blog.oyyko.com/tags/lisp/</link>
+      <link>http://localhost:1313/tags/lisp/</link>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/lisp/</guid>
+      <guid>http://localhost:1313/tags/lisp/</guid>
       <description></description>
     </item>
     <item>
       <title>Scheme</title>
-      <link>https://blog.oyyko.com/tags/scheme/</link>
+      <link>http://localhost:1313/tags/scheme/</link>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/scheme/</guid>
+      <guid>http://localhost:1313/tags/scheme/</guid>
       <description></description>
     </item>
     <item>
       <title>BUG</title>
-      <link>https://blog.oyyko.com/tags/bug/</link>
+      <link>http://localhost:1313/tags/bug/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/bug/</guid>
+      <guid>http://localhost:1313/tags/bug/</guid>
       <description></description>
     </item>
     <item>
       <title>Cpp</title>
-      <link>https://blog.oyyko.com/tags/cpp/</link>
+      <link>http://localhost:1313/tags/cpp/</link>
       <pubDate>Tue, 23 Aug 2022 15:20:51 +0800</pubDate>
-      <guid>https://blog.oyyko.com/tags/cpp/</guid>
+      <guid>http://localhost:1313/tags/cpp/</guid>
       <description></description>
     </item>
     <item>
       <title>Clangd</title>
-      <link>https://blog.oyyko.com/tags/clangd/</link>
+      <link>http://localhost:1313/tags/clangd/</link>
       <pubDate>Sun, 07 Aug 2022 21:49:29 +0800</pubDate>
-      <guid>https://blog.oyyko.com/tags/clangd/</guid>
+      <guid>http://localhost:1313/tags/clangd/</guid>
       <description></description>
     </item>
     <item>
       <title>Life</title>
-      <link>https://blog.oyyko.com/tags/life/</link>
+      <link>http://localhost:1313/tags/life/</link>
       <pubDate>Sun, 24 Jul 2022 00:37:35 +0800</pubDate>
-      <guid>https://blog.oyyko.com/tags/life/</guid>
+      <guid>http://localhost:1313/tags/life/</guid>
       <description></description>
     </item>
     <item>
       <title>Bash</title>
-      <link>https://blog.oyyko.com/tags/bash/</link>
+      <link>http://localhost:1313/tags/bash/</link>
       <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/bash/</guid>
+      <guid>http://localhost:1313/tags/bash/</guid>
       <description></description>
     </item>
     <item>
       <title>Link</title>
-      <link>https://blog.oyyko.com/tags/link/</link>
+      <link>http://localhost:1313/tags/link/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/link/</guid>
+      <guid>http://localhost:1313/tags/link/</guid>
       <description></description>
     </item>
     <item>
       <title>Algorithm</title>
-      <link>https://blog.oyyko.com/tags/algorithm/</link>
+      <link>http://localhost:1313/tags/algorithm/</link>
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/algorithm/</guid>
+      <guid>http://localhost:1313/tags/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Latex</title>
-      <link>https://blog.oyyko.com/tags/latex/</link>
+      <link>http://localhost:1313/tags/latex/</link>
       <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/latex/</guid>
+      <guid>http://localhost:1313/tags/latex/</guid>
       <description></description>
     </item>
     <item>
       <title>ICS</title>
-      <link>https://blog.oyyko.com/tags/ics/</link>
+      <link>http://localhost:1313/tags/ics/</link>
       <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/ics/</guid>
+      <guid>http://localhost:1313/tags/ics/</guid>
       <description></description>
     </item>
     <item>
       <title>Math</title>
-      <link>https://blog.oyyko.com/tags/math/</link>
+      <link>http://localhost:1313/tags/math/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/math/</guid>
+      <guid>http://localhost:1313/tags/math/</guid>
       <description></description>
     </item>
     <item>
       <title>Number_Theory</title>
-      <link>https://blog.oyyko.com/tags/number_theory/</link>
+      <link>http://localhost:1313/tags/number_theory/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/number_theory/</guid>
+      <guid>http://localhost:1313/tags/number_theory/</guid>
       <description></description>
     </item>
     <item>
       <title>Leetcode</title>
-      <link>https://blog.oyyko.com/tags/leetcode/</link>
+      <link>http://localhost:1313/tags/leetcode/</link>
       <pubDate>Tue, 30 Nov 2021 15:20:51 +0800</pubDate>
-      <guid>https://blog.oyyko.com/tags/leetcode/</guid>
+      <guid>http://localhost:1313/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>
       <title>IDE</title>
-      <link>https://blog.oyyko.com/tags/ide/</link>
+      <link>http://localhost:1313/tags/ide/</link>
       <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/ide/</guid>
+      <guid>http://localhost:1313/tags/ide/</guid>
       <description></description>
     </item>
     <item>
       <title>Translation</title>
-      <link>https://blog.oyyko.com/tags/translation/</link>
+      <link>http://localhost:1313/tags/translation/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/translation/</guid>
+      <guid>http://localhost:1313/tags/translation/</guid>
       <description></description>
     </item>
     <item>
       <title>C</title>
-      <link>https://blog.oyyko.com/tags/c/</link>
+      <link>http://localhost:1313/tags/c/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/tags/c/</guid>
+      <guid>http://localhost:1313/tags/c/</guid>
       <description></description>
     </item>
   </channel>

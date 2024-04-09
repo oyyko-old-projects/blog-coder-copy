@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on Oyyko</title>
-    <link>https://blog.oyyko.com/tags/code/</link>
+    <link>http://localhost:1313/tags/code/</link>
     <description>Recent content in Code on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Aug 2023 03:48:54 +0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Texmacs/Mogan Note 2</title>
-      <link>https://blog.oyyko.com/posts/texmacs_note2/</link>
+      <link>http://localhost:1313/posts/texmacs_note2/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/posts/texmacs_note2/</guid>
+      <guid>http://localhost:1313/posts/texmacs_note2/</guid>
       <description>23_15 Link to heading 1(get-init-tree &amp;#34;text-at-halign&amp;#34;) 这个与缓存有关。缓存位置在~/.Texmacs/。如果不更改缓存，更改源代码不会生效。&#xA;23_7 Link to heading 1(tm-define (graphics-release-left x y) 2 ;;(display* &amp;#34;Graphics] Release-left &amp;#34; x &amp;#34;, &amp;#34; y &amp;#34;\n&amp;#34;) 3 (if (inside-graphical-text?) 4 (with-innermost t graphical-text-context? 5 (let* ((ps (select-first (s2f x) (s2f y))) 6 (p (and ps (car ps)))) 7 (if (and p (list-starts? p (tree-&amp;gt;path t))) 8 (go-to p) 9 (tree-go-to t :start)))) 10 (edit_left-button (car (graphics-mode)) x y))) 1(tm-define (get-keyboard-modifiers) 2 the-keyboard-modifiers) 3 4(tm-define (set-keyboard-modifiers mods) 5 (set!</description>
     </item>
     <item>
       <title>Texmacs/Mogan Note</title>
-      <link>https://blog.oyyko.com/posts/texmacs_note/</link>
+      <link>http://localhost:1313/posts/texmacs_note/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/posts/texmacs_note/</guid>
+      <guid>http://localhost:1313/posts/texmacs_note/</guid>
       <description>Note Link to heading graphics-utils.scm Link to heading 1;;These abbreviations are very convenient 2;;to use. A nice naming scheme is : 3;; 4;; -&amp;gt; b=bool ; 5;; -&amp;gt; i=integer ; 6;; -&amp;gt; f=float ; 7;; -&amp;gt; sy=symbol ; 8;; -&amp;gt; s=string ; 9;; -&amp;gt; o=Scheme object ; 10;; -&amp;gt; p=path. 11;; -&amp;gt; t=tree. 12;; 13;; One can add the missing ones on demand. 14(tm-define f2s float-&amp;gt;string) 15(tm-define s2f string-&amp;gt;float) 16(tm-define sy2s symbol-&amp;gt;string) 17(tm-define s2sy string-&amp;gt;symbol) 18(tm-define o2s object-&amp;gt;string) 19(tm-define s2o string-&amp;gt;object) 20(tm-define t2o tree-&amp;gt;object) 21(tm-define o2t object-&amp;gt;tree) graphics-single.</description>
     </item>
   </channel>

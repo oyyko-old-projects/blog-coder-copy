@@ -69,3 +69,7 @@ baseurl = "http://oyyko.com"
   name = "Projects"
   weight = 2
   url = "projects/"
+[[menu.main]]
+  name = "Friends"
+  weight = 3
+  url = "friends/"

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ICS on Oyyko</title>
-    <link>https://blog.oyyko.com/tags/ics/</link>
+    <link>http://localhost:1313/tags/ics/</link>
     <description>Recent content in ICS on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Aug 2023 12:18:15 +0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/ics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ICS 笔记3</title>
-      <link>https://blog.oyyko.com/posts/ics3/</link>
+      <link>http://localhost:1313/posts/ics3/</link>
       <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/posts/ics3/</guid>
+      <guid>http://localhost:1313/posts/ics3/</guid>
       <description>&lt;p&gt;ICS笔记3&lt;/p&gt;</description>
     </item>
     <item>
       <title>ICS PPT Note 1</title>
-      <link>https://blog.oyyko.com/posts/ics_ppt/</link>
+      <link>http://localhost:1313/posts/ics_ppt/</link>
       <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/posts/ics_ppt/</guid>
+      <guid>http://localhost:1313/posts/ics_ppt/</guid>
       <description>&lt;p&gt;计算系统概率PPT笔记1 复习期中&lt;/p&gt;</description>
     </item>
     <item>
       <title>ICS Note 2</title>
-      <link>https://blog.oyyko.com/posts/ics2/</link>
+      <link>http://localhost:1313/posts/ics2/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/posts/ics2/</guid>
+      <guid>http://localhost:1313/posts/ics2/</guid>
       <description>&lt;p&gt;This is my notes for ICS. Source: book&#xA;计算系统概论笔记2 来自课本&lt;/p&gt;</description>
     </item>
     <item>
       <title>ICS Note 1</title>
-      <link>https://blog.oyyko.com/posts/ics1/</link>
+      <link>http://localhost:1313/posts/ics1/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.oyyko.com/posts/ics1/</guid>
+      <guid>http://localhost:1313/posts/ics1/</guid>
       <description>&lt;p&gt;This is my notes for ICS. Source: ppt&#xA;计算系统概论笔记1 来自PPT&lt;/p&gt;</description>
     </item>
   </channel>

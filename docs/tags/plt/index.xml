@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plt on Oyyko</title>
-    <link>https://blog.oyyko.com/tags/plt/</link>
+    <link>http://localhost:1313/tags/plt/</link>
     <description>Recent content in Plt on Oyyko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 02 Nov 2023 12:04:26 -0700</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/plt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/plt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UCSD CSE 230 Midterm Review Note</title>
-      <link>https://blog.oyyko.com/posts/haskell1/</link>
+      <link>http://localhost:1313/posts/haskell1/</link>
       <pubDate>Wed, 01 Nov 2023 14:56:15 -0700</pubDate>
-      <guid>https://blog.oyyko.com/posts/haskell1/</guid>
+      <guid>http://localhost:1313/posts/haskell1/</guid>
       <description>01-lambda Link to heading Programs are expressions e (also called λ-terms) of one of three kinds:&#xA;Variable x, y, z Abstraction (aka nameless function definition) (\x -&amp;gt; e) x is the formal parameter, e is the body “for any x compute e” Application (aka function call) (e1 e2) e1 is the function, e2 is the argument in your favorite language: e1(e2) Execute = rewrite step-by-step&#xA;Following simple rules until no more rules apply An variable x is free in e if there exists a free occurrence of x in e.</description>
     </item>
   </channel>

@@ -25,6 +25,4 @@ You can find out more about me on [github](https://github.com/Oyyko).
 
 You can connect me via finalwind42@gmail.com
 
----
-
 Last updated: Feb 14 2024

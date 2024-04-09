@@ -2,300 +2,303 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.oyyko.com/tags/c&#43;&#43;/</loc>
-    <lastmod>2024-04-07T23:37:30-07:00</lastmod>
+    <loc>http://localhost:1313/friends/</loc>
+    <lastmod>2024-04-08T23:44:05-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/interview/</loc>
-    <lastmod>2024-04-07T23:37:30-07:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-04-08T23:44:05-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/</loc>
-    <lastmod>2024-04-07T23:37:30-07:00</lastmod>
+    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
+    <lastmod>2024-04-08T01:01:44-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/</loc>
-    <lastmod>2024-04-07T23:37:30-07:00</lastmod>
+    <loc>http://localhost:1313/tags/interview/</loc>
+    <lastmod>2024-04-08T01:01:44-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/</loc>
-    <lastmod>2024-04-07T23:37:30-07:00</lastmod>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-04-08T01:01:44-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/interview1/</loc>
-    <lastmod>2024-04-07T23:37:30-07:00</lastmod>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-04-08T01:01:44-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/algo/</loc>
+    <loc>http://localhost:1313/posts/interview1/</loc>
+    <lastmod>2024-04-08T01:01:44-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/algo/</loc>
     <lastmod>2024-04-03T23:22:34-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/binary/</loc>
+    <loc>http://localhost:1313/tags/binary/</loc>
     <lastmod>2024-04-03T23:22:34-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/erfen/</loc>
+    <loc>http://localhost:1313/posts/erfen/</loc>
     <lastmod>2024-04-03T23:22:34-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/concurrent/</loc>
+    <loc>http://localhost:1313/tags/concurrent/</loc>
+    <lastmod>2024-04-08T01:01:44-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/go/</loc>
+    <lastmod>2024-04-08T01:01:44-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/goconcnotpar/</loc>
+    <lastmod>2024-04-08T01:01:44-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/cppnote1/</loc>
     <lastmod>2024-04-03T23:22:34-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/go/</loc>
+    <loc>http://localhost:1313/tags/pl/</loc>
     <lastmod>2024-04-03T23:22:34-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/goconcnotpar/</loc>
+    <loc>http://localhost:1313/posts/go_note1/</loc>
     <lastmod>2024-04-03T23:22:34-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/cppnote1/</loc>
+    <loc>http://localhost:1313/posts/trick/</loc>
     <lastmod>2024-04-03T23:22:34-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/pl/</loc>
-    <lastmod>2024-04-03T23:22:34-07:00</lastmod>
-  </url><url>
-    <loc>https://blog.oyyko.com/posts/go_note1/</loc>
-    <lastmod>2024-04-03T23:22:34-07:00</lastmod>
-  </url><url>
-    <loc>https://blog.oyyko.com/posts/trick/</loc>
-    <lastmod>2024-04-03T23:22:34-07:00</lastmod>
-  </url><url>
-    <loc>https://blog.oyyko.com/tags/coding/</loc>
+    <loc>http://localhost:1313/tags/coding/</loc>
     <lastmod>2024-03-08T03:08:49-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/interview/</loc>
+    <loc>http://localhost:1313/posts/interview/</loc>
     <lastmod>2024-03-08T03:08:49-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-02-14T19:17:09-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/haskell/</loc>
+    <loc>http://localhost:1313/tags/haskell/</loc>
     <lastmod>2023-11-02T12:04:26-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/plt/</loc>
+    <loc>http://localhost:1313/tags/plt/</loc>
     <lastmod>2023-11-02T12:04:26-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/ucsd/</loc>
+    <loc>http://localhost:1313/tags/ucsd/</loc>
     <lastmod>2023-11-02T12:04:26-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/haskell1/</loc>
+    <loc>http://localhost:1313/posts/haskell1/</loc>
     <lastmod>2023-11-02T12:04:26-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/infra/</loc>
+    <loc>http://localhost:1313/tags/infra/</loc>
     <lastmod>2024-03-08T03:08:49-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/infra/</loc>
+    <loc>http://localhost:1313/posts/infra/</loc>
     <lastmod>2024-03-08T03:08:49-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/%E5%85%AB%E8%82%A1/</loc>
+    <loc>http://localhost:1313/tags/%E5%85%AB%E8%82%A1/</loc>
     <lastmod>2024-03-08T03:08:49-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/mac/</loc>
+    <loc>http://localhost:1313/tags/mac/</loc>
     <lastmod>2023-10-10T23:05:15-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/macbook/</loc>
+    <loc>http://localhost:1313/tags/macbook/</loc>
     <lastmod>2023-10-10T23:05:15-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/mac_config/</loc>
+    <loc>http://localhost:1313/posts/mac_config/</loc>
     <lastmod>2023-10-10T23:05:15-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/mogan_note4/</loc>
+    <loc>http://localhost:1313/posts/mogan_note4/</loc>
     <lastmod>2023-10-04T10:37:08-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/mogan_note3/</loc>
+    <loc>http://localhost:1313/posts/mogan_note3/</loc>
     <lastmod>2023-08-20T19:01:21+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-02-14T19:17:09-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/change0729/</loc>
+    <loc>http://localhost:1313/posts/change0729/</loc>
     <lastmod>2023-08-01T12:30:09+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/meta/</loc>
+    <loc>http://localhost:1313/tags/meta/</loc>
     <lastmod>2023-08-01T12:30:09+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/vscode/</loc>
+    <loc>http://localhost:1313/tags/vscode/</loc>
     <lastmod>2023-10-21T12:29:36-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/vscode2/</loc>
+    <loc>http://localhost:1313/posts/vscode2/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/code/</loc>
+    <loc>http://localhost:1313/tags/code/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/mogan/</loc>
+    <loc>http://localhost:1313/tags/mogan/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/note/</loc>
+    <loc>http://localhost:1313/tags/note/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/texmacs/</loc>
+    <loc>http://localhost:1313/tags/texmacs/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/texmacs_note2/</loc>
+    <loc>http://localhost:1313/posts/texmacs_note2/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/archlinux/</loc>
+    <loc>http://localhost:1313/tags/archlinux/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/arch_install/</loc>
+    <loc>http://localhost:1313/posts/arch_install/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/manjaro/</loc>
+    <loc>http://localhost:1313/tags/manjaro/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/os/</loc>
+    <loc>http://localhost:1313/tags/os/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/texmacs_graphics_tutorial/</loc>
+    <loc>http://localhost:1313/posts/texmacs_graphics_tutorial/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/texmacs_note/</loc>
+    <loc>http://localhost:1313/posts/texmacs_note/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/translate/</loc>
+    <loc>http://localhost:1313/tags/translate/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/lisp/</loc>
+    <loc>http://localhost:1313/tags/lisp/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/scheme/</loc>
+    <loc>http://localhost:1313/tags/scheme/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/scheme/</loc>
+    <loc>http://localhost:1313/posts/scheme/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/bug/</loc>
+    <loc>http://localhost:1313/tags/bug/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/chrome_amd/</loc>
+    <loc>http://localhost:1313/posts/chrome_amd/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/cpp/</loc>
+    <loc>http://localhost:1313/tags/cpp/</loc>
     <lastmod>2023-10-21T12:29:36-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/value_categories_in_cpp/</loc>
+    <loc>http://localhost:1313/posts/value_categories_in_cpp/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/revisit_os/</loc>
+    <loc>http://localhost:1313/posts/revisit_os/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/clangd/</loc>
+    <loc>http://localhost:1313/tags/clangd/</loc>
     <lastmod>2023-10-21T12:29:36-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/use-cpp17-on-vscode-clangd/</loc>
+    <loc>http://localhost:1313/posts/use-cpp17-on-vscode-clangd/</loc>
     <lastmod>2023-10-21T12:29:36-07:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/first-post/</loc>
+    <loc>http://localhost:1313/posts/first-post/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/life/</loc>
+    <loc>http://localhost:1313/tags/life/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/cpp4/</loc>
+    <loc>http://localhost:1313/posts/cpp4/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/bash/</loc>
+    <loc>http://localhost:1313/tags/bash/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/bash/</loc>
+    <loc>http://localhost:1313/posts/bash/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/link/</loc>
+    <loc>http://localhost:1313/tags/link/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/link1/</loc>
+    <loc>http://localhost:1313/posts/link1/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/cpp3/</loc>
+    <loc>http://localhost:1313/posts/cpp3/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/algorithm/</loc>
+    <loc>http://localhost:1313/tags/algorithm/</loc>
     <lastmod>2024-02-14T19:17:09-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/bithack/</loc>
+    <loc>http://localhost:1313/posts/bithack/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/cpp_whitepaper/</loc>
+    <loc>http://localhost:1313/posts/cpp_whitepaper/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/latex/</loc>
+    <loc>http://localhost:1313/tags/latex/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/vscode-latex/</loc>
+    <loc>http://localhost:1313/posts/vscode-latex/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/linklist/</loc>
+    <loc>http://localhost:1313/posts/linklist/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/ics/</loc>
+    <loc>http://localhost:1313/tags/ics/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/ics3/</loc>
+    <loc>http://localhost:1313/posts/ics3/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/yahang/</loc>
+    <loc>http://localhost:1313/posts/yahang/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/three-problem/</loc>
+    <loc>http://localhost:1313/posts/three-problem/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/math/</loc>
+    <loc>http://localhost:1313/tags/math/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/number_theory/</loc>
+    <loc>http://localhost:1313/tags/number_theory/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/shulun/</loc>
+    <loc>http://localhost:1313/posts/shulun/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/leetcode/</loc>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/bisection/</loc>
+    <loc>http://localhost:1313/posts/bisection/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/cpp2/</loc>
+    <loc>http://localhost:1313/posts/cpp2/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/ics_ppt/</loc>
+    <loc>http://localhost:1313/posts/ics_ppt/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/gcd/</loc>
+    <loc>http://localhost:1313/posts/gcd/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/ics2/</loc>
+    <loc>http://localhost:1313/posts/ics2/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/ics1/</loc>
+    <loc>http://localhost:1313/posts/ics1/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/unimodal/</loc>
+    <loc>http://localhost:1313/posts/unimodal/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/ide/</loc>
+    <loc>http://localhost:1313/tags/ide/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/vscode/</loc>
+    <loc>http://localhost:1313/posts/vscode/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/ccpc_huawei/</loc>
+    <loc>http://localhost:1313/posts/ccpc_huawei/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/grub/</loc>
+    <loc>http://localhost:1313/posts/grub/</loc>
     <lastmod>2023-08-01T03:48:54+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/names_and_shakespeare/</loc>
+    <loc>http://localhost:1313/posts/names_and_shakespeare/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/translation/</loc>
+    <loc>http://localhost:1313/tags/translation/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/cpp1/</loc>
+    <loc>http://localhost:1313/posts/cpp1/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/tags/c/</loc>
+    <loc>http://localhost:1313/tags/c/</loc>
     <lastmod>2024-02-14T19:17:09-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/c_hello_world/</loc>
+    <loc>http://localhost:1313/posts/c_hello_world/</loc>
     <lastmod>2023-08-01T12:18:15+08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/posts/n-queens/</loc>
+    <loc>http://localhost:1313/posts/n-queens/</loc>
     <lastmod>2024-02-14T19:17:09-08:00</lastmod>
   </url><url>
-    <loc>https://blog.oyyko.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
