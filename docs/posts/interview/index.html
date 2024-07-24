@@ -1,277 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 
 <head>
-  <title>
-  如何准备程序员面试 · Oyyko
-</title>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-
-
-
-
-<meta name="author" content="Oyyko">
-<meta name="description" content="本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。
-本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。
-首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl&#43;F搜索。
-术语表 Link to heading JD: (Job Description) 工作岗位描述
-bar: 招人的标准。类似高考的分数线。一般用来形容难度高低。
-DP: (data point) 数据点。一般含义就是指自己or身边朋友的例子。例如我GPA2.0被牛津录取了，我就可以在网上说，给大家贡献一个DP，GPA2.0被牛津录取。或者我在面试谷歌的过程中遇到了Leetcode1234这道题，我就可以说贡献一个DP，谷歌面试会考Leetcode1234.
-OA: (Online Assessment) 在线笔试
-BQ: (behavioral question) 和代码无关的问题。例如你在工作中遇到难题会怎么办？
-VO: (Virtual Onsite) 电话或者视频面试。
-HC: (Head Count) 人头数。也就是岗位计划招几个人。例如你面试了一个组，表现很好，但是他们这个组今年的hc只有1个人，而他们在面试你之前，已经签了1个人。那么这个时候由于hc不够，你就无法被录用。
-CV/Resume: 简历
-IC: (Individual Contributor) 个人贡献者，与之对应的是Manager。IC指的就是写代码的，Manager指的是管理岗位。
-toxic: 有毒。往往用于形容令人不适的团队氛围或公司文化。
-NG: (New Grad) 指刚毕业的学生。
-ROI: (return on investment) 投资回报率
-Skip: 你老板的老板。你也可以分别称呼他们为skip manager和 direct manager.
-RA: (research assistant) 研究助理，你本科在实验室打杂也可以称自己做了2年的RA。
-corner case: 写代码的时候遇到的极端or边界情况。
-写在前面的话 Link to heading 心态 Link to heading 我们作为面试者，在求职的过程中，最终目标当然是拿到工作。因此很多时候你没有必要准备到万无一失了再投递简历或者面试。或者由于自己的不自信而不敢去投递或面试。哪怕心里很慌，也要先拿下offer再说。一般对于学生求职者来说，在拿到offer到正式上班中间还有好几个月的时间，如果你真的觉得自己不能胜任这份工作，那么你还有好几个月可以继续学习钻研相关领域。你如果总是想让自己的技术水平先达到高级工程师水平再去求职，那永远也准备不完。">
-<meta name="keywords" content="blog,developer,personal">
-
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="如何准备程序员面试"/>
-<meta name="twitter:description" content="本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。
-本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。
-首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl&#43;F搜索。
-术语表 Link to heading JD: (Job Description) 工作岗位描述
-bar: 招人的标准。类似高考的分数线。一般用来形容难度高低。
-DP: (data point) 数据点。一般含义就是指自己or身边朋友的例子。例如我GPA2.0被牛津录取了，我就可以在网上说，给大家贡献一个DP，GPA2.0被牛津录取。或者我在面试谷歌的过程中遇到了Leetcode1234这道题，我就可以说贡献一个DP，谷歌面试会考Leetcode1234.
-OA: (Online Assessment) 在线笔试
-BQ: (behavioral question) 和代码无关的问题。例如你在工作中遇到难题会怎么办？
-VO: (Virtual Onsite) 电话或者视频面试。
-HC: (Head Count) 人头数。也就是岗位计划招几个人。例如你面试了一个组，表现很好，但是他们这个组今年的hc只有1个人，而他们在面试你之前，已经签了1个人。那么这个时候由于hc不够，你就无法被录用。
-CV/Resume: 简历
-IC: (Individual Contributor) 个人贡献者，与之对应的是Manager。IC指的就是写代码的，Manager指的是管理岗位。
-toxic: 有毒。往往用于形容令人不适的团队氛围或公司文化。
-NG: (New Grad) 指刚毕业的学生。
-ROI: (return on investment) 投资回报率
-Skip: 你老板的老板。你也可以分别称呼他们为skip manager和 direct manager.
-RA: (research assistant) 研究助理，你本科在实验室打杂也可以称自己做了2年的RA。
-corner case: 写代码的时候遇到的极端or边界情况。
-写在前面的话 Link to heading 心态 Link to heading 我们作为面试者，在求职的过程中，最终目标当然是拿到工作。因此很多时候你没有必要准备到万无一失了再投递简历或者面试。或者由于自己的不自信而不敢去投递或面试。哪怕心里很慌，也要先拿下offer再说。一般对于学生求职者来说，在拿到offer到正式上班中间还有好几个月的时间，如果你真的觉得自己不能胜任这份工作，那么你还有好几个月可以继续学习钻研相关领域。你如果总是想让自己的技术水平先达到高级工程师水平再去求职，那永远也准备不完。"/>
-
-<meta property="og:title" content="如何准备程序员面试" />
+  <title>如何准备程序员面试 - Colin&#39;s Blog</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="A C&#43;&#43; Programmer" />
+<meta name="author" content="Oyyko" /><meta property="og:title" content="如何准备程序员面试" />
 <meta property="og:description" content="本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。
 本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。
-首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl&#43;F搜索。
-术语表 Link to heading JD: (Job Description) 工作岗位描述
-bar: 招人的标准。类似高考的分数线。一般用来形容难度高低。
-DP: (data point) 数据点。一般含义就是指自己or身边朋友的例子。例如我GPA2.0被牛津录取了，我就可以在网上说，给大家贡献一个DP，GPA2.0被牛津录取。或者我在面试谷歌的过程中遇到了Leetcode1234这道题，我就可以说贡献一个DP，谷歌面试会考Leetcode1234.
-OA: (Online Assessment) 在线笔试
-BQ: (behavioral question) 和代码无关的问题。例如你在工作中遇到难题会怎么办？
-VO: (Virtual Onsite) 电话或者视频面试。
-HC: (Head Count) 人头数。也就是岗位计划招几个人。例如你面试了一个组，表现很好，但是他们这个组今年的hc只有1个人，而他们在面试你之前，已经签了1个人。那么这个时候由于hc不够，你就无法被录用。
-CV/Resume: 简历
-IC: (Individual Contributor) 个人贡献者，与之对应的是Manager。IC指的就是写代码的，Manager指的是管理岗位。
-toxic: 有毒。往往用于形容令人不适的团队氛围或公司文化。
-NG: (New Grad) 指刚毕业的学生。
-ROI: (return on investment) 投资回报率
-Skip: 你老板的老板。你也可以分别称呼他们为skip manager和 direct manager.
-RA: (research assistant) 研究助理，你本科在实验室打杂也可以称自己做了2年的RA。
-corner case: 写代码的时候遇到的极端or边界情况。
-写在前面的话 Link to heading 心态 Link to heading 我们作为面试者，在求职的过程中，最终目标当然是拿到工作。因此很多时候你没有必要准备到万无一失了再投递简历或者面试。或者由于自己的不自信而不敢去投递或面试。哪怕心里很慌，也要先拿下offer再说。一般对于学生求职者来说，在拿到offer到正式上班中间还有好几个月的时间，如果你真的觉得自己不能胜任这份工作，那么你还有好几个月可以继续学习钻研相关领域。你如果总是想让自己的技术水平先达到高级工程师水平再去求职，那永远也准备不完。" />
+首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl&#43;F搜索。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.oyyko.com/posts/interview/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-03-07T22:20:06-08:00" />
 <meta property="article:modified_time" content="2024-03-08T03:08:49-08:00" />
 
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="如何准备程序员面试"/>
+<meta name="twitter:description" content="本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。
+本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。
+首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl&#43;F搜索。"/>
 
-
-
-<link rel="canonical" href="https://blog.oyyko.com/posts/interview/">
-
-
-<style>
-@import url(//fonts.googleapis.com/css2?family=Lato&family=JetBrains+Mono&family=Noto+Sans+SC);
-</style>
-
-<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/css/coder.min.4aa47e08823270231494db5e45db07ca1087851d1cf797b9ceef270927d26246.css" integrity="sha256-SqR&#43;CIIycCMUlNteRdsHyhCHhR0c95e5zu8nCSfSYkY=" crossorigin="anonymous" media="screen" />
-
-
-
-
-
-
-  
+<meta name="generator" content="Hugo 0.124.1">
     
-    
-    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+
+  <link rel="stylesheet" href="/css/normalize.min.css" />
+  <link rel="stylesheet" href="https://blog.oyyko.com/fontawesome/css/all.min.css" />
   
-
-
-
- 
-
-
-
-
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-
-
-
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 </head>
 
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">Colin&rsquo;s Blog</a>
+      </h1>
 
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
-  
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
-
-
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    <a class="navigation-title" href="/">
-      Oyyko
-    </a>
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
-        
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/posts/">Blog</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/projects/">Projects</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/friends/">Friends</a>
-            </li>
-          
-        
-        
+      <ul id="social-media">
+             <li>
+               <a href="mailto:finalwind42@gmail.com" title="Email me">
+               <i class="fas fa-envelope fa-lg"></i>
+               </a>
+             </li>
+             <li>
+               <a href="https://github.com/oyyko" title="GitHub">
+               <i class="fab fa-github fa-lg"></i>
+               </a>
+             </li>
+             <li>
+               <a href="https://linkedin.com/in/col-z" title="LinkedIn">
+               <i class="fab fa-linkedin fa-lg"></i>
+               </a>
+             </li>
       </ul>
+      
+      <p><em>A C++ Programmer</em></p>
+      
+    </header>
+
     
-  </section>
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/posts">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/tags">
+                <i class="fa-li fa  fa-lg"></i><span>Tags</span>
+            </a>
+        </li>
+        
+    </ul>
 </nav>
 
 
-    <div class="content">
+    <main>
+
+
+
+
+<article>
+
+    <h1>如何准备程序员面试</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2024-03-07T22:20:06-08:00">Mar 7, 2024</time>
+        </li>
+        
+        <li>
+            Modified on <time datetime="2024-03-08T03:08:49-08:00">Mar 8, 2024</time>
+        </li>
+        
+        
+
+        
+        <li>
+            <em>
+                
+                    
+                    <a href="/tags/interview">#Interview</a>
+                
+                    , 
+                    <a href="/tags/coding">#Coding</a>
+                
+            </em>
+        </li>
+        
+
+        <li>One minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
       
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">
-            <a class="title-link" href="https://blog.oyyko.com/posts/interview/">
-              如何准备程序员面试
-            </a>
-          </h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2024-03-07T22:20:06-08:00">
-                2024-03-07
-              </time>
-          </div>
-          
-          
-          <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
-    <span class="tag">
-      <a href="/tags/interview/">Interview</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="/tags/coding/">Coding</a>
-    </span></div>
 
-        </div>
-      </header>
+    
 
-      <div class="post-content">
-        
-        
-        <hr>
-        <i class="fa fa-book"></i> Table of Contents
-               <div id="toc"> <nav id="TableOfContents">
-  <ul>
-    <li><a href="#术语表">术语表</a></li>
-    <li><a href="#写在前面的话">写在前面的话</a>
-      <ul>
-        <li><a href="#心态">心态</a></li>
-        <li><a href="#重要概念">重要概念</a></li>
-      </ul>
-    </li>
-    <li><a href="#简历">简历</a></li>
-    <li><a href="#投简历">投简历</a></li>
-    <li><a href="#oa笔试">OA(笔试)</a></li>
-    <li><a href="#技术面试">技术面试</a>
-      <ul>
-        <li><a href="#从面试官的角度看面试">从面试官的角度看面试</a></li>
-        <li><a href="#自我介绍">自我介绍</a></li>
-        <li><a href="#resume-deep-dive">Resume Deep Dive</a></li>
-        <li><a href="#coding">Coding</a></li>
-        <li><a href="#system-design">System Design</a></li>
-        <li><a href="#八股文">八股文</a></li>
-        <li><a href="#bq">BQ</a></li>
-        <li><a href="#反问">反问</a></li>
-        <li><a href="#反问适用的常见问题">反问适用的常见问题</a></li>
-      </ul>
-    </li>
-    <li><a href="#hr面">HR面</a>
-      <ul>
-        <li><a href="#常见问题">常见问题</a></li>
-        <li><a href="#回答策略">回答策略</a></li>
-      </ul>
-    </li>
-    <li><a href="#写在后面">写在后面</a></li>
-  </ul>
-</nav> </div>
-        <hr>
-        <p>本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。</p>
+    <p>本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。</p>
 <p>本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。</p>
 <p>首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl+F搜索。</p>
-<h2 id="术语表">
-  术语表
-  <a class="heading-link" href="#%e6%9c%af%e8%af%ad%e8%a1%a8">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
+<h2 id="术语表">术语表</h2>
 <p>JD: (Job Description) 工作岗位描述</p>
 <p>bar: 招人的标准。类似高考的分数线。一般用来形容难度高低。</p>
 <p>DP: (data point) 数据点。一般含义就是指自己or身边朋友的例子。例如我GPA2.0被牛津录取了，我就可以在网上说，给大家贡献一个DP，GPA2.0被牛津录取。或者我在面试谷歌的过程中遇到了Leetcode1234这道题，我就可以说贡献一个DP，谷歌面试会考Leetcode1234.</p>
@@ -287,40 +155,16 @@ corner case: 写代码的时候遇到的极端or边界情况。
 <p>Skip: 你老板的老板。你也可以分别称呼他们为skip manager和 direct manager.</p>
 <p>RA: (research assistant) 研究助理，你本科在实验室打杂也可以称自己做了2年的RA。</p>
 <p>corner case: 写代码的时候遇到的极端or边界情况。</p>
-<h2 id="写在前面的话">
-  写在前面的话
-  <a class="heading-link" href="#%e5%86%99%e5%9c%a8%e5%89%8d%e9%9d%a2%e7%9a%84%e8%af%9d">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="心态">
-  心态
-  <a class="heading-link" href="#%e5%bf%83%e6%80%81">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h2 id="写在前面的话">写在前面的话</h2>
+<h3 id="心态">心态</h3>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <p>我们作为面试者，在求职的过程中，最终目标当然是拿到工作。因此很多时候你没有必要准备到万无一失了再投递简历或者面试。或者由于自己的不自信而不敢去投递或面试。哪怕心里很慌，也要先拿下offer再说。一般对于学生求职者来说，在拿到offer到正式上班中间还有好几个月的时间，如果你真的觉得自己不能胜任这份工作，那么你还有好几个月可以继续学习钻研相关领域。你如果总是想让自己的技术水平先达到高级工程师水平再去求职，那永远也准备不完。</p>
 <p>所以，第一点，永远不要胆怯。</p>
-<h3 id="重要概念">
-  重要概念
-  <a class="heading-link" href="#%e9%87%8d%e8%a6%81%e6%a6%82%e5%bf%b5">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="重要概念">重要概念</h3>
 <p>Match大于一切. 即你和这个职位是否匹配是大于一切的，大于你的学历，能力。你再有优势，如果和职位不够匹配，那也很难拿到offer。</p>
-<h2 id="简历">
-  简历
-  <a class="heading-link" href="#%e7%ae%80%e5%8e%86">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<p>推荐使用网上的现成模版来写。例如<a href="https://github.com/skyzh/chicv"  class="external-link" target="_blank" rel="noopener">https://github.com/skyzh/chicv</a>.</p>
+<h2 id="简历">简历</h2>
+<p>推荐使用网上的现成模版来写。例如<a href="https://github.com/skyzh/chicv">https://github.com/skyzh/chicv</a>.</p>
 <p>简历上没必要写GPA，除非这是你的优势。</p>
 <p>简历大概分为教育经历，工作经历，项目等部分。</p>
 <p>工作经历可以包含实习或者RA的经历。描写一下自己主要做了什么工作。要写出自己的impact并突出自己的技术点，不要只写自己做了什么。如果你做出来的东西对于公司没有任何影响，那等于没做。</p>
@@ -330,13 +174,7 @@ corner case: 写代码的时候遇到的极端or边界情况。
 <p>重复一下就是，主要两点。一是体现自己的能力，二是体现自己的impact。</p>
 <p>项目部分，有github链接是最好的。自己平常写的个人项目建议上传到github上面。项目就主要是突出自己的技术栈了。个人自己写的开源项目一般很难产生impact。</p>
 <p>简历以一页为宜。如果你想写的太多，你可以针对不同岗位写多份简历。例如你投后端的岗位，就没必要花大量篇幅写前端的东西。</p>
-<h2 id="投简历">
-  投简历
-  <a class="heading-link" href="#%e6%8a%95%e7%ae%80%e5%8e%86">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
+<h2 id="投简历">投简历</h2>
 <p><strong>能早投就早投！</strong></p>
 <p><strong>能早投就早投！</strong></p>
 <p><strong>能早投就早投！</strong></p>
@@ -345,29 +183,11 @@ corner case: 写代码的时候遇到的极端or边界情况。
 <p>小公司，国内可以使用boss直聘等软件。国外可以使用simplify等软件。</p>
 <p>内推: 内推建议多找自己身边认识的人、学长学姐、网友等。</p>
 <p>领英直接联系hr: 这也是一种方法。首先你需要先把自己领英的界面搞好，然后找hr进行私聊。</p>
-<h2 id="oa笔试">
-  OA(笔试)
-  <a class="heading-link" href="#oa%e7%ac%94%e8%af%95">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
+<h2 id="oa笔试">OA(笔试)</h2>
 <p>最好在收到的当天就做了。不然别人做的早，可能先把hc占了。</p>
 <p>珍惜每一个OA。</p>
-<h2 id="技术面试">
-  技术面试
-  <a class="heading-link" href="#%e6%8a%80%e6%9c%af%e9%9d%a2%e8%af%95">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="从面试官的角度看面试">
-  从面试官的角度看面试
-  <a class="heading-link" href="#%e4%bb%8e%e9%9d%a2%e8%af%95%e5%ae%98%e7%9a%84%e8%a7%92%e5%ba%a6%e7%9c%8b%e9%9d%a2%e8%af%95">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h2 id="技术面试">技术面试</h2>
+<h3 id="从面试官的角度看面试">从面试官的角度看面试</h3>
 <p>在你面试的时候，往往你会注意到面试官在敲键盘。他是在记录你面试时候的表现。一份面试官的记录可能如下:</p>
 <blockquote>
 <p>8:00pm 开始</p>
@@ -411,76 +231,28 @@ corner case: 写代码的时候遇到的极端or边界情况。
 <li>解法不是最优解的时候，发现哪一部分重复计算了or发现了新的思路，从而进行优化。</li>
 </ol>
 <p>最重要的点是让面试官觉得<strong>他的思路和你是同步的</strong>。</p>
-<h3 id="自我介绍">
-  自我介绍
-  <a class="heading-link" href="#%e8%87%aa%e6%88%91%e4%bb%8b%e7%bb%8d">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="自我介绍">自我介绍</h3>
 <p>不要太长。简要说明自己的身份和优点就可以了。</p>
-<h3 id="resume-deep-dive">
-  Resume Deep Dive
-  <a class="heading-link" href="#resume-deep-dive">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="resume-deep-dive">Resume Deep Dive</h3>
 <p>面试官会对着你的简历询问相关的问题。例如你用C++写了一个项目，他可能会问你在这个过程中用到了C++的哪些特性。或者针对你的实习经历，他会问你能再描述一下你做了什么吗？你当时遇到的困难是什么？</p>
 <p>这些只要自己对着简历，把自己想象成面试官，然后自己问自己一些问题进行准备就可以了。</p>
-<h3 id="coding">
-  Coding
-  <a class="heading-link" href="#coding">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="coding">Coding</h3>
 <p>写代码部分。推荐的网站是Leetcode.</p>
-<p><a href="https://www.techinterviewhandbook.org/grind75"  class="external-link" target="_blank" rel="noopener">https://www.techinterviewhandbook.org/grind75</a> 这个网站上面对Leetcode的题目做了分类精选。非常推荐。如果时间紧，就先刷这个上面的题目。</p>
+<p><a href="https://www.techinterviewhandbook.org/grind75">https://www.techinterviewhandbook.org/grind75</a> 这个网站上面对Leetcode的题目做了分类精选。非常推荐。如果时间紧，就先刷这个上面的题目。</p>
 <p>做题重要的是学习思想，而不是死记硬背。算法题是背不完的。</p>
-<h3 id="system-design">
-  System Design
-  <a class="heading-link" href="#system-design">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="system-design">System Design</h3>
 <p>这个属于北美的特殊要求。国内的同学可以跳过这一段。</p>
 <p>看书，DDIA。解决所有问题。</p>
-<h3 id="八股文">
-  八股文
-  <a class="heading-link" href="#%e5%85%ab%e8%82%a1%e6%96%87">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="八股文">八股文</h3>
 <p>这个国内比较多，北美偶尔也有考的。</p>
-<p>推荐的方法是首先分类。计算机网络，操作系统，编译原理，数据库。然后自己针对薄弱的地方学习。时间够的话直接在B站看南京大学或者MIT的课程，把整门课都复习一遍。这是正道。时间不够的话看这个网站，<a href="https://www.xiaolincoding.com/"  class="external-link" target="_blank" rel="noopener">https://www.xiaolincoding.com/</a>.</p>
-<h3 id="bq">
-  BQ
-  <a class="heading-link" href="#bq">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<p>推荐的方法是首先分类。计算机网络，操作系统，编译原理，数据库。然后自己针对薄弱的地方学习。时间够的话直接在B站看南京大学或者MIT的课程，把整门课都复习一遍。这是正道。时间不够的话看这个网站，<a href="https://www.xiaolincoding.com/">https://www.xiaolincoding.com/</a>.</p>
+<h3 id="bq">BQ</h3>
 <p>北美向</p>
-<p><a href="https://sugarac.gitbooks.io/high-frequency-interview-questions-and-answers/content/bq-by-xiao-tu-dao.html"  class="external-link" target="_blank" rel="noopener">https://sugarac.gitbooks.io/high-frequency-interview-questions-and-answers/content/bq-by-xiao-tu-dao.html</a></p>
-<p><a href="https://www.youtube.com/c/DanCroitor/videos"  class="external-link" target="_blank" rel="noopener">https://www.youtube.com/c/DanCroitor/videos</a></p>
-<h3 id="反问">
-  反问
-  <a class="heading-link" href="#%e5%8f%8d%e9%97%ae">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<p><a href="https://sugarac.gitbooks.io/high-frequency-interview-questions-and-answers/content/bq-by-xiao-tu-dao.html">https://sugarac.gitbooks.io/high-frequency-interview-questions-and-answers/content/bq-by-xiao-tu-dao.html</a></p>
+<p><a href="https://www.youtube.com/c/DanCroitor/videos">https://www.youtube.com/c/DanCroitor/videos</a></p>
+<h3 id="反问">反问</h3>
 <p>反问环节一般出现在面试最后，面试官会说，我的问题问完了，你有什么要问我的吗？这是一个常规流程。</p>
-<h3 id="反问适用的常见问题">
-  反问适用的常见问题
-  <a class="heading-link" href="#%e5%8f%8d%e9%97%ae%e9%80%82%e7%94%a8%e7%9a%84%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="反问适用的常见问题">反问适用的常见问题</h3>
 <p>以下问题有的只能用来询问组长(team leader),不要用他们去询问做IC的面试官。例如您对我未来2年的期望是什么？这应该很好区分。</p>
 <p>下面是总结的常见反问：</p>
 <ol>
@@ -520,21 +292,9 @@ corner case: 写代码的时候遇到的极端or边界情况。
 <li>你怎么样处理和其他人的冲突？</li>
 <li>你每天工作中最大的挑战是什么？</li>
 </ol>
-<h2 id="hr面">
-  HR面
-  <a class="heading-link" href="#hr%e9%9d%a2">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
+<h2 id="hr面">HR面</h2>
 <p>HR面常见的出现时间是投完简历之后的第一轮面试，或者技术面全部通过之后的最后一轮面试。这点不同公司差别很大。阿里的HR权力较大，一般HR面在最后需要认真准备。有的公司技术面全通过之后的HR面基本就是走个过场了。有的公司第一轮就是HR面，这属于一种初步筛选。</p>
-<h3 id="常见问题">
-  常见问题
-  <a class="heading-link" href="#%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="常见问题">常见问题</h3>
 <ol>
 <li>你为什么对本公司的这个职位感兴趣？</li>
 <li>你有没有做过什么项目？</li>
@@ -549,13 +309,7 @@ corner case: 写代码的时候遇到的极端or边界情况。
 <li>在完成某项工作时，你认为领导要求的方式不是最好的，自己还有更好的方法，你应该怎么做？</li>
 <li>你对跳槽的看法？</li>
 </ol>
-<h3 id="回答策略">
-  回答策略
-  <a class="heading-link" href="#%e5%9b%9e%e7%ad%94%e7%ad%96%e7%95%a5">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="回答策略">回答策略</h3>
 <p>STAR方法:</p>
 <p>STAR原则是结构化面试当中非常重要的一个理论：</p>
 <p>S—Situation：事情是在什么情况下发生；</p>
@@ -563,114 +317,58 @@ corner case: 写代码的时候遇到的极端or边界情况。
 <p>A—Action：针对这样的情况分析，你采用了什么行动方式；</p>
 <p>R—Result：结果怎样，在这样的情况下你学习到了什么。</p>
 <p>面试官会按照STAR方法来问你，你也按照STAR方法来回答就好了。</p>
-<h2 id="写在后面">
-  写在后面
-  <a class="heading-link" href="#%e5%86%99%e5%9c%a8%e5%90%8e%e9%9d%a2">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
+<h2 id="写在后面">写在后面</h2>
 <blockquote>
 <p>天生我材必有用，千金散尽还复来。</p>
 </blockquote>
 <p>相信自己。</p>
 
-      </div>
+
+</article>
 
 
-      <footer>
+<section class="post-nav">
+    <ul>
+        <li>
         
-
-
+            <a href="https://blog.oyyko.com/posts/haskell1/"><i class="fa fa-chevron-circle-left"></i> UCSD CSE 230 Midterm Review Note</a>
         
+        </li>
+        <li>
         
-        <div class="comments">
-    <script>
+            <a href="https://blog.oyyko.com/posts/trick/">软件使用小技巧 <i class="fa fa-chevron-circle-right"></i> </a>
+        
+        </li>
+    </ul>
+</section>
   
-    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
-  
-    getTheme = getTheme == null ? 'github-light' : getTheme;
     
-    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
-    let s = document.createElement('script');
-    s.src = 'https://utteranc.es/client.js';
-    s.setAttribute('repo', 'oyyko\/utteranc-comments');
-    s.setAttribute('issue-term', 'pathname');
-    s.setAttribute('theme', theme);
-    s.setAttribute('crossorigin', 'anonymous');
-    s.setAttribute('async', '');
-    document.querySelector('div.comments').innerHTML = '';
-    document.querySelector('div.comments').appendChild(s);
-  
-    </script>
-    </div>
-        
-        
-      </footer>
-    </article>
-
     
-  </section>
-
-    </div>
-
-    <footer class="footer">
-    <section class="container">
-      ©
-      
-      2019 -
-      
-      2024
-       Oyyko 
-      ·
-      
-      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
-        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
-        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
-      
-    </section>
-</footer>
-  </main>
-
   
 
-  
-  
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
-  
 
-  
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="https://blog.oyyko.com/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
 
   
 
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 </body>
 
 </html>
+
