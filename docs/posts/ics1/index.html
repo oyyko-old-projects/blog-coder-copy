@@ -1,143 +1,222 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>ICS Note 1 - Colin&#39;s Blog</title>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="A C&#43;&#43; Programmer" />
-<meta name="author" content="Oyyko" /><meta property="og:title" content="ICS Note 1" />
-<meta property="og:description" content="This is my notes for ICS. Source: ppt
-计算系统概论笔记1 来自PPT" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.oyyko.com/posts/ics1/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-11-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-08-01T12:18:15+08:00" />
+  <title>
+  ICS Note 1 · Colin&#39;s Blog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Oyyko">
+<meta name="description" content="This is my notes for ICS. Source: ppt
+计算系统概论笔记1 来自PPT">
+<meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="ICS Note 1"/>
 <meta name="twitter:description" content="This is my notes for ICS. Source: ppt
 计算系统概论笔记1 来自PPT"/>
 
-<meta name="generator" content="Hugo 0.124.1">
-    
+<meta property="og:title" content="ICS Note 1" />
+<meta property="og:description" content="This is my notes for ICS. Source: ppt
+计算系统概论笔记1 来自PPT" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-01T12:18:15+08:00" />
 
-  <link rel="stylesheet" href="/css/normalize.min.css" />
-  <link rel="stylesheet" href="https://blog.oyyko.com/fontawesome/css/all.min.css" />
+
+
+
+<link rel="canonical" href="https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics1/">
+
+
+<style>
+@import url(//fonts.googleapis.com/css2?family=Lato&family=JetBrains+Mono&family=Noto+Sans+SC);
+</style>
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
   
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
   
+  <link rel="stylesheet" href="/blog-coder-copy/css/coder.min.4aa47e08823270231494db5e45db07ca1087851d1cf797b9ceef270927d26246.css" integrity="sha256-SqR&#43;CIIycCMUlNteRdsHyhCHhR0c95e5zu8nCSfSYkY=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
   
-  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    
+    
+    <link rel="stylesheet" href="/blog-coder-copy/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
 </head>
 
-<body>
-  <div id="container">
-    <header>
-      
-      <h1>
-        <a href="/">Colin&rsquo;s Blog</a>
-      </h1>
 
-      <ul id="social-media">
-             <li>
-               <a href="mailto:finalwind42@gmail.com" title="Email me">
-               <i class="fas fa-envelope fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://github.com/oyyko" title="GitHub">
-               <i class="fab fa-github fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://linkedin.com/in/col-z" title="LinkedIn">
-               <i class="fab fa-linkedin fa-lg"></i>
-               </a>
-             </li>
-      </ul>
-      
-      <p><em>A C++ Programmer</em></p>
-      
-    </header>
 
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/blog-coder-copy">
+      Colin&#39;s Blog
+    </a>
     
-<nav>
-    <ul>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
-        <li>
-            <a class="" href="/about">
-                <i class="fa-li fa  fa-lg"></i><span>About</span>
-            </a>
-        </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/about">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/posts">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/tags">Tags</a>
+            </li>
+          
         
-        <li>
-            <a class="" href="/posts">
-                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
-            </a>
-        </li>
         
-        <li>
-            <a class="" href="/tags">
-                <i class="fa-li fa  fa-lg"></i><span>Tags</span>
-            </a>
-        </li>
-        
-    </ul>
+      </ul>
+    
+  </section>
 </nav>
 
 
-    <main>
-
-
-
-
-<article>
-
-    <h1>ICS Note 1</h1>
-
-    
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2021-11-17T00:00:00Z">Nov 17, 2021</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2023-08-01T12:18:15&#43;08:00">Aug 1, 2023</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/ics">#ICS</a>
-                
-            </em>
-        </li>
-        
-
-        <li>4 minute read</li>
-    </ul>
-</aside>
-
-    
-
-    
+    <div class="content">
       
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics1/">
+              ICS Note 1
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-11-17T00:00:00Z">
+                2021-11-17
+              </time>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/blog-coder-copy/tags/ics/">ICS</a>
+    </span></div>
 
-    
+        </div>
+      </header>
 
-    <p>This is my notes for ICS. Source: ppt
+      <div class="post-content">
+        
+        
+        <hr>
+        <i class="fa fa-book"></i> Table of Contents
+               <div id="toc"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#centernamescenter"><!-- raw HTML omitted -->NAMES<!-- raw HTML omitted --></a></li>
+    <li><a href="#centerlc-3center"><!-- raw HTML omitted -->LC-3<!-- raw HTML omitted --></a></li>
+    <li><a href="#centercontrol-unitcenter"><!-- raw HTML omitted -->CONTROL UNIT<!-- raw HTML omitted --></a></li>
+    <li><a href="#instruction">Instruction</a></li>
+    <li><a href="#lc3-isa">LC3 ISA</a>
+      <ul>
+        <li><a href="#add0001">ADD(0001):</a></li>
+        <li><a href="#ldr0110">LDR(0110)</a></li>
+        <li><a href="#jmp1100">JMP(1100)</a></li>
+        <li><a href="#br0000">BR(0000)</a></li>
+      </ul>
+    </li>
+    <li><a href="#process">Process</a>
+      <ul>
+        <li><a href="#fetch">FETCH</a></li>
+        <li><a href="#decode">DECODE</a></li>
+        <li><a href="#evaluate-address">EVALUATE ADDRESS</a></li>
+        <li><a href="#fetch-operands">FETCH OPERANDS</a></li>
+        <li><a href="#execute">EXECUTE</a></li>
+      </ul>
+    </li>
+    <li><a href="#store">STORE</a></li>
+    <li><a href="#changing-the-sequence-of-instructions">Changing the Sequence of Instructions</a></li>
+    <li><a href="#misc">MISC</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav> </div>
+        <hr>
+        <p>This is my notes for ICS. Source: ppt
 计算系统概论笔记1 来自PPT</p>
-<h2 id="centernamescenter"><!-- raw HTML omitted -->NAMES<!-- raw HTML omitted --></h2>
+<h2 id="centernamescenter">
+  <!-- raw HTML omitted -->NAMES<!-- raw HTML omitted -->
+  <a class="heading-link" href="#centernamescenter">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>MAR: Memory Address Register
 MDR: Memory Data Register
 (联想Lisp的 CAR,CDR)</p>
-<h2 id="centerlc-3center"><!-- raw HTML omitted -->LC-3<!-- raw HTML omitted --></h2>
+<h2 id="centerlc-3center">
+  <!-- raw HTML omitted -->LC-3<!-- raw HTML omitted -->
+  <a class="heading-link" href="#centerlc-3center">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>ALU: ADD,AND,NOT</p>
 <p>Registers: 8 registers. R0,R1,&hellip;,R7</p>
 <p>Word Size:</p>
@@ -160,7 +239,13 @@ MDR: Memory Data Register
 </ul>
 <p>CRT: cathode ray tube (CRT) 阴极射线管
 Program that controls access to a device is usually called a <strong>driver</strong>.</p>
-<h2 id="centercontrol-unitcenter"><!-- raw HTML omitted -->CONTROL UNIT<!-- raw HTML omitted --></h2>
+<h2 id="centercontrol-unitcenter">
+  <!-- raw HTML omitted -->CONTROL UNIT<!-- raw HTML omitted -->
+  <a class="heading-link" href="#centercontrol-unitcenter">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <!-- raw HTML omitted -->
 <p>Instruction Register (IR) contains the current instruction.
 Program Counter (PC) contains the <strong>address</strong> of the next instruction to be executed.</p>
@@ -180,7 +265,13 @@ Program Counter (PC) contains the <strong>address</strong> of the next instructi
 </li>
 </ul>
 <p><img src="/images/ICS1-1.png" alt="Insturction Processing"></p>
-<h2 id="instruction">Instruction</h2>
+<h2 id="instruction">
+  Instruction
+  <a class="heading-link" href="#instruction">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <ul>
 <li>The instruction is the fundamental unit of work.</li>
 <li>Specifies two things:
@@ -206,27 +297,69 @@ Program Counter (PC) contains the <strong>address</strong> of the next instructi
 <li>我们判断使用volatile还是加锁的唯一依据就是volatile的语义能否满足使用的场景(原子性)</li>
 </ul>
 <p>A computer’s instructions and their formats is known as its <strong>Instruction Set Architecture</strong> (ISA).</p>
-<h2 id="lc3-isa">LC3 ISA</h2>
-<h3 id="add0001">ADD(0001):</h3>
+<h2 id="lc3-isa">
+  LC3 ISA
+  <a class="heading-link" href="#lc3-isa">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="add0001">
+  ADD(0001):
+  <a class="heading-link" href="#add0001">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <ul>
 <li>opcode[15:12] Dst[11:9] Src1[8:6] ???[5:3] Src2[2:0]</li>
 </ul>
-<h3 id="ldr0110">LDR(0110)</h3>
+<h3 id="ldr0110">
+  LDR(0110)
+  <a class="heading-link" href="#ldr0110">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <ul>
 <li>opcode[15:12] Dst[11:9] Base[8:6] Offset[5:0]</li>
 </ul>
-<h3 id="jmp1100">JMP(1100)</h3>
+<h3 id="jmp1100">
+  JMP(1100)
+  <a class="heading-link" href="#jmp1100">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <ul>
 <li>opcode[15:12] ???[11:9] Base[8:6] ???[5:0]</li>
 </ul>
 <p>means: load the content of &lsquo;Base&rsquo; reg into PC</p>
-<h3 id="br0000">BR(0000)</h3>
+<h3 id="br0000">
+  BR(0000)
+  <a class="heading-link" href="#br0000">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <ul>
 <li>opcode[15:12] nzp[11:9] PCoffset[8:0]</li>
 </ul>
 <p>nzp: negative, zero, positive</p>
-<h2 id="process">Process</h2>
-<h3 id="fetch">FETCH</h3>
+<h2 id="process">
+  Process
+  <a class="heading-link" href="#process">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="fetch">
+  FETCH
+  <a class="heading-link" href="#fetch">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>Load next instruction (at address stored in PC) from memory into Instruction Register (IR).</p>
 <ul>
 <li>Load contents of PC into MAR.</li>
@@ -235,7 +368,13 @@ Program Counter (PC) contains the <strong>address</strong> of the next instructi
 Then increment PC, so that it points to the next instruction in sequence.</li>
 <li>PC becomes PC+1.</li>
 </ul>
-<h3 id="decode">DECODE</h3>
+<h3 id="decode">
+  DECODE
+  <a class="heading-link" href="#decode">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>First identify the opcode.</p>
 <ul>
 <li>In LC-3, this is always the first four bits of instruction.</li>
@@ -247,7 +386,13 @@ Example:</p>
 <li>for ADD, last three bits is source operand #2</li>
 <li>for LDR, last six bits is offset</li>
 </ul>
-<h3 id="evaluate-address">EVALUATE ADDRESS</h3>
+<h3 id="evaluate-address">
+  EVALUATE ADDRESS
+  <a class="heading-link" href="#evaluate-address">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>For instructions that require memory access, compute address used for access.
 Examples:</p>
 <ul>
@@ -255,21 +400,39 @@ Examples:</p>
 <li>add offset to PC (or to part of PC)</li>
 <li>add offset to zero</li>
 </ul>
-<h3 id="fetch-operands">FETCH OPERANDS</h3>
+<h3 id="fetch-operands">
+  FETCH OPERANDS
+  <a class="heading-link" href="#fetch-operands">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>Obtain source operands needed to perform operation.</p>
 <p>Examples:</p>
 <ul>
 <li>read data from register file (ADD)</li>
 <li>load data from memory (LDR)</li>
 </ul>
-<h3 id="execute">EXECUTE</h3>
+<h3 id="execute">
+  EXECUTE
+  <a class="heading-link" href="#execute">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>Perform the operation, using the source operands.</p>
 <p>Examples:</p>
 <ul>
 <li>send operands to ALU and assert ADD signal</li>
 <li>do nothing (e.g., for loads and stores)</li>
 </ul>
-<h2 id="store">STORE</h2>
+<h2 id="store">
+  STORE
+  <a class="heading-link" href="#store">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>Write results to destination. (register or memory)</p>
 <p>Examples:</p>
 <ul>
@@ -282,7 +445,13 @@ Examples:</p>
 </ul>
 </li>
 </ul>
-<h2 id="changing-the-sequence-of-instructions">Changing the Sequence of Instructions</h2>
+<h2 id="changing-the-sequence-of-instructions">
+  Changing the Sequence of Instructions
+  <a class="heading-link" href="#changing-the-sequence-of-instructions">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>In the FETCH phase, we incremented the Program Counter by 1.</p>
 <p>What if we don’t want to always execute the instruction that follows this one?
 examples: loop, if-then-else, function call
@@ -292,7 +461,13 @@ These are called jumps and branches.</p>
 <li>jumps are unconditional &ndash; they always change the PC</li>
 <li>branches are conditional &ndash; they change the PC only if some condition is true (e.g., the contents of a register is zero)</li>
 </ul>
-<h2 id="misc">MISC</h2>
+<h2 id="misc">
+  MISC
+  <a class="heading-link" href="#misc">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>The clock is a signal that keeps the control unit moving.
 Clock cycle (or machine cycle) &ndash; rising edge to rising edge.
 Clock generator circuit: based on crystal oscillator.</p>
@@ -305,7 +480,13 @@ The OS is a special program that manages processor and other resources.</p>
 <li>AND the clock generator signal with ZERO</li>
 <li>when control unit stops seeing the CLOCK signal, it stops processing</li>
 </ul>
-<h2 id="summary">Summary</h2>
+<h2 id="summary">
+  Summary
+  <a class="heading-link" href="#summary">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>Instructions look just like data &ndash; it’s all interpretation.
 Three basic kinds of instructions:</p>
 <ul>
@@ -316,52 +497,102 @@ Six basic phases of instruction processing:</li>
 <li>not all phases are needed by every instruction</li>
 <li>phases may take variable number of machine cycles</li>
 </ul>
+      </div>
 
-</article>
+
+      <footer>
+        
 
 
-<section class="post-nav">
-    <ul>
-        <li>
         
-            <a href="https://blog.oyyko.com/posts/unimodal/"><i class="fa fa-chevron-circle-left"></i> The language UNIMODAL is not context free</a>
         
-        </li>
-        <li>
-        
-            <a href="https://blog.oyyko.com/posts/ics2/">ICS Note 2 <i class="fa fa-chevron-circle-right"></i> </a>
-        
-        </li>
-    </ul>
-</section>
+        <div class="comments">
+    <script>
   
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? 'github-light' : getTheme;
     
+    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+    let s = document.createElement('script');
+    s.src = 'https://utteranc.es/client.js';
+    s.setAttribute('repo', 'oyyko\/utteranc-comments');
+    s.setAttribute('issue-term', 'pathname');
+    s.setAttribute('theme', theme);
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
+  
+    </script>
+    </div>
+        
+        
+      </footer>
+    </article>
+
     
+  </section>
+
+    </div>
+
+    <footer class="footer">
+    <section class="container">
+      ©
+      
+      2019 -
+      
+      2024
+       Oyyko 
+      ·
+      
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
+        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
+        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
+      
+    </section>
+</footer>
+  </main>
+
+  
+
+  
+  
+  <script src="/blog-coder-copy/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
   
 
 
-
-
-
-</main>
-    <footer>
-        <ul>
-            <li>
-                <h6>
-                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-                    <a href="https://blog.oyyko.com/index.xml">Subscribe </a></h6>
-            </li>
-            
-            
-        </ul>
-    </footer>
-</div>
-<script src="/js/scripts.js"></script>
+  
 
   
 
+  
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 </body>
 
 </html>
-

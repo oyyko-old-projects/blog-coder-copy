@@ -2,26 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C&#43;&#43; on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/c&#43;&#43;/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Mon, 08 Apr 2024 01:01:44 -0700</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>面试常见问题 1</title>
-      <link>https://blog.oyyko.com/posts/interview1/</link>
-      <pubDate>Sun, 07 Apr 2024 23:37:30 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/interview1/</guid>
-      <description>部分内容为GPT的回答。&#xA;和红黑树的功能类似的还有哪些数据结构 红黑树是一种自平衡的二叉搜索树，它通过特定的属性和操作保持树的平衡，从而实现在最坏情况下仍能保持对数级别的查找、插入和删除时间复杂度。和红黑树提供相似功能的数据结构主要包括其他类型的自平衡二叉搜索树和一些特殊的数据结构，它们都能提供高效的查找、插入和删除操作。下面列出一些常见的例子：</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/interview1/</link>
+      <pubDate>Sun, 07 Apr 2024 23:37:30 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/interview1/</guid>
+      <description>部分内容为GPT的回答。&#xA;和红黑树的功能类似的还有哪些数据结构 Link to heading 红黑树是一种自平衡的二叉搜索树，它通过特定的属性和操作保持树的平衡，从而实现在最坏情况下仍能保持对数级别的查找、插入和删除时间复杂度。和红黑树提供相似功能的数据结构主要包括其他类型的自平衡二叉搜索树和一些特殊的数据结构，它们都能提供高效的查找、插入和删除操作。下面列出一些常见的例子：</description>
     </item>
     <item>
       <title>Cpp 笔记 新系列1</title>
-      <link>https://blog.oyyko.com/posts/cppnote1/</link>
-      <pubDate>Tue, 02 Apr 2024 19:12:23 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/cppnote1/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cppnote1/</link>
+      <pubDate>Tue, 02 Apr 2024 19:12:23 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cppnote1/</guid>
       <description></description>
     </item>
   </channel>

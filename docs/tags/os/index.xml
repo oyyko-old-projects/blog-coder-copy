@@ -2,26 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OS on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/os/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/os/</link>
     <description>Recent content in OS on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Tue, 01 Aug 2023 12:18:15 +0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archlinux/Manjaro Install Guide</title>
-      <link>https://blog.oyyko.com/posts/arch_install/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/arch_install/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/arch_install/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/arch_install/</guid>
       <description>manjaro I3新电脑配置&#xA;假设已经安装好了manjaro i3，接下来要做的是：</description>
     </item>
     <item>
       <title>Revisit_OS</title>
-      <link>https://blog.oyyko.com/posts/revisit_os/</link>
-      <pubDate>Sat, 20 Aug 2022 16:05:28 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/revisit_os/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/revisit_os/</link>
+      <pubDate>Sat, 20 Aug 2022 16:05:28 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/revisit_os/</guid>
       <description>For some reason, I&amp;rsquo;ve been reviewing OS related stuff lately.</description>
     </item>
   </channel>

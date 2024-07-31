@@ -2,19 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meta on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/meta/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/meta/</link>
     <description>Recent content in Meta on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Tue, 01 Aug 2023 12:30:09 +0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/meta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Change0729</title>
-      <link>https://blog.oyyko.com/posts/change0729/</link>
-      <pubDate>Sat, 29 Jul 2023 22:50:19 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/change0729/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/change0729/</link>
+      <pubDate>Sat, 29 Jul 2023 22:50:19 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/change0729/</guid>
       <description>Now I changed the theme of this blog to https://github.</description>
     </item>
   </channel>

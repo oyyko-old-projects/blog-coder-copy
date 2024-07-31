@@ -1,163 +1,265 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>New Macbook Setup - Colin&#39;s Blog</title>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="A C&#43;&#43; Programmer" />
-<meta name="author" content="Oyyko" /><meta property="og:title" content="New Macbook Setup" />
-<meta property="og:description" content="Install HomeBrew see https://brew." />
+  <title>
+  New Macbook Setup · Colin&#39;s Blog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Oyyko">
+<meta name="description" content="Install HomeBrew Link to heading see https://brew.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="New Macbook Setup"/>
+<meta name="twitter:description" content="Install HomeBrew Link to heading see https://brew."/>
+
+<meta property="og:title" content="New Macbook Setup" />
+<meta property="og:description" content="Install HomeBrew Link to heading see https://brew." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.oyyko.com/posts/mac_config/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://oyyko-old-projects.github.io/blog-coder-copy/posts/mac_config/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-04T10:41:00-07:00" />
 <meta property="article:modified_time" content="2023-10-10T23:05:15-07:00" />
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="New Macbook Setup"/>
-<meta name="twitter:description" content="Install HomeBrew see https://brew."/>
 
-<meta name="generator" content="Hugo 0.124.1">
+
+
+<link rel="canonical" href="https://oyyko-old-projects.github.io/blog-coder-copy/posts/mac_config/">
+
+
+<style>
+@import url(//fonts.googleapis.com/css2?family=Lato&family=JetBrains+Mono&family=Noto+Sans+SC);
+</style>
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/blog-coder-copy/css/coder.min.4aa47e08823270231494db5e45db07ca1087851d1cf797b9ceef270927d26246.css" integrity="sha256-SqR&#43;CIIycCMUlNteRdsHyhCHhR0c95e5zu8nCSfSYkY=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
     
+    
+    <link rel="stylesheet" href="/blog-coder-copy/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
 
-  <link rel="stylesheet" href="/css/normalize.min.css" />
-  <link rel="stylesheet" href="https://blog.oyyko.com/fontawesome/css/all.min.css" />
-  
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
-  
-  
-  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
 </head>
 
-<body>
-  <div id="container">
-    <header>
-      
-      <h1>
-        <a href="/">Colin&rsquo;s Blog</a>
-      </h1>
 
-      <ul id="social-media">
-             <li>
-               <a href="mailto:finalwind42@gmail.com" title="Email me">
-               <i class="fas fa-envelope fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://github.com/oyyko" title="GitHub">
-               <i class="fab fa-github fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://linkedin.com/in/col-z" title="LinkedIn">
-               <i class="fab fa-linkedin fa-lg"></i>
-               </a>
-             </li>
-      </ul>
-      
-      <p><em>A C++ Programmer</em></p>
-      
-    </header>
 
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/blog-coder-copy">
+      Colin&#39;s Blog
+    </a>
     
-<nav>
-    <ul>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
-        <li>
-            <a class="" href="/about">
-                <i class="fa-li fa  fa-lg"></i><span>About</span>
-            </a>
-        </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/about">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/posts">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/tags">Tags</a>
+            </li>
+          
         
-        <li>
-            <a class="" href="/posts">
-                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
-            </a>
-        </li>
         
-        <li>
-            <a class="" href="/tags">
-                <i class="fa-li fa  fa-lg"></i><span>Tags</span>
-            </a>
-        </li>
-        
-    </ul>
+      </ul>
+    
+  </section>
 </nav>
 
 
-    <main>
-
-
-
-
-<article>
-
-    <h1>New Macbook Setup</h1>
-
-    
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2023-10-04T10:41:00-07:00">Oct 4, 2023</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2023-10-10T23:05:15-07:00">Oct 10, 2023</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/mac">#mac</a>
-                
-                    , 
-                    <a href="/tags/macbook">#macbook</a>
-                
-            </em>
-        </li>
-        
-
-        <li>One minute read</li>
-    </ul>
-</aside>
-
-    
-
-    
+    <div class="content">
       
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://oyyko-old-projects.github.io/blog-coder-copy/posts/mac_config/">
+              New Macbook Setup
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-10-04T10:41:00-07:00">
+                2023-10-04
+              </time>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/blog-coder-copy/tags/mac/">Mac</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/blog-coder-copy/tags/macbook/">Macbook</a>
+    </span></div>
 
-    
+        </div>
+      </header>
 
-    <h2 id="install-homebrew">Install HomeBrew</h2>
-<p>see <a href="https://brew.sh/">https://brew.sh/</a>.</p>
-<h2 id="增加软件仓库">增加软件仓库</h2>
+      <div class="post-content">
+        
+        
+        <hr>
+        <i class="fa fa-book"></i> Table of Contents
+               <div id="toc"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#install-homebrew">Install HomeBrew</a></li>
+    <li><a href="#增加软件仓库">增加软件仓库</a></li>
+    <li><a href="#use-homebrew-to-install-apps">Use homebrew to install Apps</a></li>
+    <li><a href="#install-snap">Install snap</a></li>
+    <li><a href="#install-flow">Install Flow</a></li>
+    <li><a href="#tex">Tex</a></li>
+    <li><a href="#下载字体">下载字体</a></li>
+    <li><a href="#配置iterm2和zsh">配置iterm2和zsh</a></li>
+    <li><a href="#安装zoxide">安装zoxide</a></li>
+    <li><a href="#安装p10k">安装p10k</a></li>
+    <li><a href="#使终端中的option----可以实现跨单词跳转">使终端中的option ⌥ + ← 可以实现跨单词跳转</a></li>
+    <li><a href="#使用espanso">使用espanso</a></li>
+  </ul>
+</nav> </div>
+        <hr>
+        <h2 id="install-homebrew">
+  Install HomeBrew
+  <a class="heading-link" href="#install-homebrew">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>see <a href="https://brew.sh/"  class="external-link" target="_blank" rel="noopener">https://brew.sh/</a>.</p>
+<h2 id="增加软件仓库">
+  增加软件仓库
+  <a class="heading-link" href="#%e5%a2%9e%e5%8a%a0%e8%bd%af%e4%bb%b6%e4%bb%93%e5%ba%93">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>brew tap homebrew/cask-fonts 
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>brew tap homebrew/cask
 </span></span></code></pre></div><p>在增加了homebrew/cask之后，安装cask中的软件不需要<code>brew install --cask</code>, 只需要直接<code>brew install</code>即可。</p>
 <blockquote>
 <p>但是官方不建议这么做，官方做法是使用<code>brew install --cask XXX</code></p>
 </blockquote>
-<h2 id="use-homebrew-to-install-apps">Use homebrew to install Apps</h2>
+<h2 id="use-homebrew-to-install-apps">
+  Use homebrew to install Apps
+  <a class="heading-link" href="#use-homebrew-to-install-apps">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#75715e">## Install Rust CLI Apps</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>brew install bat fd wget bottom lsd ripgrep
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#75715e">## Install cask Apps</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>brew install --cask google-chrome visual-studio-code wechat qq iterm2 iina
-</span></span></code></pre></div><h2 id="install-snap">Install snap</h2>
+</span></span></code></pre></div><h2 id="install-snap">
+  Install snap
+  <a class="heading-link" href="#install-snap">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>With Snap App, you can use <code>Command ⌘ + 1</code> to call the first app in your dock.</p>
 <p>从App Store下载。这是免费的。</p>
-<h2 id="install-flow">Install Flow</h2>
+<h2 id="install-flow">
+  Install Flow
+  <a class="heading-link" href="#install-flow">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>Flow可以定时提醒自己休息。从App Store下载或者brew安装都可以。</p>
-<h2 id="tex">Tex</h2>
+<h2 id="tex">
+  Tex
+  <a class="heading-link" href="#tex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>安装MacTex即可。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>brew install --cask mactex
-</span></span></code></pre></div><h2 id="下载字体">下载字体</h2>
+</span></span></code></pre></div><h2 id="下载字体">
+  下载字体
+  <a class="heading-link" href="#%e4%b8%8b%e8%bd%bd%e5%ad%97%e4%bd%93">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>brew install font-jetbrains-mono-nerd-font
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>brew install font-jetbrains-mono
-</span></span></code></pre></div><h2 id="配置iterm2和zsh">配置iterm2和zsh</h2>
+</span></span></code></pre></div><h2 id="配置iterm2和zsh">
+  配置iterm2和zsh
+  <a class="heading-link" href="#%e9%85%8d%e7%bd%aeiterm2%e5%92%8czsh">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>在<code>~/.zshrc</code>中配置<code>alias ins=&quot;brew install&quot;</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>ins zsh-fast-syntax-highlighting
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>ins zsh-autosuggestions
@@ -176,67 +278,141 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span><span style="color:#66d9ef">fi</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-</span></span></code></pre></div><h2 id="安装zoxide">安装zoxide</h2>
+</span></span></code></pre></div><h2 id="安装zoxide">
+  安装zoxide
+  <a class="heading-link" href="#%e5%ae%89%e8%a3%85zoxide">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>zoxide会记忆你最近访问的目录。例如你最近访问过<code>~/aaa/bb/banana</code>,那么不管你当前处在哪一个目录，你都可以用<code>z ba</code>来跳转到banana目录下吗。<code>z b</code>, <code>z ba</code>,<code>z ban</code>都是可以的。
 安装方法：
 <code>ins zoxide</code>
 之后在zshrc中配置
 <code>eval &quot;$(zoxide init zsh)&quot;</code></p>
-<h2 id="安装p10k">安装p10k</h2>
+<h2 id="安装p10k">
+  安装p10k
+  <a class="heading-link" href="#%e5%ae%89%e8%a3%85p10k">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>参考https://github.com/romkatv/powerlevel10k</p>
-<h2 id="使终端中的option----可以实现跨单词跳转">使终端中的option ⌥ + ← 可以实现跨单词跳转</h2>
+<h2 id="使终端中的option----可以实现跨单词跳转">
+  使终端中的option ⌥ + ← 可以实现跨单词跳转
+  <a class="heading-link" href="#%e4%bd%bf%e7%bb%88%e7%ab%af%e4%b8%ad%e7%9a%84option----%e5%8f%af%e4%bb%a5%e5%ae%9e%e7%8e%b0%e8%b7%a8%e5%8d%95%e8%af%8d%e8%b7%b3%e8%bd%ac">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>在zshrc中配置</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>bindkey <span style="color:#e6db74">&#34;\e\e[D&#34;</span> backward-word
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>bindkey <span style="color:#e6db74">&#34;\e\e[C&#34;</span> forward-word
-</span></span></code></pre></div><h2 id="使用espanso">使用espanso</h2>
+</span></span></code></pre></div><h2 id="使用espanso">
+  使用espanso
+  <a class="heading-link" href="#%e4%bd%bf%e7%94%a8espanso">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>espanso是一个键盘快捷键映射软件。例如在任何地方输入:date会自动变为当前的日期。输入:name会自动显示自己的姓名等。</p>
 
+      </div>
 
-</article>
+
+      <footer>
+        
 
 
-<section class="post-nav">
-    <ul>
-        <li>
         
-            <a href="https://blog.oyyko.com/posts/mogan_note4/"><i class="fa fa-chevron-circle-left"></i> Mogan_note4</a>
         
-        </li>
-        <li>
-        
-            <a href="https://blog.oyyko.com/posts/infra/">Infra知识点 <i class="fa fa-chevron-circle-right"></i> </a>
-        
-        </li>
-    </ul>
-</section>
+        <div class="comments">
+    <script>
   
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? 'github-light' : getTheme;
     
+    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+    let s = document.createElement('script');
+    s.src = 'https://utteranc.es/client.js';
+    s.setAttribute('repo', 'oyyko\/utteranc-comments');
+    s.setAttribute('issue-term', 'pathname');
+    s.setAttribute('theme', theme);
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
+  
+    </script>
+    </div>
+        
+        
+      </footer>
+    </article>
+
     
+  </section>
+
+    </div>
+
+    <footer class="footer">
+    <section class="container">
+      ©
+      
+      2019 -
+      
+      2024
+       Oyyko 
+      ·
+      
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
+        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
+        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
+      
+    </section>
+</footer>
+  </main>
+
+  
+
+  
+  
+  <script src="/blog-coder-copy/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
   
 
 
-
-
-
-</main>
-    <footer>
-        <ul>
-            <li>
-                <h6>
-                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-                    <a href="https://blog.oyyko.com/index.xml">Subscribe </a></h6>
-            </li>
-            
-            
-        </ul>
-    </footer>
-</div>
-<script src="/js/scripts.js"></script>
+  
 
   
 
+  
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 </body>
 
 </html>
-

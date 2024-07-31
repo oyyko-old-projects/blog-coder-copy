@@ -2,20 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Infra on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/infra/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/infra/</link>
     <description>Recent content in Infra on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Fri, 08 Mar 2024 03:08:49 -0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/infra/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/infra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Infra知识点</title>
-      <link>https://blog.oyyko.com/posts/infra/</link>
-      <pubDate>Wed, 11 Oct 2023 23:54:53 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/infra/</guid>
-      <description>本文为摘录网络内容. 由于时间原因未记录原文地址，谷歌即可找到原文。&#xA;简述数据库三大范式 第一范式是最基本的范式。如果数据库表中的所有字段值都是不可分解的原子值，就说明该数据库表满足了第一范式。</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/infra/</link>
+      <pubDate>Wed, 11 Oct 2023 23:54:53 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/infra/</guid>
+      <description>本文为摘录网络内容. 由于时间原因未记录原文地址，谷歌即可找到原文。&#xA;简述数据库三大范式 Link to heading 第一范式是最基本的范式。如果数据库表中的所有字段值都是不可分解的原子值，就说明该数据库表满足了第一范式。</description>
     </item>
   </channel>
 </rss>

@@ -2,68 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithm on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/algorithm/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/algorithm/</link>
     <description>Recent content in Algorithm on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Wed, 14 Feb 2024 19:17:09 -0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>位运算技巧</title>
-      <link>https://blog.oyyko.com/posts/bithack/</link>
-      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/bithack/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bithack/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bithack/</guid>
       <description>&lt;p&gt;位运算技巧&lt;/p&gt;</description>
     </item>
     <item>
       <title>链表 笔记</title>
-      <link>https://blog.oyyko.com/posts/linklist/</link>
-      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/linklist/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/linklist/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/linklist/</guid>
       <description>&lt;p&gt;链表笔记&lt;/p&gt;</description>
     </item>
     <item>
       <title>压行技巧</title>
-      <link>https://blog.oyyko.com/posts/yahang/</link>
-      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/yahang/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/yahang/</link>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/yahang/</guid>
       <description>&lt;p&gt;压行技巧&lt;/p&gt;</description>
     </item>
     <item>
       <title>三道面试题</title>
-      <link>https://blog.oyyko.com/posts/three-problem/</link>
-      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/three-problem/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/three-problem/</link>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/three-problem/</guid>
       <description>&lt;p&gt;三道面试题&lt;/p&gt;</description>
     </item>
     <item>
       <title>二分总结</title>
-      <link>https://blog.oyyko.com/posts/bisection/</link>
-      <pubDate>Tue, 30 Nov 2021 15:20:51 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/bisection/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bisection/</link>
+      <pubDate>Tue, 30 Nov 2021 15:20:51 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bisection/</guid>
       <description>##　Leetcode 704 二分查找target</description>
     </item>
     <item>
       <title>A strange way to compute GCD</title>
-      <link>https://blog.oyyko.com/posts/gcd/</link>
-      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/gcd/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/gcd/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/gcd/</guid>
       <description>&lt;p&gt;A strange way to compute GCD in one line&lt;/p&gt;</description>
     </item>
     <item>
       <title>CCPC华为的一道趣题</title>
-      <link>https://blog.oyyko.com/posts/ccpc_huawei/</link>
-      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/ccpc_huawei/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ccpc_huawei/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ccpc_huawei/</guid>
       <description>&lt;p&gt;本文记录了CCPC华为比赛中的一道题目&lt;/p&gt;</description>
     </item>
     <item>
       <title>N queens Problem</title>
-      <link>https://blog.oyyko.com/posts/n-queens/</link>
-      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/n-queens/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/n-queens/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/n-queens/</guid>
       <description>&lt;p&gt;This article will provide a fast way to find a solution for the famous N queens problem.&lt;/p&gt;</description>
     </item>
   </channel>

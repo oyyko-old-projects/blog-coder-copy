@@ -2,19 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Number_Theory on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/number_theory/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/number_theory/</link>
     <description>Recent content in Number_Theory on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Tue, 01 Aug 2023 03:48:54 +0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/number_theory/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/number_theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数论笔记</title>
-      <link>https://blog.oyyko.com/posts/shulun/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/shulun/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/shulun/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/shulun/</guid>
       <description>&lt;p&gt;本文是我的数论笔记的第一篇&#xA;关于:4k+1型和4k+3型素数&lt;/p&gt;</description>
     </item>
   </channel>

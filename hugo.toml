@@ -1,12 +1,12 @@
-baseURL = 'https://blog.oyyko.com'
+baseURL = 'https://oyyko-old-projects.github.io/blog-coder-copy/'
 title = "Colin's Blog"
-theme = "hugo-kiera"
+theme = "hugo-coder"
 publishDir = "docs"
 enableGitInfo = true
 languagecode = "en"
 defaultcontentlanguage = "en"
 
-paginate = 10
+paginate = 100
 summaryLength = 3
 
 [author]
@@ -14,7 +14,7 @@ summaryLength = 3
   github = "oyyko"
   linkedin = "col-z"
   email = "finalwind42@gmail.com"
-  link = "https://blog.oyyko.com"
+  link = "https://oyyko-old-projects.github.io/blog-coder-copy/"
 
 [params]
     tagline = "A C++ Programmer"

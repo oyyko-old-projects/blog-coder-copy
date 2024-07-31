@@ -2,20 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algo on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/algo/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/algo/</link>
     <description>Recent content in Algo on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Wed, 03 Apr 2024 23:22:34 -0700</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/algo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/algo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>二分问题的统一解决方案</title>
-      <link>https://blog.oyyko.com/posts/erfen/</link>
-      <pubDate>Wed, 03 Apr 2024 16:10:24 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/erfen/</guid>
-      <description>思路来自 https://www.youtube.com/watch?v=QvcM99na30k。本文为学习记录+结合自己的思考修改后得出的框架。&#xA;引入 在算法题中有时候会遇到这种场景，对于一个问题，它的答案是一个整数且一定取在一个范围内，例如答案只可能是$[1, 10^9]$中的一个数字。且存在一个条件，使得对于任何小于答案的数字，这个条件都不成立；而对于任何大于等于答案的数字，这个条件都成立。那么这个时候就可以使用二分的方法来找到答案。</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/erfen/</link>
+      <pubDate>Wed, 03 Apr 2024 16:10:24 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/erfen/</guid>
+      <description>思路来自 https://www.youtube.com/watch?v=QvcM99na30k。本文为学习记录+结合自己的思考修改后得出的框架。&#xA;引入 Link to heading 在算法题中有时候会遇到这种场景，对于一个问题，它的答案是一个整数且一定取在一个范围内，例如答案只可能是$[1, 10^9]$中的一个数字。且存在一个条件，使得对于任何小于答案的数字，这个条件都不成立；而对于任何大于等于答案的数字，这个条件都成立。那么这个时候就可以使用二分的方法来找到答案。</description>
     </item>
   </channel>
 </rss>

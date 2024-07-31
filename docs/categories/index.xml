@@ -2,12 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/categories/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/categories/</link>
     <description>Recent content in Categories on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
-    <atom:link href="https://blog.oyyko.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

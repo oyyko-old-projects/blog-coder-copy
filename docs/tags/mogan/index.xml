@@ -2,34 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mogan on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/mogan/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/mogan/</link>
     <description>Recent content in Mogan on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Tue, 01 Aug 2023 03:48:54 +0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/mogan/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/mogan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Texmacs/Mogan Note 2</title>
-      <link>https://blog.oyyko.com/posts/texmacs_note2/</link>
-      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/texmacs_note2/</guid>
-      <description>23_15 1(get-init-tree &amp;#34;text-at-halign&amp;#34;) 这个与缓存有关。缓存位置在~/.</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note2/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note2/</guid>
+      <description>23_15 Link to heading 1(get-init-tree &amp;#34;text-at-halign&amp;#34;) 这个与缓存有关。缓存位置在~/.</description>
     </item>
     <item>
       <title>Texmacs Graphics Tutorial</title>
-      <link>https://blog.oyyko.com/posts/texmacs_graphics_tutorial/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/texmacs_graphics_tutorial/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_graphics_tutorial/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_graphics_tutorial/</guid>
       <description>原文：https://www.texmacs.org/tmweb/documents/tutorials/TeXmacs-graphics-tutorial.pdf</description>
     </item>
     <item>
       <title>Texmacs/Mogan Note</title>
-      <link>https://blog.oyyko.com/posts/texmacs_note/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/texmacs_note/</guid>
-      <description>Note graphics-utils.scm 1;;These abbreviations are very convenient 2;;to use.</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note/</guid>
+      <description>Note Link to heading graphics-utils.</description>
     </item>
   </channel>
 </rss>

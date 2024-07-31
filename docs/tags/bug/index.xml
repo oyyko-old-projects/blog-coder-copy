@@ -2,26 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BUG on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/bug/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/bug/</link>
     <description>Recent content in BUG on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Tue, 01 Aug 2023 03:48:54 +0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/bug/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/bug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>In archlinux, chrome cannot be displayed normally under AMD.</title>
-      <link>https://blog.oyyko.com/posts/chrome_amd/</link>
-      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/chrome_amd/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/chrome_amd/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/chrome_amd/</guid>
       <description>Solution:&#xA;1rm -rf .</description>
     </item>
     <item>
       <title>Fix a grub bug</title>
-      <link>https://blog.oyyko.com/posts/grub/</link>
-      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/grub/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/grub/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/grub/</guid>
       <description>In this article, I will record how to fix the problem that grub can&amp;rsquo;t find Windows on nvme.</description>
     </item>
   </channel>

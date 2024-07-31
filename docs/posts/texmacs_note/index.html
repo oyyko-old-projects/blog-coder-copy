@@ -1,145 +1,215 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Texmacs/Mogan Note - Colin&#39;s Blog</title>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="A C&#43;&#43; Programmer" />
-<meta name="author" content="Oyyko" /><meta property="og:title" content="Texmacs/Mogan Note" />
-<meta property="og:description" content="Note graphics-utils.scm 1;;These abbreviations are very convenient 2;;to use." />
+  <title>
+  Texmacs/Mogan Note · Colin&#39;s Blog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Oyyko">
+<meta name="description" content="Note Link to heading graphics-utils.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Texmacs/Mogan Note"/>
+<meta name="twitter:description" content="Note Link to heading graphics-utils."/>
+
+<meta property="og:title" content="Texmacs/Mogan Note" />
+<meta property="og:description" content="Note Link to heading graphics-utils." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.oyyko.com/posts/texmacs_note/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-07-05T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-08-01T03:48:54+08:00" />
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Texmacs/Mogan Note"/>
-<meta name="twitter:description" content="Note graphics-utils.scm 1;;These abbreviations are very convenient 2;;to use."/>
 
-<meta name="generator" content="Hugo 0.124.1">
+
+
+<link rel="canonical" href="https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note/">
+
+
+<style>
+@import url(//fonts.googleapis.com/css2?family=Lato&family=JetBrains+Mono&family=Noto+Sans+SC);
+</style>
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/blog-coder-copy/css/coder.min.4aa47e08823270231494db5e45db07ca1087851d1cf797b9ceef270927d26246.css" integrity="sha256-SqR&#43;CIIycCMUlNteRdsHyhCHhR0c95e5zu8nCSfSYkY=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
     
+    
+    <link rel="stylesheet" href="/blog-coder-copy/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
 
-  <link rel="stylesheet" href="/css/normalize.min.css" />
-  <link rel="stylesheet" href="https://blog.oyyko.com/fontawesome/css/all.min.css" />
-  
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
-  
-  
-  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
 </head>
 
-<body>
-  <div id="container">
-    <header>
-      
-      <h1>
-        <a href="/">Colin&rsquo;s Blog</a>
-      </h1>
 
-      <ul id="social-media">
-             <li>
-               <a href="mailto:finalwind42@gmail.com" title="Email me">
-               <i class="fas fa-envelope fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://github.com/oyyko" title="GitHub">
-               <i class="fab fa-github fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://linkedin.com/in/col-z" title="LinkedIn">
-               <i class="fab fa-linkedin fa-lg"></i>
-               </a>
-             </li>
-      </ul>
-      
-      <p><em>A C++ Programmer</em></p>
-      
-    </header>
 
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/blog-coder-copy">
+      Colin&#39;s Blog
+    </a>
     
-<nav>
-    <ul>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
-        <li>
-            <a class="" href="/about">
-                <i class="fa-li fa  fa-lg"></i><span>About</span>
-            </a>
-        </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/about">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/posts">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/tags">Tags</a>
+            </li>
+          
         
-        <li>
-            <a class="" href="/posts">
-                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
-            </a>
-        </li>
         
-        <li>
-            <a class="" href="/tags">
-                <i class="fa-li fa  fa-lg"></i><span>Tags</span>
-            </a>
-        </li>
-        
-    </ul>
+      </ul>
+    
+  </section>
 </nav>
 
 
-    <main>
-
-
-
-
-<article>
-
-    <h1>Texmacs/Mogan Note</h1>
-
-    
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2023-07-05T00:00:00Z">Jul 5, 2023</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2023-08-01T03:48:54&#43;08:00">Aug 1, 2023</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/note">#note</a>
-                
-                    , 
-                    <a href="/tags/code">#code</a>
-                
-                    , 
-                    <a href="/tags/mogan">#mogan</a>
-                
-                    , 
-                    <a href="/tags/texmacs">#texmacs</a>
-                
-            </em>
-        </li>
-        
-
-        <li>10 minute read</li>
-    </ul>
-</aside>
-
-    
-
-    
+    <div class="content">
       
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note/">
+              Texmacs/Mogan Note
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-05T00:00:00Z">
+                2023-07-05
+              </time>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/blog-coder-copy/tags/note/">Note</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/blog-coder-copy/tags/code/">Code</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/blog-coder-copy/tags/mogan/">Mogan</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/blog-coder-copy/tags/texmacs/">Texmacs</a>
+    </span></div>
 
-    
+        </div>
+      </header>
 
-    <h1 id="note">Note</h1>
-<h2 id="graphics-utilsscm">graphics-utils.scm</h2>
+      <div class="post-content">
+        
+        
+        <hr>
+        <i class="fa fa-book"></i> Table of Contents
+               <div id="toc"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#graphics-utilsscm">graphics-utils.scm</a></li>
+    <li><a href="#graphics-singlescm">graphics-single.scm</a></li>
+    <li><a href="#graphics-envscm">graphics-env.scm</a></li>
+    <li><a href="#graphics-objectscm">graphics-object.scm</a></li>
+    <li><a href="#研究图形移动功能">研究图形移动功能</a></li>
+    <li><a href="#研究测试相关代码">研究测试相关代码</a></li>
+    <li><a href="#tm-ref">tm-ref</a></li>
+    <li><a href="#tm">tm?</a></li>
+    <li><a href="#研究宏包">研究宏包</a></li>
+    <li><a href="#srfi">SRFI</a></li>
+    <li><a href="#23_15">23_15</a></li>
+    <li><a href="#设置属性">设置属性</a></li>
+    <li><a href="#菜单">菜单</a></li>
+    <li><a href="#object-get-property">object-get-property</a></li>
+  </ul>
+</nav> </div>
+        <hr>
+        <h1 id="note">
+  Note
+  <a class="heading-link" href="#note">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="graphics-utilsscm">
+  graphics-utils.scm
+  <a class="heading-link" href="#graphics-utilsscm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#75715e">;;These abbreviations are very convenient</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#75715e">;;to use. A nice naming scheme is :</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#75715e">;;</span>
@@ -161,14 +231,38 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>(<span style="color:#a6e22e">tm-define</span> s2o string-&gt;object)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>(<span style="color:#a6e22e">tm-define</span> t2o tree-&gt;object)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>(<span style="color:#a6e22e">tm-define</span> o2t object-&gt;tree)
-</span></span></code></pre></div><h2 id="graphics-singlescm">graphics-single.scm</h2>
+</span></span></code></pre></div><h2 id="graphics-singlescm">
+  graphics-single.scm
+  <a class="heading-link" href="#graphics-singlescm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>editing routines for single graphical objects.</p>
-<h2 id="graphics-envscm">graphics-env.scm</h2>
+<h2 id="graphics-envscm">
+  graphics-env.scm
+  <a class="heading-link" href="#graphics-envscm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>routines for managing the graphical context.</p>
 <p>current-x在此定义。</p>
-<h2 id="graphics-objectscm">graphics-object.scm</h2>
+<h2 id="graphics-objectscm">
+  graphics-object.scm
+  <a class="heading-link" href="#graphics-objectscm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>routines for managing the graphical object.</p>
-<h2 id="研究图形移动功能">研究图形移动功能</h2>
+<h2 id="研究图形移动功能">
+  研究图形移动功能
+  <a class="heading-link" href="#%e7%a0%94%e7%a9%b6%e5%9b%be%e5%bd%a2%e7%a7%bb%e5%8a%a8%e5%8a%9f%e8%83%bd">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>在edit_move函数中有下面一段</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>(<span style="color:#66d9ef">cond </span>((<span style="color:#a6e22e">==</span> (cadr mode) <span style="color:#e6db74">&#39;move</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>                  (<span style="color:#a6e22e">sketch-transform</span>
@@ -196,13 +290,31 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    (<span style="color:#66d9ef">if </span>(<span style="color:#a6e22e">match?</span> o <span style="color:#f92672">&#39;</span>(point :%2))
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>	<span style="color:#f92672">`</span>(<span style="color:#a6e22e">point</span> <span style="color:#f92672">,</span>(<span style="color:#a6e22e">f2s</span> (+ x (<span style="color:#a6e22e">s2f</span> (cadr o)))) <span style="color:#f92672">,</span>(<span style="color:#a6e22e">f2s</span> (+ y (<span style="color:#a6e22e">s2f</span> (caddr o)))))
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>        o)))
-</span></span></code></pre></div><h2 id="研究测试相关代码">研究测试相关代码</h2>
-<h2 id="tm-ref">tm-ref</h2>
+</span></span></code></pre></div><h2 id="研究测试相关代码">
+  研究测试相关代码
+  <a class="heading-link" href="#%e7%a0%94%e7%a9%b6%e6%b5%8b%e8%af%95%e7%9b%b8%e5%85%b3%e4%bb%a3%e7%a0%81">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h2 id="tm-ref">
+  tm-ref
+  <a class="heading-link" href="#tm-ref">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>(<span style="color:#a6e22e">define-public</span> (<span style="color:#a6e22e">tm-ref</span> t <span style="color:#f92672">.</span> l)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  (<span style="color:#66d9ef">and </span>(<span style="color:#a6e22e">tm?</span> t)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>       (<span style="color:#a6e22e">with</span> r (<span style="color:#a6e22e">select</span> t l)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>	 (<span style="color:#66d9ef">and </span>(<span style="color:#a6e22e">nnull?</span> r) (car r)))))
-</span></span></code></pre></div><h2 id="tm">tm?</h2>
+</span></span></code></pre></div><h2 id="tm">
+  tm?
+  <a class="heading-link" href="#tm">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>  tmscm_install_procedure (<span style="color:#e6db74">&#34;tm?&#34;</span>, contentP, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>);
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>tmscm
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#a6e22e">contentP</span> (tmscm t) {
@@ -230,10 +342,22 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>Scheme]  (<span style="color:#a6e22e">tm-ref</span> (<span style="color:#a6e22e">stree-&gt;tree</span> <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)) <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#ae81ff">2</span>
-</span></span></code></pre></div><h2 id="研究宏包">研究宏包</h2>
+</span></span></code></pre></div><h2 id="研究宏包">
+  研究宏包
+  <a class="heading-link" href="#%e7%a0%94%e7%a9%b6%e5%ae%8f%e5%8c%85">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>为什么有的包已经引入，有的需要作为宏包引入呢？
 init中会初始化一些包。</p>
-<h2 id="srfi">SRFI</h2>
+<h2 id="srfi">
+  SRFI
+  <a class="heading-link" href="#srfi">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>列表长度length</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>  (<span style="color:#a6e22e">assuming</span> (<span style="color:#a6e22e">style-has?</span> <span style="color:#e6db74">&#34;std-markup-dtd&#34;</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    (<span style="color:#a6e22e">with</span> u <span style="color:#f92672">&#39;</span>(arrow-with-text arrow-with-text*)
@@ -250,7 +374,13 @@ init中会初始化一些包。</p>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>            ((eval (<span style="color:#a6e22e">upcase-first</span> (symbol-&gt;string tag)))
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>             (<span style="color:#a6e22e">import-from</span> (<span style="color:#a6e22e">graphics</span> graphics-markup))
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>             (<span style="color:#a6e22e">graphics-set-mode</span> <span style="color:#f92672">`</span>(<span style="color:#a6e22e">edit</span> <span style="color:#f92672">,</span>tag))))))))
-</span></span></code></pre></div><h2 id="23_15">23_15</h2>
+</span></span></code></pre></div><h2 id="23_15">
+  23_15
+  <a class="heading-link" href="#23_15">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">if</span> (N(p) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>      typeset_dynamic (tree (ERROR, <span style="color:#e6db74">&#34;bad text-at&#34;</span>), ip);
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    <span style="color:#66d9ef">else</span> {
@@ -353,7 +483,13 @@ init中会初始化一些包。</p>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  edit_env              env;        <span style="color:#75715e">// the environment
 </span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#75715e"></span>  array<span style="color:#f92672">&lt;</span>line_item<span style="color:#f92672">&gt;</span>      a;          <span style="color:#75715e">// the line items
 </span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">bool</span>                  rigid;      <span style="color:#75715e">// when surely not wrappable
-</span></span></span></code></pre></div><h2 id="设置属性">设置属性</h2>
+</span></span></span></code></pre></div><h2 id="设置属性">
+  设置属性
+  <a class="heading-link" href="#%e8%ae%be%e7%bd%ae%e5%b1%9e%e6%80%a7">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>(<span style="color:#a6e22e">tm-define</span> (<span style="color:#a6e22e">object-set-text-at-halign</span> val)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  (<span style="color:#a6e22e">:argument</span> val <span style="color:#e6db74">&#34;Horizontal alignment&#34;</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  (<span style="color:#a6e22e">:check-mark</span> <span style="color:#e6db74">&#34;*&#34;</span> (<span style="color:#a6e22e">object-test-property?</span> <span style="color:#e6db74">&#34;text-at-halign&#34;</span>))
@@ -366,7 +502,13 @@ init中会初始化一些包。</p>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>         (<span style="color:#a6e22e">with-set</span> (<span style="color:#a6e22e">tree-up</span> t) var val <span style="color:#ae81ff">0</span>))
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        ((<span style="color:#a6e22e">!=</span> val <span style="color:#e6db74">&#34;default&#34;</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>         (<span style="color:#a6e22e">tree-set!</span> t <span style="color:#f92672">`</span>(<span style="color:#a6e22e">with</span> <span style="color:#f92672">,</span>var <span style="color:#f92672">,</span>val <span style="color:#f92672">,</span>t)))))
-</span></span></code></pre></div><h2 id="菜单">菜单</h2>
+</span></span></code></pre></div><h2 id="菜单">
+  菜单
+  <a class="heading-link" href="#%e8%8f%9c%e5%8d%95">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>(<span style="color:#a6e22e">tm-menu</span> (<span style="color:#a6e22e">text-at-halign-menu</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  (<span style="color:#e6db74">&#34;Center&#34;</span> (<span style="color:#a6e22e">object-set-text-at-halign</span> <span style="color:#e6db74">&#34;default&#34;</span>))
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  (<span style="color:#e6db74">&#34;Right&#34;</span> (<span style="color:#a6e22e">object-set-text-at-halign</span> <span style="color:#e6db74">&#34;right&#34;</span>))
@@ -547,7 +689,13 @@ init中会初始化一些包。</p>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>  <span style="color:#66d9ef">if</span> (exists (tm_init_buffer_file)) exec_file (tm_init_buffer_file);
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>  <span style="color:#66d9ef">if</span> (exists (my_init_buffer_file)) exec_file (my_init_buffer_file);
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>  set_current_view (temp);
-</span></span></code></pre></div><h2 id="object-get-property">object-get-property</h2>
+</span></span></code></pre></div><h2 id="object-get-property">
+  object-get-property
+  <a class="heading-link" href="#object-get-property">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>(<span style="color:#a6e22e">tm-define</span> (<span style="color:#a6e22e">object-get-property</span> var)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  (<span style="color:#a6e22e">tree-&gt;stree</span> (<span style="color:#a6e22e">get-env-tree</span> var)))
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>{
@@ -580,52 +728,102 @@ init中会初始化一些包。</p>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">get_env_value</span> (var, tp);
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>}
 </span></span></code></pre></div>
+      </div>
 
-</article>
+
+      <footer>
+        
 
 
-<section class="post-nav">
-    <ul>
-        <li>
         
-            <a href="https://blog.oyyko.com/posts/scheme/"><i class="fa fa-chevron-circle-left"></i> Scheme Review 1</a>
         
-        </li>
-        <li>
-        
-            <a href="https://blog.oyyko.com/posts/texmacs_graphics_tutorial/">Texmacs Graphics Tutorial <i class="fa fa-chevron-circle-right"></i> </a>
-        
-        </li>
-    </ul>
-</section>
+        <div class="comments">
+    <script>
   
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? 'github-light' : getTheme;
     
+    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+    let s = document.createElement('script');
+    s.src = 'https://utteranc.es/client.js';
+    s.setAttribute('repo', 'oyyko\/utteranc-comments');
+    s.setAttribute('issue-term', 'pathname');
+    s.setAttribute('theme', theme);
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
+  
+    </script>
+    </div>
+        
+        
+      </footer>
+    </article>
+
     
+  </section>
+
+    </div>
+
+    <footer class="footer">
+    <section class="container">
+      ©
+      
+      2019 -
+      
+      2024
+       Oyyko 
+      ·
+      
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
+        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
+        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
+      
+    </section>
+</footer>
+  </main>
+
+  
+
+  
+  
+  <script src="/blog-coder-copy/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
   
 
 
-
-
-
-</main>
-    <footer>
-        <ul>
-            <li>
-                <h6>
-                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-                    <a href="https://blog.oyyko.com/index.xml">Subscribe </a></h6>
-            </li>
-            
-            
-        </ul>
-    </footer>
-</div>
-<script src="/js/scripts.js"></script>
+  
 
   
 
+  
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 </body>
 
 </html>
-

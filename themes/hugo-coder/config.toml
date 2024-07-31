@@ -1,4 +1,4 @@
-baseurl = "http://oyyko.com"
+baseurl = "https://oyyko-old-projects.github.io/blog-coder-copy/"
 
 
 
@@ -9,7 +9,7 @@ baseurl = "http://oyyko.com"
   info = "Developer & Student"
   description = "Oyyko's personal website"
   keywords = "blog,developer,personal"
-  avatarurl = "/asuka.jpeg"
+  avatarurl = "./asuka.jpeg"
 
   #gravatar = "john.doe@example.com"
 

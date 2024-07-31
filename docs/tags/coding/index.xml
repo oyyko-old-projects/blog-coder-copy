@@ -2,19 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/coding/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/coding/</link>
     <description>Recent content in Coding on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Fri, 08 Mar 2024 03:08:49 -0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何准备程序员面试</title>
-      <link>https://blog.oyyko.com/posts/interview/</link>
-      <pubDate>Thu, 07 Mar 2024 22:20:06 -0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/interview/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/interview/</link>
+      <pubDate>Thu, 07 Mar 2024 22:20:06 -0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/interview/</guid>
       <description>本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。&#xA;本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。&#xA;首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl+F搜索。</description>
     </item>
   </channel>

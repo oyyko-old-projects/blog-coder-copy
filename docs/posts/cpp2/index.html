@@ -1,139 +1,215 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>C&#43;&#43; Note 2 - Colin&#39;s Blog</title>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="A C&#43;&#43; Programmer" />
-<meta name="author" content="Oyyko" /><meta property="og:title" content="C&#43;&#43; Note 2" />
-<meta property="og:description" content="本文是我的C&#43;&#43;笔记的第二篇
-My Second C&#43;&#43; Note;" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.oyyko.com/posts/cpp2/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-11-28T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-08-01T12:18:15+08:00" />
+  <title>
+  C&#43;&#43; Note 2 · Colin&#39;s Blog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Oyyko">
+<meta name="description" content="本文是我的C&#43;&#43;笔记的第二篇
+My Second C&#43;&#43; Note;">
+<meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="C&#43;&#43; Note 2"/>
 <meta name="twitter:description" content="本文是我的C&#43;&#43;笔记的第二篇
 My Second C&#43;&#43; Note;"/>
 
-<meta name="generator" content="Hugo 0.124.1">
-    
+<meta property="og:title" content="C&#43;&#43; Note 2" />
+<meta property="og:description" content="本文是我的C&#43;&#43;笔记的第二篇
+My Second C&#43;&#43; Note;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-01T12:18:15+08:00" />
 
-  <link rel="stylesheet" href="/css/normalize.min.css" />
-  <link rel="stylesheet" href="https://blog.oyyko.com/fontawesome/css/all.min.css" />
+
+
+
+<link rel="canonical" href="https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp2/">
+
+
+<style>
+@import url(//fonts.googleapis.com/css2?family=Lato&family=JetBrains+Mono&family=Noto+Sans+SC);
+</style>
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
   
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
   
+  <link rel="stylesheet" href="/blog-coder-copy/css/coder.min.4aa47e08823270231494db5e45db07ca1087851d1cf797b9ceef270927d26246.css" integrity="sha256-SqR&#43;CIIycCMUlNteRdsHyhCHhR0c95e5zu8nCSfSYkY=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
   
-  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    
+    
+    <link rel="stylesheet" href="/blog-coder-copy/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
 </head>
 
-<body>
-  <div id="container">
-    <header>
-      
-      <h1>
-        <a href="/">Colin&rsquo;s Blog</a>
-      </h1>
 
-      <ul id="social-media">
-             <li>
-               <a href="mailto:finalwind42@gmail.com" title="Email me">
-               <i class="fas fa-envelope fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://github.com/oyyko" title="GitHub">
-               <i class="fab fa-github fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://linkedin.com/in/col-z" title="LinkedIn">
-               <i class="fab fa-linkedin fa-lg"></i>
-               </a>
-             </li>
-      </ul>
-      
-      <p><em>A C++ Programmer</em></p>
-      
-    </header>
 
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/blog-coder-copy">
+      Colin&#39;s Blog
+    </a>
     
-<nav>
-    <ul>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
-        <li>
-            <a class="" href="/about">
-                <i class="fa-li fa  fa-lg"></i><span>About</span>
-            </a>
-        </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/about">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/posts">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/tags">Tags</a>
+            </li>
+          
         
-        <li>
-            <a class="" href="/posts">
-                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
-            </a>
-        </li>
         
-        <li>
-            <a class="" href="/tags">
-                <i class="fa-li fa  fa-lg"></i><span>Tags</span>
-            </a>
-        </li>
-        
-    </ul>
+      </ul>
+    
+  </section>
 </nav>
 
 
-    <main>
-
-
-
-
-<article>
-
-    <h1>C&#43;&#43; Note 2</h1>
-
-    
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2021-11-28T00:00:00Z">Nov 28, 2021</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2023-08-01T12:18:15&#43;08:00">Aug 1, 2023</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/cpp">#Cpp</a>
-                
-            </em>
-        </li>
-        
-
-        <li>4 minute read</li>
-    </ul>
-</aside>
-
-    
-
-    
+    <div class="content">
       
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp2/">
+              C&#43;&#43; Note 2
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-11-28T00:00:00Z">
+                2021-11-28
+              </time>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/blog-coder-copy/tags/cpp/">Cpp</a>
+    </span></div>
 
-    
+        </div>
+      </header>
 
-    <p>本文是我的C++笔记的第二篇
+      <div class="post-content">
+        
+        
+        <hr>
+        <i class="fa fa-book"></i> Table of Contents
+               <div id="toc"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vectorclear">vector.clear()</a></li>
+    <li><a href="#clear-and-minimize">clear and minimize</a>
+      <ul>
+        <li><a href="#before-c11">Before C++11</a></li>
+        <li><a href="#after-c11">After C++11</a></li>
+      </ul>
+    </li>
+    <li><a href="#partition">partition()</a></li>
+    <li><a href="#partial_sort">partial_sort()</a></li>
+    <li><a href="#partial_sort_copy">partial_sort_copy()</a></li>
+    <li><a href="#nth_element">nth_element()</a></li>
+    <li><a href="#is_sorted">is_sorted()</a></li>
+    <li><a href="#is_sorted_until">is_sorted_until()</a></li>
+    <li><a href="#merge">merge()</a></li>
+    <li><a href="#inplace_merge">inplace_merge()</a></li>
+    <li><a href="#find-find_if">find() find_if()</a></li>
+    <li><a href="#find_end与search">find_end()与search()</a></li>
+    <li><a href="#all_of-any_of-none_of">all_of(), any_of(), none_of()</a></li>
+    <li><a href="#countcount_if">count(),count_if()</a></li>
+    <li><a href="#c中的mapfilterreduce">C++中的map,filter,reduce</a>
+      <ul>
+        <li></li>
+        <li><a href="#transform">transform</a></li>
+        <li><a href="#accumulate">accumulate</a></li>
+      </ul>
+    </li>
+    <li><a href="#unique">unique</a></li>
+    <li><a href="#for_each">for_each()</a></li>
+  </ul>
+</nav> </div>
+        <hr>
+        <p>本文是我的C++笔记的第二篇
 My Second C++ Note;</p>
-<h2 id="vectorclear">vector.clear()</h2>
+<h2 id="vectorclear">
+  vector.clear()
+  <a class="heading-link" href="#vectorclear">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p><code>vector.clear()</code>并不释放数组，其会调用<code>data[0]...data[size-1]</code>的析构函数。
 <code>vector</code>在析构的时候会先调用<code>clear()</code>然后释放数组
 例如</p>
@@ -173,17 +249,41 @@ My Second C++ Note;</p>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>~World<span style="color:#f92672">()</span>!
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>~World<span style="color:#f92672">()</span>!
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>BBB
-</span></span></code></pre></div><h2 id="clear-and-minimize">clear and minimize</h2>
-<h3 id="before-c11">Before C++11</h3>
+</span></span></code></pre></div><h2 id="clear-and-minimize">
+  clear and minimize
+  <a class="heading-link" href="#clear-and-minimize">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="before-c11">
+  Before C++11
+  <a class="heading-link" href="#before-c11">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v{<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>};
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> temp;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>v.swap(temp);
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#75715e">// to make the capacity and size of v to be both 0
-</span></span></span></code></pre></div><h3 id="after-c11">After C++11</h3>
+</span></span></span></code></pre></div><h3 id="after-c11">
+  After C++11
+  <a class="heading-link" href="#after-c11">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v{<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>};
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>v.clear();
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>v.shrink_to_fit();<span style="color:#75715e">// to make the capacity == size
-</span></span></span></code></pre></div><h2 id="partition">partition()</h2>
+</span></span></span></code></pre></div><h2 id="partition">
+  partition()
+  <a class="heading-link" href="#partition">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>按照规则进行进行分组
 返回分出的第二组的首位的迭代器</p>
 <p>例如</p>
@@ -197,7 +297,13 @@ My Second C++ Note;</p>
 后面一组都是不符合的
 可能会打乱顺序</p>
 <p>对于不想打乱顺序的，使用<code>stable_partition()</code></p>
-<h2 id="partial_sort">partial_sort()</h2>
+<h2 id="partial_sort">
+  partial_sort()
+  <a class="heading-link" href="#partial_sort">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">partial_sort</span> (RandomAccessIterator first,
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>                   RandomAccessIterator middle,
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>                   RandomAccessIterator last);
@@ -206,7 +312,13 @@ My Second C++ Note;</p>
 容器支持的迭代器类型必须为随机访问迭代器。这意味着，partial_sort() 函数只适用于 array、vector、deque 这 3 个容器。
 当选用默认的升序排序规则时，容器中存储的元素类型必须支持 &lt;小于运算符；同样，如果选用标准库提供的其它排序规则，元素类型也必须支持该规则底层实现所用的比较运算符；
 partial_sort() 函数在实现过程中，需要交换某些元素的存储位置。因此，如果容器中存储的是自定义的类对象，则该类的内部必须提供移动构造函数和移动赋值运算符。</p>
-<h2 id="partial_sort_copy">partial_sort_copy()</h2>
+<h2 id="partial_sort_copy">
+  partial_sort_copy()
+  <a class="heading-link" href="#partial_sort_copy">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>partial_sort_copy() 函数的功能和 partial_sort() 类似，唯一的区别在于，前者不会对原有数据做任何变动，而是先将选定的部分元素拷贝到另外指定的数组或容器中，然后再对这部分元素进行排序。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>RandomAccessIterator <span style="color:#a6e22e">partial_sort_copy</span> (
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>                       InputIterator first,
@@ -216,31 +328,67 @@ partial_sort() 函数在实现过程中，需要交换某些元素的存储位�
 </span></span></code></pre></div><p>partial_sort_copy() 函数会将 [first, last) 范围内最小（或最大）的 result_last-result_first 个元素复制到 [result_first, result_last) 区域中，并对该区域的元素做升序（或降序）排序。</p>
 <p>值得一提的是，[first, last] 中的这 2 个迭代器类型仅限定为输入迭代器，这意味着相比 partial_sort() 函数，partial_sort_copy() 函数放宽了对存储原有数据的容器类型的限制。换句话说，partial_sort_copy() 函数还支持对 list 容器或者 forward_list 容器中存储的元素进行“部分排序”，而 partial_sort() 函数不行。</p>
 <p>但是，介于 result_first 和 result_last 仍为随机访问迭代器，因此 [result_first, result_last) 指定的区域仍仅限于普通数组和部分类型的容器，这和 partial_sort() 函数对容器的要求是一样的。</p>
-<h2 id="nth_element">nth_element()</h2>
+<h2 id="nth_element">
+  nth_element()
+  <a class="heading-link" href="#nth_element">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>nth_element is a partial sorting algorithm that rearranges elements in [first, last) such that:</p>
 <ul>
 <li>The element pointed at by nth is changed to whatever element would occur in that position if [first, last) were sorted.</li>
 <li>All of the elements before this new nth element are less than or equal to the elements after the new nth element.</li>
 </ul>
 <p>简单的理解 nth_element() 函数的功能，当采用默认的升序排序规则（std::less<!-- raw HTML omitted -->）时，该函数可以从某个序列中找到第 n 小的元素 K，并将 K 移动到序列中第 n 的位置处。不仅如此，整个序列经过 nth_element() 函数处理后，所有位于 K 之前的元素都比 K 小，所有位于 K 之后的元素都比 K 大。</p>
-<h2 id="is_sorted">is_sorted()</h2>
+<h2 id="is_sorted">
+  is_sorted()
+  <a class="heading-link" href="#is_sorted">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#75715e">//判断 [first, last) 区域内的数据是否符合 std::less&lt;T&gt; 排序规则，即是否为升序序列
 </span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#75715e"></span><span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">is_sorted</span> (ForwardIterator first, ForwardIterator last);
-</span></span></code></pre></div><h2 id="is_sorted_until">is_sorted_until()</h2>
+</span></span></code></pre></div><h2 id="is_sorted_until">
+  is_sorted_until()
+  <a class="heading-link" href="#is_sorted_until">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>和 is_sorted() 函数相比，is_sorted_until() 函数不仅能检测出某个序列是否有序，还会返回一个正向迭代器，该迭代器指向的是当前序列中第一个破坏有序状态的元素。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>ForwardIterator <span style="color:#a6e22e">is_sorted_until</span> (ForwardIterator first, ForwardIterator last);
-</span></span></code></pre></div><h2 id="merge">merge()</h2>
+</span></span></code></pre></div><h2 id="merge">
+  merge()
+  <a class="heading-link" href="#merge">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>merge() 函数用于将 2 个有序序列合并为 1 个有序序列，前提是这 2 个有序序列的排序规则相同（要么都是升序，要么都是降序）。并且最终借助该函数获得的新有序序列，其排序规则也和这 2 个有序序列相同。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>OutputIterator <span style="color:#a6e22e">merge</span> (InputIterator1 first1, InputIterator1 last1,
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>                      InputIterator2 first2, InputIterator2 last2,
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>                      OutputIterator result);
-</span></span></code></pre></div><h2 id="inplace_merge">inplace_merge()</h2>
+</span></span></code></pre></div><h2 id="inplace_merge">
+  inplace_merge()
+  <a class="heading-link" href="#inplace_merge">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>事实上，当 2 个有序序列存储在同一个数组或容器中时，如果想将它们合并为 1 个有序序列，除了使用 merge() 函数，更推荐使用 inplace_merge() 函数。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#75715e">//默认采用升序的排序规则
 </span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">inplace_merge</span> (BidirectionalIterator first, BidirectionalIterator middle,
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>                    BidirectionalIterator last);
 </span></span></code></pre></div><p>其中，first、middle 和 last 都为双向迭代器，[first, middle) 和 [middle, last) 各表示一个有序序列。</p>
-<h2 id="find-find_if">find() find_if()</h2>
+<h2 id="find-find_if">
+  find() find_if()
+  <a class="heading-link" href="#find-find_if">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>InputIterator <span style="color:#a6e22e">find</span> (InputIterator first, InputIterator last, <span style="color:#66d9ef">const</span> T<span style="color:#f92672">&amp;</span> val);
 </span></span></code></pre></div><p>find() 函数本质上是一个模板函数，用于在指定范围内查找和目标元素值相等的第一个元素。
 另外，该函数会返回一个输入迭代器，当 find() 函数查找成功时，其指向的是在 [first, last) 区域内查找到的第一个目标元素；如果查找失败，则该迭代器的指向和 last 相同。
@@ -248,21 +396,51 @@ partial_sort() 函数在实现过程中，需要交换某些元素的存储位�
 <hr>
 <p>和 find() 函数相同，find_if() 函数也用于在指定区域内执行查找操作。不同的是，前者需要明确指定要查找的元素的值，而后者则允许自定义查找规则。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>InputIterator <span style="color:#a6e22e">find_if</span> (InputIterator first, InputIterator last, UnaryPredicate pred);
-</span></span></code></pre></div><h2 id="find_end与search">find_end()与search()</h2>
+</span></span></code></pre></div><h2 id="find_end与search">
+  find_end()与search()
+  <a class="heading-link" href="#find_end%e4%b8%8esearch">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>序列A: 1,2,3,7,8,9,1,2,3,4
 序列B: 1,2,3</p>
 <p>find_end(A,B)返回B在A里面最后一次出现的位置
 search(A,B)返回B在A里面第一次出现的位置</p>
-<h2 id="all_of-any_of-none_of">all_of(), any_of(), none_of()</h2>
+<h2 id="all_of-any_of-none_of">
+  all_of(), any_of(), none_of()
+  <a class="heading-link" href="#all_of-any_of-none_of">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>algorithm 头文件中定义了 3 种算法，用来检查在算法应用到序列中的元素上时，什么时候使谓词返回 true。这些算法的前两个参数是定义谓词应用范围的输入迭代器；第三个参数指定了谓词。检查元素是否能让谓词返回 true 似乎很简单，但它却是十分有用的。</p>
-<h2 id="countcount_if">count(),count_if()</h2>
+<h2 id="countcount_if">
+  count(),count_if()
+  <a class="heading-link" href="#countcount_if">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>返回序列中
 count(): 等于val的个数
 count_if(): 满足pred的个数</p>
-<h2 id="c中的mapfilterreduce">C++中的map,filter,reduce</h2>
+<h2 id="c中的mapfilterreduce">
+  C++中的map,filter,reduce
+  <a class="heading-link" href="#c%e4%b8%ad%e7%9a%84mapfilterreduce">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>分别等价于transform,copy_if,accumulate</p>
 <p>用法：</p>
-<h4 id="copy_if">copy_if</h4>
+<h4 id="copy_if">
+  copy_if
+  <a class="heading-link" href="#copy_if">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>};
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vv;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>copy_if(begin(v), end(v), inserter(vv,begin(vv)), [](<span style="color:#66d9ef">auto</span> <span style="color:#f92672">&amp;</span>x)
@@ -276,9 +454,21 @@ count_if(): 满足pred的个数</p>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>            { <span style="color:#66d9ef">return</span> x <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>; });
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    pr(cc);<span style="color:#75715e">// 11 22 33 44 2
 </span></span></span></code></pre></div><p>这里使用<code>back_inserter</code>向后面追加元素</p>
-<h3 id="transform">transform</h3>
+<h3 id="transform">
+  transform
+  <a class="heading-link" href="#transform">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>对容器里面的每个元素都做一次操作</p>
-<h3 id="accumulate">accumulate</h3>
+<h3 id="accumulate">
+  accumulate
+  <a class="heading-link" href="#accumulate">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>迭代所有元素并做类似求和等操作</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>};
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    cout <span style="color:#f92672">&lt;&lt;</span> accumulate(v.begin(), v.end(), v[<span style="color:#ae81ff">0</span>], [](<span style="color:#66d9ef">auto</span> <span style="color:#f92672">&amp;</span>x, <span style="color:#66d9ef">auto</span> <span style="color:#f92672">&amp;</span>y)
@@ -289,9 +479,21 @@ count_if(): 满足pred的个数</p>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    cout <span style="color:#f92672">&lt;&lt;</span> accumulate(next(begin(v)), end(v), v[<span style="color:#ae81ff">0</span>], [](<span style="color:#66d9ef">auto</span> <span style="color:#f92672">&amp;</span>x, <span style="color:#66d9ef">auto</span> <span style="color:#f92672">&amp;</span>y)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>                       { <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> y; });
 </span></span></code></pre></div><p>也就是把初始值设置为<code>v[0]</code>之后再累加剩余的元素即可。</p>
-<h2 id="unique">unique</h2>
+<h2 id="unique">
+  unique
+  <a class="heading-link" href="#unique">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>unique() 算法可以在序列中原地移除重复的元素，这就要求被处理的序列必须是正向迭代器所指定的。在移除重复元素后，它会返回一个正向迭代器作为新序列的结束迭代器。可以提供一个函数对象作为可选的第三个参数，这个参数会定义一个用来代替 == 比较元素的方法。</p>
-<h2 id="for_each">for_each()</h2>
+<h2 id="for_each">
+  for_each()
+  <a class="heading-link" href="#for_each">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>};
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    for_each(v.begin(), v.end(), [](<span style="color:#66d9ef">auto</span> <span style="color:#f92672">&amp;</span>x)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>             { x <span style="color:#f92672">=</span> x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>; });
@@ -302,52 +504,102 @@ count_if(): 满足pred的个数</p>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>             { x <span style="color:#f92672">=</span> x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>; });
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>    pr(v);<span style="color:#75715e">//1 2 3
 </span></span></span></code></pre></div>
+      </div>
 
-</article>
+
+      <footer>
+        
 
 
-<section class="post-nav">
-    <ul>
-        <li>
         
-            <a href="https://blog.oyyko.com/posts/ics_ppt/"><i class="fa fa-chevron-circle-left"></i> ICS PPT Note 1</a>
         
-        </li>
-        <li>
-        
-            <a href="https://blog.oyyko.com/posts/bisection/">二分总结 <i class="fa fa-chevron-circle-right"></i> </a>
-        
-        </li>
-    </ul>
-</section>
+        <div class="comments">
+    <script>
   
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? 'github-light' : getTheme;
     
+    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+    let s = document.createElement('script');
+    s.src = 'https://utteranc.es/client.js';
+    s.setAttribute('repo', 'oyyko\/utteranc-comments');
+    s.setAttribute('issue-term', 'pathname');
+    s.setAttribute('theme', theme);
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
+  
+    </script>
+    </div>
+        
+        
+      </footer>
+    </article>
+
     
+  </section>
+
+    </div>
+
+    <footer class="footer">
+    <section class="container">
+      ©
+      
+      2019 -
+      
+      2024
+       Oyyko 
+      ·
+      
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
+        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
+        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
+      
+    </section>
+</footer>
+  </main>
+
+  
+
+  
+  
+  <script src="/blog-coder-copy/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
   
 
 
-
-
-
-</main>
-    <footer>
-        <ul>
-            <li>
-                <h6>
-                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-                    <a href="https://blog.oyyko.com/index.xml">Subscribe </a></h6>
-            </li>
-            
-            
-        </ul>
-    </footer>
-</div>
-<script src="/js/scripts.js"></script>
+  
 
   
 
+  
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 </body>
 
 </html>
-

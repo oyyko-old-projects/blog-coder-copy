@@ -2,26 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/math/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/math/</link>
     <description>Recent content in Math on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Tue, 01 Aug 2023 12:18:15 +0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数论笔记</title>
-      <link>https://blog.oyyko.com/posts/shulun/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/shulun/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/shulun/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/shulun/</guid>
       <description>&lt;p&gt;本文是我的数论笔记的第一篇&#xA;关于:4k+1型和4k+3型素数&lt;/p&gt;</description>
     </item>
     <item>
       <title>CCPC华为的一道趣题</title>
-      <link>https://blog.oyyko.com/posts/ccpc_huawei/</link>
-      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/ccpc_huawei/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ccpc_huawei/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ccpc_huawei/</guid>
       <description>&lt;p&gt;本文记录了CCPC华为比赛中的一道题目&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,20 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scheme on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/scheme/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/scheme/</link>
     <description>Recent content in Scheme on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Tue, 01 Aug 2023 03:48:54 +0800</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/scheme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/scheme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scheme Review 1</title>
-      <link>https://blog.oyyko.com/posts/scheme/</link>
-      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/scheme/</guid>
-      <description>https://courses.cs.washington.edu/courses/cse341/04wi/lectures/14-scheme-quote.html&#xA;Quote Scheme has a convenient syntax for representing data literals: prefix any expression with &amp;rsquo; (single quote) and the expression, rather than being evaluated, will be returned as data:</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/scheme/</link>
+      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/scheme/</guid>
+      <description>https://courses.cs.washington.edu/courses/cse341/04wi/lectures/14-scheme-quote.html&#xA;Quote Link to heading Scheme has a convenient syntax for representing data literals: prefix any expression with &amp;rsquo; (single quote) and the expression, rather than being evaluated, will be returned as data:</description>
     </item>
   </channel>
 </rss>

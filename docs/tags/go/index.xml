@@ -2,27 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/tags/go/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/tags/go/</link>
     <description>Recent content in Go on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Mon, 08 Apr 2024 01:01:44 -0700</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go 并发与并行的区别</title>
-      <link>https://blog.oyyko.com/posts/goconcnotpar/</link>
-      <pubDate>Wed, 03 Apr 2024 15:12:33 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/goconcnotpar/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/goconcnotpar/</link>
+      <pubDate>Wed, 03 Apr 2024 15:12:33 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/goconcnotpar/</guid>
       <description></description>
     </item>
     <item>
       <title>Go 学习笔记 1</title>
-      <link>https://blog.oyyko.com/posts/go_note1/</link>
-      <pubDate>Sun, 31 Mar 2024 14:07:47 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/go_note1/</guid>
-      <description>ChatGPT摘抄 Go和C++的区别 Go语言（通常称为Golang）和C++在多个方面有显著的区别，包括它们的设计哲学、类型系统、内存管理、并发模型等方面。下面是一些主要的区别：</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/go_note1/</link>
+      <pubDate>Sun, 31 Mar 2024 14:07:47 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/go_note1/</guid>
+      <description>ChatGPT摘抄 Link to heading Go和C++的区别 Link to heading Go语言（通常称为Golang）和C++在多个方面有显著的区别，包括它们的设计哲学、类型系统、内存管理、并发模型等方面。下面是一些主要的区别：</description>
     </item>
   </channel>
 </rss>

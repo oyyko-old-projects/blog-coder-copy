@@ -1,556 +1,245 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>Colin&#39;s Blog</title>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="A C&#43;&#43; Programmer" />
-<meta name="author" content="Oyyko" /><link rel="alternate" type="application/rss+xml" href="https://blog.oyyko.com/index.xml" title="Colin's Blog" /><meta property="og:title" content="Colin&#39;s Blog" />
-<meta property="og:description" content="A C&#43;&#43; Programmer" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.oyyko.com/" />
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Oyyko">
+<meta name="description" content="A C&#43;&#43; Programmer">
+<meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Colin&#39;s Blog"/>
 <meta name="twitter:description" content="A C&#43;&#43; Programmer"/>
 
-<meta name="generator" content="Hugo 0.124.1">
-    
+<meta property="og:title" content="Colin&#39;s Blog" />
+<meta property="og:description" content="A C&#43;&#43; Programmer" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://oyyko-old-projects.github.io/blog-coder-copy/" />
 
-  <link rel="stylesheet" href="/css/normalize.min.css" />
-  <link rel="stylesheet" href="https://blog.oyyko.com/fontawesome/css/all.min.css" />
+
+
+
+<link rel="canonical" href="https://oyyko-old-projects.github.io/blog-coder-copy/">
+
+
+<style>
+@import url(//fonts.googleapis.com/css2?family=Lato&family=JetBrains+Mono&family=Noto+Sans+SC);
+</style>
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
   
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
   
+  <link rel="stylesheet" href="/blog-coder-copy/css/coder.min.4aa47e08823270231494db5e45db07ca1087851d1cf797b9ceef270927d26246.css" integrity="sha256-SqR&#43;CIIycCMUlNteRdsHyhCHhR0c95e5zu8nCSfSYkY=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
   
-  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    
+    
+    <link rel="stylesheet" href="/blog-coder-copy/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link rel="alternate" type="application/rss+xml" href="/blog-coder-copy/index.xml" title="Colin's Blog" />
+
+
+<meta name="generator" content="Hugo 0.124.1">
+
+
+
+
+
 </head>
 
-<body>
-  <div id="container">
-    <header>
-      
-      <h1>
-        <a href="/">Colin&rsquo;s Blog</a>
-      </h1>
 
-      <ul id="social-media">
-             <li>
-               <a href="mailto:finalwind42@gmail.com" title="Email me">
-               <i class="fas fa-envelope fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://github.com/oyyko" title="GitHub">
-               <i class="fab fa-github fa-lg"></i>
-               </a>
-             </li>
-             <li>
-               <a href="https://linkedin.com/in/col-z" title="LinkedIn">
-               <i class="fab fa-linkedin fa-lg"></i>
-               </a>
-             </li>
-      </ul>
-      
-      <p><em>A C++ Programmer</em></p>
-      
-    </header>
 
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/blog-coder-copy">
+      Colin&#39;s Blog
+    </a>
     
-<nav>
-    <ul>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
-        <li>
-            <a class="" href="/about">
-                <i class="fa-li fa  fa-lg"></i><span>About</span>
-            </a>
-        </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/about">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/posts">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/blog-coder-copy/tags">Tags</a>
+            </li>
+          
         
-        <li>
-            <a class="" href="/posts">
-                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
-            </a>
-        </li>
         
-        <li>
-            <a class="" href="/tags">
-                <i class="fa-li fa  fa-lg"></i><span>Tags</span>
-            </a>
-        </li>
-        
-    </ul>
+      </ul>
+    
+  </section>
 </nav>
 
 
-    <main>
-
-
-
-
-<section id="home">
-  <ul>
+    <div class="content">
+      
+<section class="container centered">
+  <div class="about">
     
+  
+    <div class="avatar"><img src="/blog-coder-copy/asuka.jpeg" alt="avatar"></div>
+  
+
+
+
+
+    <h1>Oyyko</h1>
+
+<h2>Developer &amp; Student </h2>
+
+
+
     
+<ul>
+  
     
-
-    <li class="first" >
-      <h1><a href="https://blog.oyyko.com/posts/interview1/" title="面试常见问题 1">面试常见问题 1</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2024-04-07T23:37:30-07:00">Apr 7, 2024</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2024-04-08T01:01:44-07:00">Apr 8, 2024</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/c&#43;&#43;">#C&#43;&#43;</a>
-                
-                    , 
-                    <a href="/tags/interview">#Interview</a>
-                
-            </em>
-        </li>
-        
-
-        <li>11 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p>部分内容为GPT的回答。
-和红黑树的功能类似的还有哪些数据结构 红黑树是一种自平衡的二叉搜索树，它通过特定的属性和操作保持树的平衡，从而实现在最坏情况下仍能保持对数级别的查找、插入和删除时间复杂度。和红黑树提供相似功能的数据结构主要包括其他类型的自平衡二叉搜索树和一些特殊的数据结构，它们都能提供高效的查找、插入和删除操作。下面列出一些常见的例子：</p>
-      
-      <a href="/posts/interview1/">Read more…</a>
-      
-    </li>
+      <li>
+        <a href="https://github.com/Oyyko/" aria-label="Github"   >
+          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
     
-
-    <li >
-      <h1><a href="https://blog.oyyko.com/posts/erfen/" title="二分问题的统一解决方案">二分问题的统一解决方案</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2024-04-03T16:10:24-07:00">Apr 3, 2024</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2024-04-03T23:22:34-07:00">Apr 3, 2024</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/algo">#Algo</a>
-                
-                    , 
-                    <a href="/tags/binary">#Binary</a>
-                
-            </em>
-        </li>
-        
-
-        <li>2 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p>思路来自 https://www.youtube.com/watch?v=QvcM99na30k。本文为学习记录+结合自己的思考修改后得出的框架。
-引入 在算法题中有时候会遇到这种场景，对于一个问题，它的答案是一个整数且一定取在一个范围内，例如答案只可能是$[1, 10^9]$中的一个数字。且存在一个条件，使得对于任何小于答案的数字，这个条件都不成立；而对于任何大于等于答案的数字，这个条件都成立。那么这个时候就可以使用二分的方法来找到答案。</p>
-      
-      <a href="/posts/erfen/">Read more…</a>
-      
-    </li>
+  
     
-
-    <li >
-      <h1><a href="https://blog.oyyko.com/posts/goconcnotpar/" title="Go 并发与并行的区别">Go 并发与并行的区别</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2024-04-03T15:12:33-07:00">Apr 3, 2024</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2024-04-08T01:01:44-07:00">Apr 8, 2024</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/go">#Go</a>
-                
-                    , 
-                    <a href="/tags/concurrent">#Concurrent</a>
-                
-            </em>
-        </li>
-        
-
-        <li>0 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p></p>
-      
-    </li>
+      <li>
+        <a href="https://www.linkedin.com/in/zhang-jia/" aria-label="Linkedin"   >
+          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
     
-
-    <li >
-      <h1><a href="https://blog.oyyko.com/posts/cppnote1/" title="Cpp 笔记 新系列1">Cpp 笔记 新系列1</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2024-04-02T19:12:23-07:00">Apr 2, 2024</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2024-04-03T23:22:34-07:00">Apr 3, 2024</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/c&#43;&#43;">#C&#43;&#43;</a>
-                
-                    , 
-                    <a href="/tags/pl">#PL</a>
-                
-            </em>
-        </li>
-        
-
-        <li>0 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p></p>
-      
-    </li>
+  
     
-
-    <li >
-      <h1><a href="https://blog.oyyko.com/posts/go_note1/" title="Go 学习笔记 1">Go 学习笔记 1</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2024-03-31T14:07:47-07:00">Mar 31, 2024</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2024-04-03T23:22:34-07:00">Apr 3, 2024</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/go">#Go</a>
-                
-                    , 
-                    <a href="/tags/pl">#PL</a>
-                
-            </em>
-        </li>
-        
-
-        <li>11 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p>ChatGPT摘抄 Go和C++的区别 Go语言（通常称为Golang）和C++在多个方面有显著的区别，包括它们的设计哲学、类型系统、内存管理、并发模型等方面。下面是一些主要的区别：</p>
-      
-      <a href="/posts/go_note1/">Read more…</a>
-      
-    </li>
+      <li>
+        <a href="mailto:finalwind42@gmail.com" aria-label="email"   >
+          <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
     
+  
+</ul>
 
-    <li >
-      <h1><a href="https://blog.oyyko.com/posts/trick/" title="软件使用小技巧">软件使用小技巧</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2024-03-09T20:01:37-08:00">Mar 9, 2024</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2024-04-03T23:22:34-07:00">Apr 3, 2024</time>
-        </li>
-        
-        
+  </div>
 
-        
+  
 
-        <li>One minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p>Chrome 如何在MacOS下使chrome全屏，并且是不显示tab栏和地址栏的真全屏？
-首先Fn+F使它假全屏，之后按 ⌘ + ⇧ + F , (Command + Shift + F) 使得它真全屏.</p>
-      
-      <a href="/posts/trick/">Read more…</a>
-      
-    </li>
-    
-
-    <li >
-      <h1><a href="https://blog.oyyko.com/posts/interview/" title="如何准备程序员面试">如何准备程序员面试</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2024-03-07T22:20:06-08:00">Mar 7, 2024</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2024-03-08T03:08:49-08:00">Mar 8, 2024</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/interview">#Interview</a>
-                
-                    , 
-                    <a href="/tags/coding">#Coding</a>
-                
-            </em>
-        </li>
-        
-
-        <li>One minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p>本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。
-本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。
-首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl+F搜索。</p>
-      
-      <a href="/posts/interview/">Read more…</a>
-      
-    </li>
-    
-
-    <li >
-      <h1><a href="https://blog.oyyko.com/posts/haskell1/" title="UCSD CSE 230 Midterm Review Note">UCSD CSE 230 Midterm Review Note</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2023-11-01T14:56:15-07:00">Nov 1, 2023</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2023-11-02T12:04:26-07:00">Nov 2, 2023</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/haskell">#haskell</a>
-                
-                    , 
-                    <a href="/tags/plt">#plt</a>
-                
-                    , 
-                    <a href="/tags/ucsd">#ucsd</a>
-                
-            </em>
-        </li>
-        
-
-        <li>3 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p>01-lambda Programs are expressions e (also called λ-terms) of one of three kinds:</p>
-      
-      <a href="/posts/haskell1/">Read more…</a>
-      
-    </li>
-    
-
-    <li >
-      <h1><a href="https://blog.oyyko.com/posts/infra/" title="Infra知识点">Infra知识点</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2023-10-11T23:54:53-07:00">Oct 11, 2023</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2024-03-08T03:08:49-08:00">Mar 8, 2024</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/infra">#Infra</a>
-                
-                    , 
-                    <a href="/tags/%E5%85%AB%E8%82%A1">#八股</a>
-                
-            </em>
-        </li>
-        
-
-        <li>7 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p>本文为摘录网络内容. 由于时间原因未记录原文地址，谷歌即可找到原文。
-简述数据库三大范式 第一范式是最基本的范式。如果数据库表中的所有字段值都是不可分解的原子值，就说明该数据库表满足了第一范式。</p>
-      
-      <a href="/posts/infra/">Read more…</a>
-      
-    </li>
-    
-
-    <li >
-      <h1><a href="https://blog.oyyko.com/posts/mac_config/" title="New Macbook Setup">New Macbook Setup</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2023-10-04T10:41:00-07:00">Oct 4, 2023</time>
-        </li>
-        
-        <li>
-            Modified on <time datetime="2023-10-10T23:05:15-07:00">Oct 10, 2023</time>
-        </li>
-        
-        
-
-        
-        <li>
-            <em>
-                
-                    
-                    <a href="/tags/mac">#mac</a>
-                
-                    , 
-                    <a href="/tags/macbook">#macbook</a>
-                
-            </em>
-        </li>
-        
-
-        <li>One minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p>Install HomeBrew see https://brew.</p>
-      
-      <a href="/posts/mac_config/">Read more…</a>
-      
-    </li>
-    
-  </ul>
 </section>
 
 
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/page/5/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
+    </div>
 
+    <footer class="footer">
+    <section class="container">
+      ©
+      
+      2019 -
+      
+      2024
+       Oyyko 
+      ·
+      
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a
+        href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a> Modified by <a
+        href="https://oyyko.com" target="_blank" rel="noopener">Oyyko </a>.
+      
+    </section>
+</footer>
+  </main>
 
+  
 
-</main>
-    <footer>
-        <ul>
-            <li>
-                <h6>
-                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-                    <a href="https://blog.oyyko.com/index.xml">Subscribe </a></h6>
-            </li>
-            
-            
-        </ul>
-    </footer>
-</div>
-<script src="/js/scripts.js"></script>
+  
+  
+  <script src="/blog-coder-copy/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
 
   
 
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 </body>
 
 </html>
-

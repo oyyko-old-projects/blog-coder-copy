@@ -2,383 +2,381 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Colin&#39;s Blog</title>
-    <link>https://blog.oyyko.com/</link>
+    <link>https://oyyko-old-projects.github.io/blog-coder-copy/</link>
     <description>Recent content on Colin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>finalwind42@gmail.com (Oyyko)</managingEditor>
-    <webMaster>finalwind42@gmail.com (Oyyko)</webMaster>
     <lastBuildDate>Tue, 16 Apr 2024 21:44:42 -0700</lastBuildDate>
-    <atom:link href="https://blog.oyyko.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oyyko-old-projects.github.io/blog-coder-copy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Friends</title>
-      <link>https://blog.oyyko.com/friends/</link>
-      <pubDate>Mon, 08 Apr 2024 23:44:05 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/friends/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/friends/</link>
+      <pubDate>Mon, 08 Apr 2024 23:44:05 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/friends/</guid>
       <description>Zi&amp;rsquo;an Chen&#xA;Kokic</description>
     </item>
     <item>
       <title>面试常见问题 1</title>
-      <link>https://blog.oyyko.com/posts/interview1/</link>
-      <pubDate>Sun, 07 Apr 2024 23:37:30 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/interview1/</guid>
-      <description>部分内容为GPT的回答。&#xA;和红黑树的功能类似的还有哪些数据结构 红黑树是一种自平衡的二叉搜索树，它通过特定的属性和操作保持树的平衡，从而实现在最坏情况下仍能保持对数级别的查找、插入和删除时间复杂度。和红黑树提供相似功能的数据结构主要包括其他类型的自平衡二叉搜索树和一些特殊的数据结构，它们都能提供高效的查找、插入和删除操作。下面列出一些常见的例子：</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/interview1/</link>
+      <pubDate>Sun, 07 Apr 2024 23:37:30 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/interview1/</guid>
+      <description>部分内容为GPT的回答。&#xA;和红黑树的功能类似的还有哪些数据结构 Link to heading 红黑树是一种自平衡的二叉搜索树，它通过特定的属性和操作保持树的平衡，从而实现在最坏情况下仍能保持对数级别的查找、插入和删除时间复杂度。和红黑树提供相似功能的数据结构主要包括其他类型的自平衡二叉搜索树和一些特殊的数据结构，它们都能提供高效的查找、插入和删除操作。下面列出一些常见的例子：</description>
     </item>
     <item>
       <title>二分问题的统一解决方案</title>
-      <link>https://blog.oyyko.com/posts/erfen/</link>
-      <pubDate>Wed, 03 Apr 2024 16:10:24 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/erfen/</guid>
-      <description>思路来自 https://www.youtube.com/watch?v=QvcM99na30k。本文为学习记录+结合自己的思考修改后得出的框架。&#xA;引入 在算法题中有时候会遇到这种场景，对于一个问题，它的答案是一个整数且一定取在一个范围内，例如答案只可能是$[1, 10^9]$中的一个数字。且存在一个条件，使得对于任何小于答案的数字，这个条件都不成立；而对于任何大于等于答案的数字，这个条件都成立。那么这个时候就可以使用二分的方法来找到答案。</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/erfen/</link>
+      <pubDate>Wed, 03 Apr 2024 16:10:24 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/erfen/</guid>
+      <description>思路来自 https://www.youtube.com/watch?v=QvcM99na30k。本文为学习记录+结合自己的思考修改后得出的框架。&#xA;引入 Link to heading 在算法题中有时候会遇到这种场景，对于一个问题，它的答案是一个整数且一定取在一个范围内，例如答案只可能是$[1, 10^9]$中的一个数字。且存在一个条件，使得对于任何小于答案的数字，这个条件都不成立；而对于任何大于等于答案的数字，这个条件都成立。那么这个时候就可以使用二分的方法来找到答案。</description>
     </item>
     <item>
       <title>Go 并发与并行的区别</title>
-      <link>https://blog.oyyko.com/posts/goconcnotpar/</link>
-      <pubDate>Wed, 03 Apr 2024 15:12:33 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/goconcnotpar/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/goconcnotpar/</link>
+      <pubDate>Wed, 03 Apr 2024 15:12:33 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/goconcnotpar/</guid>
       <description></description>
     </item>
     <item>
       <title>Cpp 笔记 新系列1</title>
-      <link>https://blog.oyyko.com/posts/cppnote1/</link>
-      <pubDate>Tue, 02 Apr 2024 19:12:23 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/cppnote1/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cppnote1/</link>
+      <pubDate>Tue, 02 Apr 2024 19:12:23 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cppnote1/</guid>
       <description></description>
     </item>
     <item>
       <title>Go 学习笔记 1</title>
-      <link>https://blog.oyyko.com/posts/go_note1/</link>
-      <pubDate>Sun, 31 Mar 2024 14:07:47 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/go_note1/</guid>
-      <description>ChatGPT摘抄 Go和C++的区别 Go语言（通常称为Golang）和C++在多个方面有显著的区别，包括它们的设计哲学、类型系统、内存管理、并发模型等方面。下面是一些主要的区别：</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/go_note1/</link>
+      <pubDate>Sun, 31 Mar 2024 14:07:47 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/go_note1/</guid>
+      <description>ChatGPT摘抄 Link to heading Go和C++的区别 Link to heading Go语言（通常称为Golang）和C++在多个方面有显著的区别，包括它们的设计哲学、类型系统、内存管理、并发模型等方面。下面是一些主要的区别：</description>
     </item>
     <item>
       <title>软件使用小技巧</title>
-      <link>https://blog.oyyko.com/posts/trick/</link>
-      <pubDate>Sat, 09 Mar 2024 20:01:37 -0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/trick/</guid>
-      <description>Chrome 如何在MacOS下使chrome全屏，并且是不显示tab栏和地址栏的真全屏？&#xA;首先Fn+F使它假全屏，之后按 ⌘ + ⇧ + F , (Command + Shift + F) 使得它真全屏.</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/trick/</link>
+      <pubDate>Sat, 09 Mar 2024 20:01:37 -0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/trick/</guid>
+      <description>Chrome Link to heading 如何在MacOS下使chrome全屏，并且是不显示tab栏和地址栏的真全屏？</description>
     </item>
     <item>
       <title>如何准备程序员面试</title>
-      <link>https://blog.oyyko.com/posts/interview/</link>
-      <pubDate>Thu, 07 Mar 2024 22:20:06 -0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/interview/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/interview/</link>
+      <pubDate>Thu, 07 Mar 2024 22:20:06 -0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/interview/</guid>
       <description>本文既讲解国内和北美面试中间的共同点，也对于两地不同的情况进行单独讲解。例如国内的八股文和北美的BQ。&#xA;本文主要面向的读者是还没参加过正式工作的学生群体。作者也没有跳槽或者高级别的工作经验。如有不合理、不详尽之处，请联系本人改正。十分感谢。&#xA;首先讲解一些互联网上常见的术语。本文可能用到其中的一些。如果你在本文阅读过程中看到看不懂的词语，请使用ctrl+F搜索。</description>
     </item>
     <item>
       <title>Projects</title>
-      <link>https://blog.oyyko.com/projects/</link>
-      <pubDate>Wed, 14 Feb 2024 14:44:17 -0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/projects/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/projects/</link>
+      <pubDate>Wed, 14 Feb 2024 14:44:17 -0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/projects/</guid>
       <description>In chronological order, some of the projects I did, started from my freshman year.</description>
     </item>
     <item>
       <title>UCSD CSE 230 Midterm Review Note</title>
-      <link>https://blog.oyyko.com/posts/haskell1/</link>
-      <pubDate>Wed, 01 Nov 2023 14:56:15 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/haskell1/</guid>
-      <description>01-lambda Programs are expressions e (also called λ-terms) of one of three kinds:</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/haskell1/</link>
+      <pubDate>Wed, 01 Nov 2023 14:56:15 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/haskell1/</guid>
+      <description>01-lambda Link to heading Programs are expressions e (also called λ-terms) of one of three kinds:</description>
     </item>
     <item>
       <title>Infra知识点</title>
-      <link>https://blog.oyyko.com/posts/infra/</link>
-      <pubDate>Wed, 11 Oct 2023 23:54:53 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/infra/</guid>
-      <description>本文为摘录网络内容. 由于时间原因未记录原文地址，谷歌即可找到原文。&#xA;简述数据库三大范式 第一范式是最基本的范式。如果数据库表中的所有字段值都是不可分解的原子值，就说明该数据库表满足了第一范式。</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/infra/</link>
+      <pubDate>Wed, 11 Oct 2023 23:54:53 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/infra/</guid>
+      <description>本文为摘录网络内容. 由于时间原因未记录原文地址，谷歌即可找到原文。&#xA;简述数据库三大范式 Link to heading 第一范式是最基本的范式。如果数据库表中的所有字段值都是不可分解的原子值，就说明该数据库表满足了第一范式。</description>
     </item>
     <item>
       <title>New Macbook Setup</title>
-      <link>https://blog.oyyko.com/posts/mac_config/</link>
-      <pubDate>Wed, 04 Oct 2023 10:41:00 -0700</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/mac_config/</guid>
-      <description>Install HomeBrew see https://brew.</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/mac_config/</link>
+      <pubDate>Wed, 04 Oct 2023 10:41:00 -0700</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/mac_config/</guid>
+      <description>Install HomeBrew Link to heading see https://brew.</description>
     </item>
     <item>
       <title>Mogan_note4</title>
-      <link>https://blog.oyyko.com/posts/mogan_note4/</link>
-      <pubDate>Sun, 03 Sep 2023 20:33:01 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/mogan_note4/</guid>
-      <description>如何画曲线 1public: 2 inline curve_rep () {} 3 inline virtual ~curve_rep () {} 4 5 inline virtual int nr_components () { return 1; } 6 // the number of components of the curve is useful for getting 7 // nice parameterizations when concatenating curves 8 9 virtual point evaluate (double t)= 0; 10 // gives a point on the curve for its intrinsic parameterization 11 // curves are parameterized from 0.</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/mogan_note4/</link>
+      <pubDate>Sun, 03 Sep 2023 20:33:01 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/mogan_note4/</guid>
+      <description>如何画曲线 Link to heading 1public: 2 inline curve_rep () {} 3 inline virtual ~curve_rep () {} 4 5 inline virtual int nr_components () { return 1; } 6 // the number of components of the curve is useful for getting 7 // nice parameterizations when concatenating curves 8 9 virtual point evaluate (double t)= 0; 10 // gives a point on the curve for its intrinsic parameterization 11 // curves are parameterized from 0.</description>
     </item>
     <item>
       <title>TeXmacs/Mogan Note 3</title>
-      <link>https://blog.oyyko.com/posts/mogan_note3/</link>
-      <pubDate>Wed, 02 Aug 2023 15:57:15 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/mogan_note3/</guid>
-      <description>修改为两点画圆 研究三点画圆的代码实现&#xA;菜单中选择画圆的时候使用</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/mogan_note3/</link>
+      <pubDate>Wed, 02 Aug 2023 15:57:15 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/mogan_note3/</guid>
+      <description>修改为两点画圆 Link to heading 研究三点画圆的代码实现</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://blog.oyyko.com/about/</link>
-      <pubDate>Sat, 29 Jul 2023 23:43:28 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/about/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/about/</link>
+      <pubDate>Sat, 29 Jul 2023 23:43:28 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/about/</guid>
       <description>Hi. Oyyko here. Nice to meet you!</description>
     </item>
     <item>
       <title>Change0729</title>
-      <link>https://blog.oyyko.com/posts/change0729/</link>
-      <pubDate>Sat, 29 Jul 2023 22:50:19 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/change0729/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/change0729/</link>
+      <pubDate>Sat, 29 Jul 2023 22:50:19 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/change0729/</guid>
       <description>Now I changed the theme of this blog to https://github.</description>
     </item>
     <item>
       <title>Vscode 返回上一个位置快捷键</title>
-      <link>https://blog.oyyko.com/posts/vscode2/</link>
-      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/vscode2/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/vscode2/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/vscode2/</guid>
       <description>非常有用的一个功能。&#xA;Windows: $Alt + \leftarrow$</description>
     </item>
     <item>
       <title>Texmacs/Mogan Note 2</title>
-      <link>https://blog.oyyko.com/posts/texmacs_note2/</link>
-      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/texmacs_note2/</guid>
-      <description>23_15 1(get-init-tree &amp;#34;text-at-halign&amp;#34;) 这个与缓存有关。缓存位置在~/.</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note2/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note2/</guid>
+      <description>23_15 Link to heading 1(get-init-tree &amp;#34;text-at-halign&amp;#34;) 这个与缓存有关。缓存位置在~/.</description>
     </item>
     <item>
       <title>Archlinux/Manjaro Install Guide</title>
-      <link>https://blog.oyyko.com/posts/arch_install/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/arch_install/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/arch_install/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/arch_install/</guid>
       <description>manjaro I3新电脑配置&#xA;假设已经安装好了manjaro i3，接下来要做的是：</description>
     </item>
     <item>
       <title>Texmacs Graphics Tutorial</title>
-      <link>https://blog.oyyko.com/posts/texmacs_graphics_tutorial/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/texmacs_graphics_tutorial/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_graphics_tutorial/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_graphics_tutorial/</guid>
       <description>原文：https://www.texmacs.org/tmweb/documents/tutorials/TeXmacs-graphics-tutorial.pdf</description>
     </item>
     <item>
       <title>Texmacs/Mogan Note</title>
-      <link>https://blog.oyyko.com/posts/texmacs_note/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/texmacs_note/</guid>
-      <description>Note graphics-utils.scm 1;;These abbreviations are very convenient 2;;to use.</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/texmacs_note/</guid>
+      <description>Note Link to heading graphics-utils.</description>
     </item>
     <item>
       <title>Scheme Review 1</title>
-      <link>https://blog.oyyko.com/posts/scheme/</link>
-      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/scheme/</guid>
-      <description>https://courses.cs.washington.edu/courses/cse341/04wi/lectures/14-scheme-quote.html&#xA;Quote Scheme has a convenient syntax for representing data literals: prefix any expression with &amp;rsquo; (single quote) and the expression, rather than being evaluated, will be returned as data:</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/scheme/</link>
+      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/scheme/</guid>
+      <description>https://courses.cs.washington.edu/courses/cse341/04wi/lectures/14-scheme-quote.html&#xA;Quote Link to heading Scheme has a convenient syntax for representing data literals: prefix any expression with &amp;rsquo; (single quote) and the expression, rather than being evaluated, will be returned as data:</description>
     </item>
     <item>
       <title>In archlinux, chrome cannot be displayed normally under AMD.</title>
-      <link>https://blog.oyyko.com/posts/chrome_amd/</link>
-      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/chrome_amd/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/chrome_amd/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/chrome_amd/</guid>
       <description>Solution:&#xA;1rm -rf .</description>
     </item>
     <item>
       <title>Value_categories_in_Cpp</title>
-      <link>https://blog.oyyko.com/posts/value_categories_in_cpp/</link>
-      <pubDate>Tue, 23 Aug 2022 15:20:51 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/value_categories_in_cpp/</guid>
-      <description>Intro 1#define IS_XVALUE(expr) \ 2(is_rvalue_reference&amp;lt;decltype((expr))&amp;gt;{}) 3#define IS_PRVALUE(expr) \ 4(!</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/value_categories_in_cpp/</link>
+      <pubDate>Tue, 23 Aug 2022 15:20:51 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/value_categories_in_cpp/</guid>
+      <description>Intro Link to heading 1#define IS_XVALUE(expr) \ 2(is_rvalue_reference&amp;lt;decltype((expr))&amp;gt;{}) 3#define IS_PRVALUE(expr) \ 4(!</description>
     </item>
     <item>
       <title>Revisit_OS</title>
-      <link>https://blog.oyyko.com/posts/revisit_os/</link>
-      <pubDate>Sat, 20 Aug 2022 16:05:28 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/revisit_os/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/revisit_os/</link>
+      <pubDate>Sat, 20 Aug 2022 16:05:28 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/revisit_os/</guid>
       <description>For some reason, I&amp;rsquo;ve been reviewing OS related stuff lately.</description>
     </item>
     <item>
       <title>Using Cpp17 or higher version of Cpp on Vscode extension Clangd</title>
-      <link>https://blog.oyyko.com/posts/use-cpp17-on-vscode-clangd/</link>
-      <pubDate>Sun, 07 Aug 2022 21:49:29 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/use-cpp17-on-vscode-clangd/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/use-cpp17-on-vscode-clangd/</link>
+      <pubDate>Sun, 07 Aug 2022 21:49:29 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/use-cpp17-on-vscode-clangd/</guid>
       <description>Recently I&amp;rsquo;ve switched my code completion tool in VScode from Microsoft&amp;rsquo;s official plugin to clangd.</description>
     </item>
     <item>
       <title>First Post</title>
-      <link>https://blog.oyyko.com/posts/first-post/</link>
-      <pubDate>Sun, 24 Jul 2022 00:37:35 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/first-post/</guid>
-      <description>新博客 决定把博客切换到hugo。也算是人生路上一个新的开始。</description>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/first-post/</link>
+      <pubDate>Sun, 24 Jul 2022 00:37:35 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/first-post/</guid>
+      <description>新博客 Link to heading 决定把博客切换到hugo。也算是人生路上一个新的开始。</description>
     </item>
     <item>
       <title>C&#43;&#43; Note 4</title>
-      <link>https://blog.oyyko.com/posts/cpp4/</link>
-      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/cpp4/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp4/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp4/</guid>
       <description>&lt;p&gt;C++ 笔记4&lt;/p&gt;</description>
     </item>
     <item>
       <title>BASH脚本</title>
-      <link>https://blog.oyyko.com/posts/bash/</link>
-      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/bash/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bash/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bash/</guid>
       <description>&lt;p&gt;BASH 条件判断&lt;/p&gt;</description>
     </item>
     <item>
       <title>链接 Note 1</title>
-      <link>https://blog.oyyko.com/posts/link1/</link>
-      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/link1/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/link1/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/link1/</guid>
       <description>&lt;p&gt;链接的笔记&lt;/p&gt;</description>
     </item>
     <item>
       <title>C&#43;&#43; Note 3</title>
-      <link>https://blog.oyyko.com/posts/cpp3/</link>
-      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/cpp3/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp3/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp3/</guid>
       <description>&lt;p&gt;本文是我的C++笔记的第三篇&#xA;My Thrid C++ Note;&lt;/p&gt;</description>
     </item>
     <item>
       <title>位运算技巧</title>
-      <link>https://blog.oyyko.com/posts/bithack/</link>
-      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/bithack/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bithack/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bithack/</guid>
       <description>&lt;p&gt;位运算技巧&lt;/p&gt;</description>
     </item>
     <item>
       <title>现代C&#43;&#43;白皮书 笔记1</title>
-      <link>https://blog.oyyko.com/posts/cpp_whitepaper/</link>
-      <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/cpp_whitepaper/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp_whitepaper/</link>
+      <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp_whitepaper/</guid>
       <description>&lt;p&gt;现代C++白皮书 笔记1&lt;/p&gt;</description>
     </item>
     <item>
       <title>VsCode Latex 插件配置</title>
-      <link>https://blog.oyyko.com/posts/vscode-latex/</link>
-      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/vscode-latex/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/vscode-latex/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/vscode-latex/</guid>
       <description>更改vscode的 setting.json文件 加入</description>
     </item>
     <item>
       <title>链表 笔记</title>
-      <link>https://blog.oyyko.com/posts/linklist/</link>
-      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/linklist/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/linklist/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/linklist/</guid>
       <description>&lt;p&gt;链表笔记&lt;/p&gt;</description>
     </item>
     <item>
       <title>ICS 笔记3</title>
-      <link>https://blog.oyyko.com/posts/ics3/</link>
-      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/ics3/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics3/</link>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics3/</guid>
       <description>&lt;p&gt;ICS笔记3&lt;/p&gt;</description>
     </item>
     <item>
       <title>压行技巧</title>
-      <link>https://blog.oyyko.com/posts/yahang/</link>
-      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/yahang/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/yahang/</link>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/yahang/</guid>
       <description>&lt;p&gt;压行技巧&lt;/p&gt;</description>
     </item>
     <item>
       <title>三道面试题</title>
-      <link>https://blog.oyyko.com/posts/three-problem/</link>
-      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/three-problem/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/three-problem/</link>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/three-problem/</guid>
       <description>&lt;p&gt;三道面试题&lt;/p&gt;</description>
     </item>
     <item>
       <title>数论笔记</title>
-      <link>https://blog.oyyko.com/posts/shulun/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/shulun/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/shulun/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/shulun/</guid>
       <description>&lt;p&gt;本文是我的数论笔记的第一篇&#xA;关于:4k+1型和4k+3型素数&lt;/p&gt;</description>
     </item>
     <item>
       <title>二分总结</title>
-      <link>https://blog.oyyko.com/posts/bisection/</link>
-      <pubDate>Tue, 30 Nov 2021 15:20:51 +0800</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/bisection/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bisection/</link>
+      <pubDate>Tue, 30 Nov 2021 15:20:51 +0800</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/bisection/</guid>
       <description>##　Leetcode 704 二分查找target</description>
     </item>
     <item>
       <title>C&#43;&#43; Note 2</title>
-      <link>https://blog.oyyko.com/posts/cpp2/</link>
-      <pubDate>Sun, 28 Nov 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/cpp2/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp2/</link>
+      <pubDate>Sun, 28 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp2/</guid>
       <description>&lt;p&gt;本文是我的C++笔记的第二篇&#xA;My Second C++ Note;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ICS PPT Note 1</title>
-      <link>https://blog.oyyko.com/posts/ics_ppt/</link>
-      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/ics_ppt/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics_ppt/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics_ppt/</guid>
       <description>&lt;p&gt;计算系统概率PPT笔记1 复习期中&lt;/p&gt;</description>
     </item>
     <item>
       <title>A strange way to compute GCD</title>
-      <link>https://blog.oyyko.com/posts/gcd/</link>
-      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/gcd/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/gcd/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/gcd/</guid>
       <description>&lt;p&gt;A strange way to compute GCD in one line&lt;/p&gt;</description>
     </item>
     <item>
       <title>ICS Note 2</title>
-      <link>https://blog.oyyko.com/posts/ics2/</link>
-      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/ics2/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics2/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics2/</guid>
       <description>&lt;p&gt;This is my notes for ICS. Source: book&#xA;计算系统概论笔记2 来自课本&lt;/p&gt;</description>
     </item>
     <item>
       <title>ICS Note 1</title>
-      <link>https://blog.oyyko.com/posts/ics1/</link>
-      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/ics1/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics1/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ics1/</guid>
       <description>&lt;p&gt;This is my notes for ICS. Source: ppt&#xA;计算系统概论笔记1 来自PPT&lt;/p&gt;</description>
     </item>
     <item>
       <title>The language UNIMODAL is not context free</title>
-      <link>https://blog.oyyko.com/posts/unimodal/</link>
-      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/unimodal/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/unimodal/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/unimodal/</guid>
       <description>&lt;p&gt;In this article, we will prove that: the language &amp;lsquo;UNIMODAL&amp;rsquo; is not cfg. Also, we will prove that cfg can not be used to compare binary number.&lt;/p&gt;</description>
     </item>
     <item>
       <title>VSCODE 使用笔记</title>
-      <link>https://blog.oyyko.com/posts/vscode/</link>
-      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/vscode/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/vscode/</link>
+      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/vscode/</guid>
       <description>&lt;p&gt;工欲善其事，必先利其器。&lt;/p&gt;</description>
     </item>
     <item>
       <title>CCPC华为的一道趣题</title>
-      <link>https://blog.oyyko.com/posts/ccpc_huawei/</link>
-      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/ccpc_huawei/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ccpc_huawei/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/ccpc_huawei/</guid>
       <description>&lt;p&gt;本文记录了CCPC华为比赛中的一道题目&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fix a grub bug</title>
-      <link>https://blog.oyyko.com/posts/grub/</link>
-      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/grub/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/grub/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/grub/</guid>
       <description>In this article, I will record how to fix the problem that grub can&amp;rsquo;t find Windows on nvme.</description>
     </item>
     <item>
       <title>name and shakespeare</title>
-      <link>https://blog.oyyko.com/posts/names_and_shakespeare/</link>
-      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/names_and_shakespeare/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/names_and_shakespeare/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/names_and_shakespeare/</guid>
       <description>匿名函数与莎士比亚大定理&#xA;This article is translated from Here</description>
     </item>
     <item>
       <title>C&#43;&#43; Note 1</title>
-      <link>https://blog.oyyko.com/posts/cpp1/</link>
-      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/cpp1/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp1/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/cpp1/</guid>
       <description>&lt;p&gt;本文是我的C++笔记的第一篇&#xA;My First C++ Note;&lt;/p&gt;</description>
     </item>
     <item>
       <title>C Hello World Again</title>
-      <link>https://blog.oyyko.com/posts/c_hello_world/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/c_hello_world/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/c_hello_world/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/c_hello_world/</guid>
       <description>&lt;p&gt;本文是我给地空学院的学生的C语言讲座的讲稿&lt;/p&gt;</description>
     </item>
     <item>
       <title>N queens Problem</title>
-      <link>https://blog.oyyko.com/posts/n-queens/</link>
-      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate><author>finalwind42@gmail.com (Oyyko)</author>
-      <guid>https://blog.oyyko.com/posts/n-queens/</guid>
+      <link>https://oyyko-old-projects.github.io/blog-coder-copy/posts/n-queens/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://oyyko-old-projects.github.io/blog-coder-copy/posts/n-queens/</guid>
       <description>&lt;p&gt;This article will provide a fast way to find a solution for the famous N queens problem.&lt;/p&gt;</description>
     </item>
   </channel>
